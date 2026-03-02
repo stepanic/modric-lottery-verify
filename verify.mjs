@@ -63,12 +63,11 @@ const SLOT_DIVISOR = 1000;
 const BYTES_PER_SEL = 8;
 
 // ── RPC endpoint pool ───────────────────────────────────────────────────────
-// Free public Solana RPC nodes. The script rotates to the next one on 429/403.
+// Free public Solana RPC nodes. On 429/403/401 the script rotates to the next.
 
 const RPC_ENDPOINTS = [
   "https://api.mainnet-beta.solana.com",
   "https://solana.publicnode.com",
-  "https://mainnet.helius-rpc.com/?api-key=1d8740dc-e5f4-421c-b823-e1bad1889ced",
 ];
 
 const RPC_CONNECTION_OPTS = {
@@ -79,47 +78,61 @@ const RPC_CONNECTION_OPTS = {
 let currentRpcIndex = 0;
 let connection = new Connection(RPC_ENDPOINTS[currentRpcIndex], RPC_CONNECTION_OPTS);
 
-function getCurrentRpcLabel() {
-  const url = RPC_ENDPOINTS[currentRpcIndex];
-  try { return new URL(url).hostname; } catch { return url; }
+function rpcLabel(idx) {
+  try { return new URL(RPC_ENDPOINTS[idx % RPC_ENDPOINTS.length]).hostname; }
+  catch { return RPC_ENDPOINTS[idx % RPC_ENDPOINTS.length]; }
 }
+function getCurrentRpcLabel() { return rpcLabel(currentRpcIndex); }
 
-function rotateRpc() {
-  currentRpcIndex = (currentRpcIndex + 1) % RPC_ENDPOINTS.length;
+function setRpc(idx) {
+  currentRpcIndex = idx % RPC_ENDPOINTS.length;
   connection = new Connection(RPC_ENDPOINTS[currentRpcIndex], RPC_CONNECTION_OPTS);
   return getCurrentRpcLabel();
 }
+
+/** Reset to primary endpoint (call between draws to get fresh rate window) */
+function resetRpc() { setRpc(0); }
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function randomDelay(minMs = 500, maxMs = 1500) {
+function randomDelay(minMs = 400, maxMs = 1200) {
   const ms = Math.floor(Math.random() * (maxMs - minMs + 1)) + minMs;
   return sleep(ms);
 }
 
-/** Retry an RPC call, rotating endpoint on 429 / 403 errors */
+function isRetryableError(msg) {
+  return msg.includes("429") || msg.includes("Too many requests")
+    || msg.includes("403") || msg.includes("Forbidden")
+    || msg.includes("401") || msg.includes("Unauthorized");
+}
+
+/**
+ * Execute an RPC call with automatic endpoint rotation on failure.
+ * Tries every endpoint in order before giving up.
+ */
 async function rpcCall(fn, label = "RPC call") {
-  const maxRetries = RPC_ENDPOINTS.length * 2;
-  for (let attempt = 0; attempt < maxRetries; attempt++) {
+  let lastErr;
+
+  for (let tried = 0; tried < RPC_ENDPOINTS.length; tried++) {
     try {
       await randomDelay();
       return await fn(connection);
     } catch (err) {
+      lastErr = err;
       const msg = err.message || "";
-      const isRetryable = msg.includes("429") || msg.includes("Too many requests")
-        || msg.includes("403") || msg.includes("Forbidden");
-      if (isRetryable && attempt < maxRetries - 1) {
-        const newRpc = rotateRpc();
-        const delayMs = 1000 * (attempt + 1);
-        kv("RPC rotate", `→ ${newRpc}  (retry ${attempt + 1}, wait ${delayMs}ms)`, C.yellow);
+      if (isRetryableError(msg) && tried < RPC_ENDPOINTS.length - 1) {
+        const newRpc = setRpc(currentRpcIndex + 1);
+        const delayMs = 800 * (tried + 1);
+        kv("RPC rotate", `→ ${newRpc}  (${label}, wait ${delayMs}ms)`, C.yellow);
         await sleep(delayMs);
         continue;
       }
       throw err;
     }
   }
+  throw lastErr;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -180,23 +193,59 @@ async function fetchVRFRandomness(vrfPda, draw) {
 }
 
 async function fetchTransaction(signature) {
-  const result = await rpcCall(
-    conn => conn.getTransaction(signature, { maxSupportedTransactionVersion: 0 }),
-    "getTransaction"
-  );
-  if (!result) throw new Error("Transaction not found");
+  // Some free endpoints don't serve historical transactions (return null).
+  // Try each endpoint, then retry the full cycle once more with longer waits.
+  const maxRounds = 2;
 
-  const blockTime = result.blockTime
-    ? new Date(result.blockTime * 1000).toISOString()
-    : "unknown";
+  for (let round = 0; round < maxRounds; round++) {
+    if (round > 0) {
+      setRpc(0);                      // reset to primary for 2nd round
+      await sleep(3000);              // longer cooldown before retry round
+    }
 
-  const accountKeys = result.transaction.message.getAccountKeys();
-  let hasOrao = false;
-  for (let i = 0; i < accountKeys.length; i++) {
-    if (accountKeys.get(i)?.equals(ORAO_PROGRAM_ID)) { hasOrao = true; break; }
+    for (let tried = 0; tried < RPC_ENDPOINTS.length; tried++) {
+      try {
+        await randomDelay(500 + round * 500, 1500 + round * 500);
+        const result = await connection.getTransaction(signature, {
+          maxSupportedTransactionVersion: 0,
+        });
+
+        if (result) {
+          const blockTime = result.blockTime
+            ? new Date(result.blockTime * 1000).toISOString()
+            : "unknown";
+
+          const accountKeys = result.transaction.message.getAccountKeys();
+          let hasOrao = false;
+          for (let i = 0; i < accountKeys.length; i++) {
+            if (accountKeys.get(i)?.equals(ORAO_PROGRAM_ID)) { hasOrao = true; break; }
+          }
+
+          return { blockTime, slot: result.slot, success: !result.meta?.err, hasOrao };
+        }
+
+        // null result — this endpoint can't find the TX, try next
+        if (tried < RPC_ENDPOINTS.length - 1) {
+          const newRpc = setRpc(currentRpcIndex + 1);
+          kv("TX retry", `→ ${newRpc}`, C.dim);
+          continue;
+        }
+      } catch (err) {
+        const msg = err.message || "";
+        if (isRetryableError(msg) && tried < RPC_ENDPOINTS.length - 1) {
+          const newRpc = setRpc(currentRpcIndex + 1);
+          const delayMs = 800 * (tried + 1);
+          kv("RPC rotate", `→ ${newRpc}  (getTransaction, wait ${delayMs}ms)`, C.yellow);
+          await sleep(delayMs);
+          continue;
+        }
+        // On last round, throw; otherwise try next round
+        if (round === maxRounds - 1) throw err;
+        break; // break inner loop, go to next round
+      }
+    }
   }
-
-  return { blockTime, slot: result.slot, success: !result.meta?.err, hasOrao };
+  throw new Error("Transaction not found on any RPC endpoint");
 }
 
 async function fetchTokenInfo(winnerAddress) {
@@ -255,6 +304,7 @@ function kv(key, value, color = C.white) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 async function verifyDraw(draw) {
+  resetRpc();              // start each draw on the primary endpoint
   header(`${draw.label}`);
 
   // 1. Load snapshot
@@ -393,7 +443,9 @@ async function main() {
 
   // Run each draw
   const results = [];
-  for (const draw of drawsToRun) {
+  for (let i = 0; i < drawsToRun.length; i++) {
+    if (i > 0) await sleep(2000);   // pause between draws for rate-limit cooldown
+    const draw = drawsToRun[i];
     const ok = await verifyDraw(draw);
     results.push({ draw, ok });
   }
