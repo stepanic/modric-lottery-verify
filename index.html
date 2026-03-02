@@ -527,14 +527,27 @@ function selectWinners(holders, randomBytes, n) {
 // ─── Solana JSON-RPC ────────────────────────────────────────────────────────
 
 function rpc(method, params) {
-  return fetch(RPC, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: method, params: params }),
-  }).then(function(r) { return r.json(); }).then(function(j) {
-    if (j.error) throw new Error(j.error.message);
-    return j.result;
-  });
+  var maxRetries = 3;
+  function attempt(n) {
+    return fetch(RPC, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: method, params: params }),
+    }).then(function(r) {
+      // If server-side proxy rotated, it already handled 429 for us.
+      // But if the response is still a retryable status, we retry client-side.
+      if ((r.status === 429 || r.status === 503) && n < maxRetries) {
+        var delay = 1000 * (n + 1) + Math.random() * 500;
+        return new Promise(function(resolve) { setTimeout(resolve, delay); })
+          .then(function() { return attempt(n + 1); });
+      }
+      return r.json();
+    }).then(function(j) {
+      if (j.error) throw new Error(j.error.message);
+      return j.result;
+    });
+  }
+  return attempt(0);
 }
 
 function fetchVRF(draw) {
