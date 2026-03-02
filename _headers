@@ -1,0 +1,4 @@
+# CORS for data files
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
