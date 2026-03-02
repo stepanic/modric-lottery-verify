@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$MODRIC Lottery — On-Chain Verification</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:     #07090d;
+  --surf:   #0c1016;
+  --surf2:  #111820;
+  --bord:   #18242e;
+  --bord2:  #243648;
+  --green:  #00e676;
+  --glow:   rgba(0,230,118,0.15);
+  --amber:  #ffb300;
+  --red:    #ff3d57;
+  --blue:   #40c4ff;
+  --dim:    #3a5568;
+  --mid:    #607d8b;
+  --text:   #b0c4ce;
+  --white:  #e8f4f8;
+  --mono:   'JetBrains Mono', monospace;
+  --sans:   'Syne', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--mono);
+  font-size:13px;
+  line-height:1.65;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* scanlines */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.04) 2px,rgba(0,0,0,0.04) 4px);
+}
+
+.wrap{max-width:860px;margin:0 auto;padding:32px 20px 80px}
+
+/* ── HERO ── */
+.hero{
+  text-align:center;padding:56px 0 44px;
+  position:relative;overflow:hidden;
+}
+.hero-mesh{
+  position:absolute;inset:0;
+  background-image:linear-gradient(var(--bord) 1px,transparent 1px),
+    linear-gradient(90deg,var(--bord) 1px,transparent 1px);
+  background-size:48px 48px;opacity:.4;
+  mask-image:radial-gradient(ellipse 90% 80% at 50% 50%,black 30%,transparent 100%);
+}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green);border:1px solid rgba(0,230,118,.35);
+  padding:5px 16px;margin-bottom:20px;
+  position:relative;
+}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green);
+  animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+
+h1{
+  font-family:var(--sans);font-size:clamp(26px,5vw,50px);
+  font-weight:800;letter-spacing:-.02em;color:var(--white);
+  line-height:1.1;margin-bottom:10px;
+}
+h1 em{color:var(--green);font-style:normal;}
+.sub{color:var(--mid);font-size:12px;letter-spacing:.06em;}
+
+/* ── DRAW TABS ── */
+.draw-tabs{
+  display:flex;gap:2px;margin-bottom:16px;
+}
+.draw-tab{
+  flex:1;padding:12px 10px;
+  font-family:var(--mono);font-size:10px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  text-align:center;cursor:pointer;
+  background:var(--surf);border:1px solid var(--bord);
+  color:var(--dim);transition:all .2s;
+}
+.draw-tab:hover{border-color:var(--bord2);color:var(--text);}
+.draw-tab.active{
+  border-color:rgba(0,230,118,.5);color:var(--green);
+  background:rgba(0,230,118,.06);
+}
+.draw-tab .tab-date{
+  display:block;font-size:9px;font-weight:400;
+  letter-spacing:.04em;margin-top:2px;color:inherit;opacity:.6;
+}
+
+/* ── FACT STRIP ── */
+.facts{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--bord);border:1px solid var(--bord);
+  margin-bottom:28px;
+}
+@media(max-width:640px){.facts{grid-template-columns:1fr 1fr}}
+.fact{background:var(--surf);padding:14px 16px;}
+.fact-label{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;}
+.fact-val{font-size:11px;color:var(--blue);word-break:break-all;line-height:1.4;}
+.fact-val.g{color:var(--green);}
+.fact-val.a{color:var(--amber);}
+
+/* ── RUN BUTTON ── */
+.run-area{text-align:center;margin-bottom:24px;}
+#btn{
+  font-family:var(--mono);font-size:12px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;
+  color:var(--bg);background:var(--green);
+  border:none;padding:13px 44px;cursor:pointer;
+  clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);
+  transition:background .15s,box-shadow .15s;position:relative;
+}
+#btn:hover{background:#fff;box-shadow:0 0 32px var(--glow);}
+#btn:disabled{background:var(--bord2);color:var(--dim);cursor:not-allowed;box-shadow:none;}
+
+/* ── PROGRESS ── */
+.progress{height:2px;background:var(--bord);margin-bottom:3px;overflow:hidden;}
+.progress-bar{height:100%;background:var(--green);width:0;transition:width .6s ease;box-shadow:0 0 8px var(--green);}
+
+/* ── STEPS ── */
+.steps{display:flex;flex-direction:column;gap:2px;}
+.step{
+  background:var(--surf);border:1px solid var(--bord);
+  overflow:hidden;transition:border-color .3s;
+}
+.step.active{border-color:rgba(64,196,255,.6);}
+.step.ok{border-color:rgba(0,230,118,.5);}
+.step.err{border-color:rgba(255,61,87,.5);}
+.step.skip{border-color:rgba(255,179,0,.3);}
+
+.step-hd{
+  display:flex;align-items:center;gap:12px;
+  padding:11px 14px;border-bottom:1px solid var(--bord);
+}
+.sn{
+  width:20px;height:20px;border:1px solid var(--dim);
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:700;color:var(--dim);flex-shrink:0;
+  transition:all .3s;
+}
+.step.active .sn{border-color:var(--blue);color:var(--blue);}
+.step.ok     .sn{background:var(--green);border-color:var(--green);color:var(--bg);}
+.step.err    .sn{border-color:var(--red);color:var(--red);}
+.step.skip   .sn{border-color:var(--amber);color:var(--amber);}
+
+.st{flex:1;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);transition:color .3s;}
+.step.active .st{color:var(--blue);}
+.step.ok     .st{color:var(--green);}
+.step.err    .st{color:var(--red);}
+.step.skip   .st{color:var(--amber);}
+
+.ss{font-size:10px;color:var(--dim);transition:color .3s;}
+.step.active .ss{color:var(--amber);}
+.step.ok     .ss{color:var(--green);}
+.step.err    .ss{color:var(--red);}
+.step.skip   .ss{color:var(--amber);}
+
+.step-bd{
+  max-height:0;overflow:hidden;padding:0;
+  transition:max-height .5s ease,padding .3s;
+}
+.step.active .step-bd,.step.ok .step-bd,.step.err .step-bd,.step.skip .step-bd{
+  max-height:1400px;padding:14px;
+}
+
+/* ── KV rows ── */
+.kv{display:flex;gap:10px;margin-bottom:5px;flex-wrap:wrap;align-items:baseline;}
+.kk{min-width:140px;flex-shrink:0;color:var(--dim);font-size:10px;letter-spacing:.04em;}
+.vv{font-size:11px;color:var(--text);word-break:break-all;line-height:1.5;}
+.vv.g{color:var(--green);}
+.vv.b{color:var(--blue);}
+.vv.a{color:var(--amber);}
+.vv.d{color:var(--dim);font-size:10px;}
+.vv.r{color:var(--red);}
+
+/* ── Spinner ── */
+.spin{
+  display:inline-block;width:11px;height:11px;
+  border:2px solid var(--bord2);border-top-color:var(--amber);
+  border-radius:50%;animation:rot .65s linear infinite;vertical-align:middle;margin-right:6px;
+}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* ── Hex dump ── */
+.hexdump{
+  font-size:10px;color:var(--dim);letter-spacing:.04em;
+  background:rgba(0,0,0,.4);border:1px solid var(--bord);
+  padding:10px 12px;margin-top:6px;line-height:1.8;word-break:break-all;
+}
+.hexdump .hl{color:var(--green);font-weight:700;}
+
+/* ── Prob bar ── */
+.pbar-wrap{margin-top:10px;}
+.pbar-track{height:5px;background:var(--bord);overflow:hidden;position:relative;}
+.pbar-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--blue));width:0;transition:width 1s ease .2s;}
+.pbar-label{font-size:10px;color:var(--dim);margin-top:4px;}
+
+/* ── Slot calc ── */
+.slot-calc{
+  border:1px solid var(--bord);padding:12px 14px;margin-top:10px;
+  background:rgba(0,0,0,.3);
+}
+.slot-eq{font-size:11px;color:var(--mid);line-height:1.9;}
+.slot-eq span{color:var(--green);}
+.slot-eq strong{color:var(--white);font-weight:600;}
+
+/* ── Verdict ── */
+#verdict{margin-top:3px;display:none;}
+.vbox{
+  border:2px solid var(--green);padding:28px 22px;
+  background:linear-gradient(135deg,rgba(0,230,118,.06),transparent);
+  text-align:center;position:relative;overflow:hidden;
+}
+.vbox::before{
+  content:'';position:absolute;top:-40px;left:-40px;right:-40px;bottom:-40px;
+  background:radial-gradient(ellipse at center,var(--glow) 0%,transparent 70%);
+  pointer-events:none;
+}
+.vbox.fail{border-color:var(--red);background:linear-gradient(135deg,rgba(255,61,87,.06),transparent);}
+.vicon{font-size:42px;display:block;margin-bottom:14px;}
+.vtitle{
+  font-family:var(--sans);font-size:18px;font-weight:800;
+  color:var(--green);text-transform:uppercase;letter-spacing:.08em;
+  margin-bottom:22px;
+}
+.vbox.fail .vtitle{color:var(--red);}
+
+.vgrid{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--bord);border:1px solid var(--bord);
+  max-width:720px;margin:0 auto 18px;text-align:left;
+}
+@media(max-width:600px){.vgrid{grid-template-columns:1fr}}
+.vc{background:var(--bg);padding:12px 14px;}
+.vcl{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;}
+.vcv{font-size:11px;color:var(--text);word-break:break-all;}
+.vcv.g{color:var(--green);}
+
+.checks{
+  display:flex;flex-wrap:wrap;justify-content:center;
+  gap:6px 18px;margin-top:14px;font-size:10px;color:var(--mid);
+}
+.checks b{color:var(--green);}
+
+/* ── Trust note ── */
+.trust-note{
+  margin-top:14px;padding:14px;border:1px solid var(--bord);
+  background:rgba(0,0,0,.3);font-size:10px;color:var(--dim);line-height:1.7;
+}
+.trust-note strong{color:var(--amber);font-weight:600;}
+
+/* ── Links ── */
+.links{
+  margin-top:28px;border:1px solid var(--bord);
+  background:var(--surf);padding:18px;
+}
+.links-ttl{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:12px;}
+.lrow{display:flex;gap:10px;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;}
+.ll{min-width:68px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);flex-shrink:0;}
+.links a{color:var(--blue);text-decoration:none;font-size:11px;word-break:break-all;border-bottom:1px solid transparent;transition:border-color .15s;}
+.links a:hover{border-bottom-color:var(--blue);}
+
+.err-box{
+  background:rgba(255,61,87,.07);border:1px solid rgba(255,61,87,.25);
+  padding:10px 13px;color:var(--red);font-size:11px;margin-top:6px;
+}
+.warn-box{
+  background:rgba(255,179,0,.07);border:1px solid rgba(255,179,0,.25);
+  padding:10px 13px;color:var(--amber);font-size:11px;margin-top:6px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-mesh"></div>
+  <div class="badge"><span class="badge-dot"></span>Live &middot; Solana Mainnet &middot; Provably Fair</div>
+  <h1>$MODRIC Lottery<br><em>Verification</em></h1>
+  <p class="sub">Signed Luka Modri&#263; Jersey Giveaways &nbsp;&middot;&nbsp; 3 Draws &nbsp;&middot;&nbsp; Orao VRF</p>
+</div>
+
+<!-- DRAW TABS -->
+<div class="draw-tabs">
+  <div class="draw-tab active" onclick="selectDraw(0)">Draw 1<span class="tab-date">Oct 19, 2025</span></div>
+  <div class="draw-tab" onclick="selectDraw(1)">Draw 2<span class="tab-date">Nov 01, 2025</span></div>
+  <div class="draw-tab" onclick="selectDraw(2)">Draw 3<span class="tab-date">Jan 14, 2026</span></div>
+</div>
+
+<!-- FACTS -->
+<div class="facts" id="facts"></div>
+
+<!-- RUN -->
+<div class="run-area">
+  <button id="btn" onclick="run()">&#9654;&nbsp; Run On-Chain Verification</button>
+</div>
+<div class="progress"><div class="progress-bar" id="pb"></div></div>
+
+<!-- STEPS -->
+<div class="steps">
+  <div class="step" id="s1">
+    <div class="step-hd">
+      <div class="sn">1</div>
+      <div class="st">Holder Snapshot</div>
+      <div class="ss" id="s1s">waiting</div>
+    </div>
+    <div class="step-bd" id="s1b"></div>
+  </div>
+  <div class="step" id="s2">
+    <div class="step-hd">
+      <div class="sn">2</div>
+      <div class="st">$MODRIC Token Verification</div>
+      <div class="ss" id="s2s">waiting</div>
+    </div>
+    <div class="step-bd" id="s2b"></div>
+  </div>
+  <div class="step" id="s3">
+    <div class="step-hd">
+      <div class="sn">3</div>
+      <div class="st">Solana Transaction</div>
+      <div class="ss" id="s3s">waiting</div>
+    </div>
+    <div class="step-bd" id="s3b"></div>
+  </div>
+  <div class="step" id="s4">
+    <div class="step-hd">
+      <div class="sn">4</div>
+      <div class="st">VRF Randomness On-Chain</div>
+      <div class="ss" id="s4s">waiting</div>
+    </div>
+    <div class="step-bd" id="s4b"></div>
+  </div>
+  <div class="step" id="s5">
+    <div class="step-hd">
+      <div class="sn">5</div>
+      <div class="st">Winner Selection Algorithm</div>
+      <div class="ss" id="s5s">waiting</div>
+    </div>
+    <div class="step-bd" id="s5b"></div>
+  </div>
+</div>
+
+<!-- VERDICT -->
+<div id="verdict"></div>
+
+<!-- LINKS -->
+<div class="links" id="linksBox"></div>
+
+</div><!-- /wrap -->
+
+<script>
+// ─── Draw configurations ────────────────────────────────────────────────────
+// Each draw has its own VRF seed, PDA, TX signature, snapshot, byte offset,
+// and (where known) expected winner.
+
+var DRAWS = [
+  {
+    id: 1,
+    label: 'Draw 1 — Oct 19, 2025',
+    shortLabel: 'Draw 1',
+    date: 'Oct 19, 2025',
+    vrfSeed: '2ZhsqrcNEbtHikLBQoK2mrTgJLjFSz4njPpUY9rJhpNn',
+    vrfPda: 'FmFz1Q9reotBSa1wEUciim6Q5e6JR3AYc5eU8YUG4Fyh',
+    signature: '4xehnSm7tqhSp47mHSGLJnz9o7LfRLN3xu2RjiqnHU88a68RzjnJeNfX9jzVXiECJ7tJM8NPdpLGiLTfRngcFtJ8',
+    snapshotFile: 'modric_top_holders_oct_19.json',
+    snapshotUrl: '/snapshot/1',
+    holderCount: null,   // use all holders in file (20)
+    randOffset: [40, 104],
+    expectedWinner: null,
+  },
+  {
+    id: 2,
+    label: 'Draw 2 — Nov 01, 2025',
+    shortLabel: 'Draw 2',
+    date: 'Nov 01, 2025',
+    vrfSeed: '4SLs5v8A72kEKjwBJQoMGV3rY9xcirHQLmJ6rx6uHnez',
+    vrfPda: 'A7WTnsag9rETHdkq44GQ9t1zwxCxa3YPomykM8sTvMVY',
+    signature: '3ggGrf5pdAdzsNDGC9sC7mjLjUT8ievzp9F5AR9tiBGymNrA7hHcYiHkxPNXHoYmvu7wpZHSj7JG3NidrxMWFLMJ',
+    snapshotFile: 'modric_top_holders_nov_01.json',
+    snapshotUrl: '/snapshot/2',
+    holderCount: null,   // use all holders in file (8)
+    randOffset: [73, 137],
+    expectedWinner: null,
+  },
+  {
+    id: 3,
+    label: 'Draw 3 — Jan 14, 2026',
+    shortLabel: 'Draw 3',
+    date: 'Jan 14, 2026',
+    vrfSeed: '5DkZHCp9gbBKzcto6ezFhdFqyiqhig7cfn87Ugix36kK',
+    vrfPda: 'HJyvitPbQ7AjxaH9EPHtZjsh9e4wcuaPbgJ9YQ1Q37PF',
+    signature: '3uVX8xScufRqtpaabM2bqr5UQYQ7gKB49Js3k4APpTA3CNbxmf8K5DSzqSyzXvcTzVdST6WnLatYA5N7iNFj997h',
+    snapshotFile: 'modric_top_holders_jan_14_2026.json',
+    snapshotUrl: '/snapshot/3',
+    holderCount: 140,    // top 140 holders from sorted file
+    randOffset: [40, 104],
+    expectedWinner: '6bwzpkSKSXbjVMBYMSdazEytkaCZatibRdmExpjSgCyA',
+  },
+];
+
+var currentDraw = 2; // default to Draw 3 (index 2)
+
+var ORAO_ID = 'VRFzZoJdhFWL8rkvu87LpKM3RbcVezpMEc6X5GVDr7y';
+var MINT    = 'F5qFr17LeunQk5ikRM9hseSi2bbZYXYRum8zaTegtrnd';
+var RPC     = '/rpc';
+var SLOT_DIV = 1000;
+
+// ─── Draw tab selection ─────────────────────────────────────────────────────
+
+function selectDraw(idx) {
+  currentDraw = idx;
+  var tabs = document.querySelectorAll('.draw-tab');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].className = 'draw-tab' + (i === idx ? ' active' : '');
+  }
+  updateFacts();
+  updateLinks();
+  resetSteps();
+}
+
+function updateFacts() {
+  var d = DRAWS[currentDraw];
+  var winner = d.expectedWinner || '(computed on verification)';
+  var winnerShort = d.expectedWinner
+    ? d.expectedWinner.slice(0,6) + '\u2026' + d.expectedWinner.slice(-4)
+    : '\u2014';
+  var seedShort = d.vrfSeed.slice(0,6) + '\u2026' + d.vrfSeed.slice(-3);
+  var pdaShort = d.vrfPda.slice(0,6) + '\u2026' + d.vrfPda.slice(-3);
+
+  document.getElementById('facts').innerHTML =
+    '<div class="fact">' +
+      '<div class="fact-label">' + (d.expectedWinner ? 'Winner Wallet' : 'Winner') + '</div>' +
+      '<div class="fact-val g" title="' + winner + '">' + winnerShort + '</div>' +
+    '</div>' +
+    '<div class="fact">' +
+      '<div class="fact-label">VRF Seed</div>' +
+      '<div class="fact-val" title="' + d.vrfSeed + '">' + seedShort + '</div>' +
+    '</div>' +
+    '<div class="fact">' +
+      '<div class="fact-label">VRF PDA (Orao)</div>' +
+      '<div class="fact-val" title="' + d.vrfPda + '">' + pdaShort + '</div>' +
+    '</div>' +
+    '<div class="fact">' +
+      '<div class="fact-label">Date &amp; Offset</div>' +
+      '<div class="fact-val a">' + d.date + ' &middot; [' + d.randOffset[0] + ':' + d.randOffset[1] + ']</div>' +
+    '</div>';
+}
+
+function updateLinks() {
+  var d = DRAWS[currentDraw];
+  var txShort = d.signature.slice(0,6) + '\u2026' + d.signature.slice(-4);
+  var html =
+    '<div class="links-ttl">On-Chain References &mdash; ' + d.shortLabel + '</div>' +
+    '<div class="lrow"><div class="ll">TX</div><a href="https://solscan.io/tx/' + d.signature + '" target="_blank">' + txShort + ' &#8599;</a></div>' +
+    '<div class="lrow"><div class="ll">VRF PDA</div><a href="https://solscan.io/account/' + d.vrfPda + '" target="_blank">' + d.vrfPda + ' &#8599;</a></div>';
+
+  if (d.expectedWinner) {
+    html += '<div class="lrow"><div class="ll">Winner</div><a href="https://solscan.io/account/' + d.expectedWinner + '" target="_blank">' + d.expectedWinner + ' &#8599;</a></div>';
+  }
+  html +=
+    '<div class="lrow"><div class="ll">Mint</div><a href="https://solscan.io/token/' + MINT + '" target="_blank">' + MINT + ' &#8599;</a></div>' +
+    '<div class="lrow"><div class="ll">GitHub</div><a href="https://github.com/trendexgg/trendexgg" target="_blank">github.com/trendexgg/trendexgg &#8599;</a></div>' +
+    '<div class="lrow"><div class="ll">Snapshot</div><a href="https://raw.githubusercontent.com/trendexgg/trendexgg/main/data/' + d.snapshotFile + '" target="_blank">' + d.snapshotFile + ' &#8599;</a></div>';
+
+  document.getElementById('linksBox').innerHTML = html;
+}
+
+function resetSteps() {
+  for (var i = 1; i <= 5; i++) {
+    document.getElementById('s' + i).className = 'step';
+    document.getElementById('s' + i + 's').textContent = 'waiting';
+    document.getElementById('s' + i + 'b').innerHTML = '';
+  }
+  document.getElementById('pb').style.width = '0%';
+  document.getElementById('verdict').style.display = 'none';
+  var btn = document.getElementById('btn');
+  btn.disabled = false;
+  btn.innerHTML = '&#9654;&nbsp; Run On-Chain Verification';
+}
+
+// init
+selectDraw(2);
+
+// ─── Trendex selection algorithm (exact port) ───────────────────────────────
+// Source: github.com/trendexgg/trendexgg/src/utils/utils.ts
+//         github.com/trendexgg/trendexgg/src/core/selection.ts
+
+function distributeSlots(holders) {
+  var slots = [];
+  for (var i = 0; i < holders.length; i++) {
+    var n = Math.floor(holders[i].amount / SLOT_DIV);
+    for (var j = 0; j < n; j++) slots.push(holders[i].publicKey);
+  }
+  return slots;
+}
+
+function pickIndex(randomBytes, max, iter) {
+  if (iter === undefined) iter = 0;
+  var v = new DataView(randomBytes.buffer, randomBytes.byteOffset + iter * 8, 8);
+  return Number(v.getBigUint64(0, false) % BigInt(max));
+}
+
+function selectWinners(holders, randomBytes, n) {
+  var remaining = distributeSlots(holders);
+  var winners = [];
+  for (var i = 0; i < n; i++) {
+    var idx  = pickIndex(randomBytes, remaining.length, i);
+    var addr = remaining[idx];
+    winners.push({ addr: addr, idx: idx, total: remaining.length });
+    remaining = remaining.filter(function(pk) { return pk !== addr; });
+  }
+  return winners;
+}
+
+// ─── Solana JSON-RPC ────────────────────────────────────────────────────────
+
+function rpc(method, params) {
+  return fetch(RPC, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: method, params: params }),
+  }).then(function(r) { return r.json(); }).then(function(j) {
+    if (j.error) throw new Error(j.error.message);
+    return j.result;
+  });
+}
+
+function fetchVRF(draw) {
+  return rpc('getAccountInfo', [draw.vrfPda, { encoding: 'base64' }]).then(function(res) {
+    if (!res || !res.value) throw new Error('Account not found');
+    var raw   = Uint8Array.from(atob(res.value.data[0]), function(c) { return c.charCodeAt(0); });
+    var owner = res.value.owner;
+    if (owner !== ORAO_ID) throw new Error('Unexpected owner: ' + owner);
+
+    var start = draw.randOffset[0];
+    var end   = draw.randOffset[1];
+    var rand  = raw.slice(start, end);
+    if (rand.length !== 64) throw new Error('Expected 64 bytes, got ' + rand.length);
+    if (rand.every(function(b) { return b === 0; })) throw new Error('VRF not fulfilled (all zeros)');
+    return { rand: rand, owner: owner, size: raw.length, raw: raw };
+  });
+}
+
+function fetchTx(draw) {
+  return rpc('getTransaction', [draw.signature, { encoding: 'jsonParsed', maxSupportedTransactionVersion: 0 }]).then(function(res) {
+    if (!res) throw new Error('Transaction not found');
+    var keys    = res.transaction && res.transaction.message ? res.transaction.message.accountKeys || [] : [];
+    var hasOrao = keys.some(function(k) { return (k.pubkey || k) === ORAO_ID; });
+    return {
+      blockTime: res.blockTime ? new Date(res.blockTime * 1000).toUTCString() : 'unknown',
+      slot:      res.slot,
+      ok:        !(res.meta && res.meta.err),
+      hasOrao:   hasOrao,
+    };
+  });
+}
+
+function fetchTokenInfo(winnerAddr) {
+  var result = {};
+  return rpc('getTokenSupply', [MINT]).then(function(supply) {
+    result.supply = supply && supply.value;
+  }).catch(function(e) { result.supplyErr = e.message; }).then(function() {
+    if (!winnerAddr) return;
+    return rpc('getTokenAccountsByOwner', [
+      winnerAddr, { mint: MINT }, { encoding: 'jsonParsed' }
+    ]).then(function(accounts) {
+      if (accounts && accounts.value && accounts.value.length > 0) {
+        var parsed = accounts.value[0].account.data.parsed.info;
+        result.winnerBalance = parsed.tokenAmount;
+        result.winnerTokenAccount = accounts.value[0].pubkey;
+      }
+    }).catch(function(e) { result.balanceErr = e.message; });
+  }).then(function() { return result; });
+}
+
+// ─── UI helpers ─────────────────────────────────────────────────────────────
+
+function state(id, cls, status) {
+  document.getElementById(id).className = 'step ' + cls;
+  document.getElementById(id + 's').textContent = status;
+}
+
+function body(id, html) { document.getElementById(id + 'b').innerHTML = html; }
+
+function kv(k, v, c) {
+  if (!c) c = '';
+  return '<div class="kv"><div class="kk">' + k + '</div><div class="vv ' + c + '">' + v + '</div></div>';
+}
+
+function setpb(pct) {
+  document.getElementById('pb').style.width = pct + '%';
+}
+
+function hex(u8, from, to) {
+  return Array.from(u8.slice(from, to)).map(function(b) { return b.toString(16).padStart(2,'0'); }).join('');
+}
+
+// ─── Main flow ──────────────────────────────────────────────────────────────
+
+function run() {
+  var draw = DRAWS[currentDraw];
+  var btn = document.getElementById('btn');
+  btn.disabled = true;
+  btn.textContent = 'Verifying ' + draw.shortLabel + '\u2026';
+  document.getElementById('verdict').style.display = 'none';
+  resetStepsUI();
+  setpb(4);
+
+  // ── Step 1: Snapshot ──
+  state('s1','active','\u27F3 loading\u2026');
+  body('s1', '<span class="spin"></span>Fetching snapshot from GitHub\u2026');
+
+  var holders;
+  fetch(draw.snapshotUrl).then(function(r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then(function(allHolders) {
+    holders = draw.holderCount ? allHolders.slice(0, draw.holderCount) : allHolders;
+
+    var totalSlots  = holders.reduce(function(s,h) { return s + Math.floor(h.amount / SLOT_DIV); }, 0);
+    var eligible    = holders.filter(function(h) { return Math.floor(h.amount / SLOT_DIV) > 0; }).length;
+
+    var snapshotHtml =
+      kv('Source', '<a href="https://raw.githubusercontent.com/trendexgg/trendexgg/main/data/' + draw.snapshotFile + '" target="_blank" style="color:var(--blue)">GitHub &middot; trendexgg/trendexgg &#8599;</a>') +
+      kv('Holders in file', allHolders.length + ' in snapshot') +
+      kv('Used for draw', holders.length + (draw.holderCount ? ' (top ' + draw.holderCount + ')' : ' (all)')) +
+      kv('Eligible', eligible + ' holders with &ge; 1,000 MODRIC') +
+      kv('Total slots', totalSlots.toLocaleString(), 'b');
+
+    if (draw.expectedWinner) {
+      var me     = holders.find(function(h) { return h.publicKey === draw.expectedWinner; });
+      var myRank = holders.findIndex(function(h) { return h.publicKey === draw.expectedWinner; }) + 1;
+      var mySlots = me ? Math.floor(me.amount / SLOT_DIV) : 0;
+      var myPct   = (mySlots / totalSlots * 100).toFixed(4);
+
+      snapshotHtml +=
+        kv('Winner rank', '#' + myRank + ' of ' + holders.length, 'g') +
+        kv('MODRIC held', (me ? me.amount.toFixed(6) : '?') + ' MODRIC', 'a') +
+        kv('Winner slots', mySlots.toLocaleString() + ' slots', 'g') +
+        '<div class="pbar-wrap">' +
+          '<div class="pbar-track"><div class="pbar-fill" id="pfill"></div></div>' +
+          '<div class="pbar-label">Win probability: <span style="color:var(--green)">' + myPct + '%</span> &mdash; rank #' + myRank + ' of ' + holders.length + '</div>' +
+        '</div>';
+    }
+
+    state('s1','ok','\u2713 loaded');
+    body('s1', snapshotHtml);
+    setTimeout(function() {
+      var f = document.getElementById('pfill');
+      if (f && draw.expectedWinner) {
+        var me     = holders.find(function(h) { return h.publicKey === draw.expectedWinner; });
+        var mySlots = me ? Math.floor(me.amount / SLOT_DIV) : 0;
+        var totalSlots = holders.reduce(function(s,h) { return s + Math.floor(h.amount / SLOT_DIV); }, 0);
+        f.style.width = Math.min((mySlots / totalSlots * 100) * 6, 100) + '%';
+      }
+    }, 80);
+    setpb(18);
+
+    // ── Step 2: Token verification ──
+    state('s2','active','\u27F3 checking\u2026');
+    body('s2', '<span class="spin"></span>Verifying $MODRIC token on-chain\u2026');
+
+    return fetchTokenInfo(draw.expectedWinner);
+  }).then(function(tokenInfo) {
+    var tokenHtml = kv('Token mint', '<a href="https://solscan.io/token/' + MINT + '" target="_blank" style="color:var(--blue)">' + MINT + ' &#8599;</a>');
+
+    if (tokenInfo.supply) {
+      tokenHtml += kv('Total supply', tokenInfo.supply.uiAmountString + ' MODRIC (' + tokenInfo.supply.decimals + ' decimals)', 'g');
+    }
+    if (tokenInfo.winnerBalance) {
+      tokenHtml += kv('Winner balance', '\u2705 ' + tokenInfo.winnerBalance.uiAmountString + ' MODRIC', 'g');
+      tokenHtml += kv('Token account', tokenInfo.winnerTokenAccount, 'd');
+    } else if (draw.expectedWinner) {
+      tokenHtml += kv('Winner balance', 'Could not fetch (RPC limit)', 'a');
+    } else {
+      tokenHtml += kv('Winner balance', 'N/A (no known winner for this draw)', 'd');
+    }
+
+    state('s2','ok','\u2713 verified');
+    body('s2', tokenHtml);
+    setpb(34);
+
+    // ── Step 3: Transaction ──
+    state('s3','active','\u27F3 querying\u2026');
+    body('s3', '<span class="spin"></span>Querying Solana mainnet\u2026');
+
+    return fetchTx(draw).then(function(tx) {
+      state('s3','ok','\u2713 confirmed');
+      body('s3',
+        kv('Block time', tx.blockTime, 'g') +
+        kv('Slot', tx.slot ? tx.slot.toLocaleString() : 'N/A') +
+        kv('Status', tx.ok ? '\u2705 Success' : '\u274C Failed', tx.ok ? 'g' : 'r') +
+        kv('Orao VRF', tx.hasOrao ? '\u2705 Invoked as program' : '\u26A0 Not in account keys', tx.hasOrao ? 'g' : 'a')
+      );
+    }).catch(function(e) {
+      state('s3','skip','\u26A0 skipped');
+      body('s3',
+        '<div class="warn-box">Transaction check skipped: ' + e.message + '<br>' +
+        '<small style="color:var(--dim);font-size:10px">Public RPC may throttle old transactions. Verify manually on Solscan &#8599;</small></div>' +
+        kv('Solscan', '<a href="https://solscan.io/tx/' + draw.signature + '" target="_blank" style="color:var(--blue)">View transaction &#8599;</a>')
+      );
+    });
+  }).then(function() {
+    setpb(52);
+
+    // ── Step 4: VRF Randomness ──
+    state('s4','active','\u27F3 fetching\u2026');
+    body('s4', '<span class="spin"></span>Reading Orao VRF account on Solana mainnet\u2026');
+
+    return fetchVRF(draw);
+  }).then(function(vrf) {
+    var rand = vrf.rand;
+    var start = draw.randOffset[0];
+    var end   = draw.randOffset[1];
+
+    var h = hex(rand, 0, 64);
+    var h1 = h.slice(0,32), h2 = h.slice(32,64), h3 = h.slice(64,96), h4 = h.slice(96);
+
+    state('s4','ok','\u2713 fulfilled');
+    body('s4',
+      kv('PDA account', draw.vrfPda, 'd') +
+      kv('Owner', '\u2705 ' + ORAO_ID, 'g') +
+      kv('Account size', vrf.size + ' bytes') +
+      kv('Randomness offset', '[' + start + '..' + end + '] (64 bytes)') +
+      '<div class="hexdump">' +
+        '<div style="color:var(--dim);font-size:9px;margin-bottom:6px;">RANDOMNESS &middot; 64 bytes &middot; offset ' + start + '&ndash;' + end + '</div>' +
+        '<div><span style="color:var(--dim)">00 </span><span class="hl">' + h1 + '</span></div>' +
+        '<div><span style="color:var(--dim)">20 </span><span class="hl">' + h2 + '</span></div>' +
+        '<div><span style="color:var(--dim)">40 </span>' + h3 + '</div>' +
+        '<div><span style="color:var(--dim)">60 </span>' + h4 + '</div>' +
+      '</div>'
+    );
+    setpb(74);
+
+    // ── Step 5: Selection ──
+    state('s5','active','\u27F3 computing\u2026');
+    body('s5', '<span class="spin"></span>Running Trendex selection algorithm\u2026');
+
+    return new Promise(function(resolve) { setTimeout(function() { resolve(rand); }, 200); });
+  }).then(function(rand) {
+    var totalSlots = holders.reduce(function(s,h) { return s + Math.floor(h.amount / SLOT_DIV); }, 0);
+    var view       = new DataView(rand.buffer, rand.byteOffset, 8);
+    var bigintVal  = view.getBigUint64(0, false);
+    var slotIdx    = Number(bigintVal % BigInt(totalSlots));
+
+    var winners  = selectWinners(holders, rand, 1);
+    var computed = winners[0];
+    var isMatch  = draw.expectedWinner ? computed.addr === draw.expectedWinner : null;
+
+    var firstHex = hex(rand, 0, 8);
+
+    var resultLabel = isMatch === true ? '\u2713 match!' : (isMatch === false ? '\u2717 mismatch' : '\u2713 computed');
+    var resultClass = isMatch === true ? 'ok' : (isMatch === false ? 'err' : 'ok');
+
+    state('s5', resultClass, resultLabel);
+    body('s5',
+      kv('Algorithm', 'distributeSlots() \u2192 BigUInt64BE(bytes[0..8]) mod totalSlots') +
+      kv('Source', '<a href="https://github.com/trendexgg/trendexgg/blob/main/src/core/selection.ts" target="_blank" style="color:var(--blue)">selection.ts &#8599;</a>') +
+      kv('Bytes [0..8]', '<span style="color:var(--blue)">0x' + firstHex + '</span>') +
+      '<div class="slot-calc">' +
+        '<div class="slot-eq">' +
+          'BigUInt64BE(<span>0x' + firstHex + '</span>) = <strong>' + bigintVal.toString() + '</strong><br>' +
+          '<strong>' + bigintVal.toString() + '</strong> mod <strong>' + totalSlots.toLocaleString() + '</strong> = <span>' + slotIdx.toLocaleString() + '</span><br>' +
+          'Slot <span>' + slotIdx.toLocaleString() + '</span> \u2192 <strong>' + computed.addr + '</strong>' +
+        '</div>' +
+      '</div>' +
+      kv('Computed winner', computed.addr, isMatch !== false ? 'g' : 'r')
+    );
+
+    setpb(100);
+    verdict(draw, computed, totalSlots, isMatch, holders);
+    done(false);
+  }).catch(function(e) {
+    // Handle any unrecovered error in the chain
+    var failedStep = null;
+    for (var i = 1; i <= 5; i++) {
+      if (document.getElementById('s' + i).classList.contains('active')) {
+        failedStep = i; break;
+      }
+    }
+    if (failedStep) {
+      state('s' + failedStep, 'err', '\u2717 failed');
+      body('s' + failedStep, '<div class="err-box">' + e.message + '</div>');
+    }
+    done(true);
+  });
+}
+
+function resetStepsUI() {
+  for (var i = 1; i <= 5; i++) {
+    document.getElementById('s' + i).className = 'step';
+    document.getElementById('s' + i + 's').textContent = 'waiting';
+    document.getElementById('s' + i + 'b').innerHTML = '';
+  }
+}
+
+function verdict(draw, computed, totalSlots, isMatch, holders) {
+  var el = document.getElementById('verdict');
+  el.style.display = 'block';
+
+  var winnerEntry = holders.find(function(h) { return h.publicKey === computed.addr; });
+  var mySlots = winnerEntry ? Math.floor(winnerEntry.amount / SLOT_DIV) : 0;
+  var myPct = (mySlots / totalSlots * 100).toFixed(4);
+
+  if (isMatch === true) {
+    // Known winner verified
+    el.innerHTML =
+      '<div class="vbox">' +
+        '<span class="vicon">\uD83C\uDFC6</span>' +
+        '<div class="vtitle">Cryptographically Proven &mdash; Winner is Correct</div>' +
+        '<div class="vgrid">' +
+          '<div class="vc"><div class="vcl">Computed Winner</div><div class="vcv g">' + computed.addr + '</div></div>' +
+          '<div class="vc"><div class="vcl">Announced Winner</div><div class="vcv g">' + draw.expectedWinner + '</div></div>' +
+          '<div class="vc"><div class="vcl">Slot Picked</div><div class="vcv">' + computed.idx.toLocaleString() + ' of ' + computed.total.toLocaleString() + ' slots</div></div>' +
+          '<div class="vc"><div class="vcl">Win Probability</div><div class="vcv g">' + myPct + '% &nbsp;(' + mySlots.toLocaleString() + ' of ' + computed.total.toLocaleString() + ' slots)</div></div>' +
+        '</div>' +
+        '<div class="checks">' +
+          '<div><b>\u2713</b> Trendex GitHub snapshot</div>' +
+          '<div><b>\u2713</b> On-chain Orao VRF randomness</div>' +
+          '<div><b>\u2713</b> Open-source selection algorithm</div>' +
+          '<div><b>\u2713</b> Deterministic &middot; reproducible by anyone</div>' +
+        '</div>' +
+        '<div class="trust-note">' +
+          '<strong>\u26A0 Transparency note:</strong> The holder snapshot was published by Trendex on their GitHub. ' +
+          'VRF randomness and algorithm are fully on-chain and verifiable. ' +
+          'For complete independence, snapshot balances can be cross-verified using an archival Solana RPC at the lottery block height.' +
+        '</div>' +
+      '</div>';
+  } else if (isMatch === false) {
+    // Mismatch
+    el.innerHTML =
+      '<div class="vbox fail">' +
+        '<span class="vicon">\u274C</span>' +
+        '<div class="vtitle">Mismatch</div>' +
+        '<div class="vgrid">' +
+          '<div class="vc"><div class="vcl">Computed</div><div class="vcv">' + computed.addr + '</div></div>' +
+          '<div class="vc"><div class="vcl">Expected</div><div class="vcv">' + draw.expectedWinner + '</div></div>' +
+        '</div>' +
+      '</div>';
+  } else {
+    // No expected winner — just show computed result
+    el.innerHTML =
+      '<div class="vbox">' +
+        '<span class="vicon">\uD83C\uDFB0</span>' +
+        '<div class="vtitle">' + draw.shortLabel + ' &mdash; Winner Computed</div>' +
+        '<div class="vgrid">' +
+          '<div class="vc"><div class="vcl">Computed Winner</div><div class="vcv g">' + computed.addr + '</div></div>' +
+          '<div class="vc"><div class="vcl">Draw</div><div class="vcv">' + draw.label + '</div></div>' +
+          '<div class="vc"><div class="vcl">Slot Picked</div><div class="vcv">' + computed.idx.toLocaleString() + ' of ' + computed.total.toLocaleString() + ' slots</div></div>' +
+          '<div class="vc"><div class="vcl">Win Probability</div><div class="vcv g">' + myPct + '% &nbsp;(' + mySlots.toLocaleString() + ' of ' + computed.total.toLocaleString() + ' slots)</div></div>' +
+        '</div>' +
+        '<div class="checks">' +
+          '<div><b>\u2713</b> Trendex GitHub snapshot</div>' +
+          '<div><b>\u2713</b> On-chain Orao VRF randomness</div>' +
+          '<div><b>\u2713</b> Open-source selection algorithm</div>' +
+          '<div><b>\u2713</b> Deterministic &middot; reproducible by anyone</div>' +
+        '</div>' +
+        '<div class="trust-note">' +
+          '<strong>\u26A0 Note:</strong> No expected winner was provided for this draw, so we show the computed result. ' +
+          'The randomness is on-chain (Orao VRF) and the snapshot is from Trendex\'s GitHub. ' +
+          'Anyone can independently verify this computation.' +
+        '</div>' +
+      '</div>';
+  }
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function done(reEnable) {
+  if (reEnable === undefined) reEnable = true;
+  var btn = document.getElementById('btn');
+  btn.disabled = false;
+  btn.innerHTML = '\u21BA&nbsp; Run Again';
+}
+</script>
+</body>
+</html>

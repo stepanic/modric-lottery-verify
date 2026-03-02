@@ -1,0 +1,3990 @@
+[
+  {
+    "publicKey": "8Gh5wCbo1XkxVG8xFgnnnZYHTqhTTxDqNid5eujbxqeU",
+    "amount": 10057919.543675
+  },
+  {
+    "publicKey": "24xehCdydWvZEACoHSkTC2RhNC6hhTRyrhLNbwAQCMiM",
+    "amount": 8300468.832412
+  },
+  {
+    "publicKey": "n4ZwhySaSw2tRs2XgbXs5P52ghmWSrSEQmCLHPzGr6n",
+    "amount": 7174320.582898
+  },
+  {
+    "publicKey": "6hrBv4pcTPf1L7VQVSvyzm9XaW7hGBuz8rrozykiTAeZ",
+    "amount": 6068308.916603
+  },
+  {
+    "publicKey": "3EUyTZ2gb1JZfa7KarMKdrWFTiNvkgAFxUqcv5bxjA7i",
+    "amount": 5990541.015095
+  },
+  {
+    "publicKey": "2FZ4EpGn5AXfSmjjFLZgEtwr3DHdFK1y5zmKDR4g9rbK",
+    "amount": 5810830.72739
+  },
+  {
+    "publicKey": "DBPmqYdXi66A8Eq7nPkJHL5Q9rriLGkj6ioiNaYhC4Rg",
+    "amount": 4694685.671861
+  },
+  {
+    "publicKey": "AXjRuSLQyUyxjSKZhwjXcV4tZUfJCH5c9kbPbv3H61YX",
+    "amount": 3000000
+  },
+  {
+    "publicKey": "7LhHrSr3qgG1fC3FSUb21c3brF7jo89jdE1tEst1hj9E",
+    "amount": 2832458.587676
+  },
+  {
+    "publicKey": "ArB9XNWy4QmZ99Rmmzn3RQhEfEqkejc8iGJHytP7fLWm",
+    "amount": 2700110.731149
+  },
+  {
+    "publicKey": "2PRSHDj22Nsio3gyDKeEV4T7ZTXNjruMFFLEuVSrHg43",
+    "amount": 2552582.315266
+  },
+  {
+    "publicKey": "B2xgqWVVxRsSAWPbHHeHq9LNHdY8ucYpDqS4SFsu3XFZ",
+    "amount": 2486079.771581
+  },
+  {
+    "publicKey": "3utfzUJFRUNmU9BgXQHLwoc5XPbFLnppzysvca3A5NQa",
+    "amount": 2413965.135624
+  },
+  {
+    "publicKey": "5wceam6f3i2PNykKQkomeord2dhxsmyTEaEFxVLVaegM",
+    "amount": 2141514.092142
+  },
+  {
+    "publicKey": "5mq6vcBXge69ZhQV5dn3ZETLhjQAtnF7YEntLZhwFHGf",
+    "amount": 1960104.267659
+  },
+  {
+    "publicKey": "3VguMNaHhdJaETUsu4nTeTbJh2Gn1Go7cfXRbRgmcJwD",
+    "amount": 1697088.686116
+  },
+  {
+    "publicKey": "Drann2SPvYhbQQNFMos8yCyYWjHkWuEgjhzpy4G8FBKL",
+    "amount": 1567737.723629
+  },
+  {
+    "publicKey": "7THeQj96qtq95LtgFuXpabDFgcKHAGsK6Yae3ZkKdgo3",
+    "amount": 1475339.276704
+  },
+  {
+    "publicKey": "6bwzpkSKSXbjVMBYMSdazEytkaCZatibRdmExpjSgCyA",
+    "amount": 1430254.351774
+  },
+  {
+    "publicKey": "4Qo6nr3CqiynvnA3SsbBtzVT3B1pmqQW4dwf2nFmnzYp",
+    "amount": 1120191.591795
+  },
+  {
+    "publicKey": "Apr74No2eNWihwbTa3U8QoyHqsxTgquDYQDRNaePQ4a4",
+    "amount": 1051117.810389
+  },
+  {
+    "publicKey": "FvshZaaqVCqZc81Z4hVaUys4HoD5XnqHtnTKoGu2ozcY",
+    "amount": 1014108.398832
+  },
+  {
+    "publicKey": "GfduoUY2dYZZDTH7DcGgP8MTRLW1fnKTh3gtgtwDNzqd",
+    "amount": 1008971.117197
+  },
+  {
+    "publicKey": "hZ9qoEqnn9Adf427UqUVT8YKYkAeYfNvz2fvfx9a52w",
+    "amount": 938552.391308
+  },
+  {
+    "publicKey": "5Y2xSomGJoQX3uW4dNzfHfopyL4n5wfJKHieP7tvoHNe",
+    "amount": 933690.073039
+  },
+  {
+    "publicKey": "HHjtDwyo8o81A1outHkXU1DAsfMsz8XnijwLq1MnopXy",
+    "amount": 835759.301778
+  },
+  {
+    "publicKey": "GEUFFmY8nYarTEpjkfajpunEHiFyAMKLS1GPEP2xCe3w",
+    "amount": 755365.568499
+  },
+  {
+    "publicKey": "6XxHDhvQNqVDRu94uDg5q2YwEaQcJoxwweSud9VkN8wF",
+    "amount": 752377.629346
+  },
+  {
+    "publicKey": "AEp5NBYYRMUVBLeYfrVqm5bHaJcV9yv9ThUqReokWr8R",
+    "amount": 732094.271324
+  },
+  {
+    "publicKey": "59ZVHEmFkXDcMdiM8egSs8n1U1rjgELzVSybkhhBvigL",
+    "amount": 731567.220899
+  },
+  {
+    "publicKey": "FWaNdG42yWxkKWiNn4xRCtBJFsT8XUpzezXKyttUL95q",
+    "amount": 725136.557187
+  },
+  {
+    "publicKey": "67Y3pQisRLSNW3yc2ha9vQidUS6sCN6xKU2hkc1G35kx",
+    "amount": 705900.179178
+  },
+  {
+    "publicKey": "3caKVSZ5nqNNCPcC12fUGqqtYrTarybMdY2eiyjaBnhe",
+    "amount": 668094.569153
+  },
+  {
+    "publicKey": "9f5NSypkmmpjXjm5CSNRMiuGuj1zXR5BJg3ttQnL7vQF",
+    "amount": 645327.751816
+  },
+  {
+    "publicKey": "7nhXdHr12QpgBacRQcNtmTK6iC2X4oxMQsLD2prKZihf",
+    "amount": 615563.941103
+  },
+  {
+    "publicKey": "35o8StRdsSYgH6Xs2562RhWKhzgK5yPZKNuNQzLUX8yG",
+    "amount": 584783.872296
+  },
+  {
+    "publicKey": "7acXmcDekBzo6m4ebtFQMJ1Gjat4xtRrhV8vWtCBkfcW",
+    "amount": 554815.562189
+  },
+  {
+    "publicKey": "EeKDbRMqvc2rtegwi3GFC4Y4733JuD8DToiciZEaLHf4",
+    "amount": 506047.020367
+  },
+  {
+    "publicKey": "AxbRxsq8oRGXS5EwfMCxbDfTvV2CfNR6QGZC5zpUNL5Q",
+    "amount": 496224.436975
+  },
+  {
+    "publicKey": "F35ds8fXpaFcnLCcZmTWELMavDYptBcPyCzMEzAp4XmS",
+    "amount": 493256.817692
+  },
+  {
+    "publicKey": "HALkm2AdfF9YwimycEVXadTynw6FSTvNPS5rJQhivzU3",
+    "amount": 434138.202178
+  },
+  {
+    "publicKey": "DMs3Dd8XXXFYfWWyYKNAC7oXwYEaCwtADVCDYeyGX15q",
+    "amount": 431721.582014
+  },
+  {
+    "publicKey": "6CYXdD74pk97sd4495CoemJa5URw33e1yFSzmYNfG6e2",
+    "amount": 398278.224011
+  },
+  {
+    "publicKey": "37y8bPyP5e7xXQEvb5pnC3ZynZox8m7Z4rD1iWMqBvSd",
+    "amount": 380179.698941
+  },
+  {
+    "publicKey": "GymVcgf2jQnopGVDCmAMo2c3STnNzgvnxSAFJ9jgX54b",
+    "amount": 370378.739443
+  },
+  {
+    "publicKey": "DoBDTyBw3L5jJVWhSJZTiSayevUL3A5veFNSf8iLHzM1",
+    "amount": 361018.829231
+  },
+  {
+    "publicKey": "FPHS8Lk9TGVJLfTGtk6vVpBj1YZrd9EUMysuKkozGH33",
+    "amount": 349576.228319
+  },
+  {
+    "publicKey": "88rQFsWxijMKxrmPuMXssmfWjYaqLCoRLHRVBppSv59E",
+    "amount": 349198.999013
+  },
+  {
+    "publicKey": "5g8QkUDS5JyNyUz6zij6BwmsJauhf3JKqM9AC6vgfrFZ",
+    "amount": 344628.395897
+  },
+  {
+    "publicKey": "CeSo4W6FPbX6FMKi6HkR5JwKFSx9R7wDj2jidDCTzH1v",
+    "amount": 306524.995735
+  },
+  {
+    "publicKey": "5jgZcDvA7mfrYy3vA38Tf737HV6BjJVZPvq38LhwzLRz",
+    "amount": 302000
+  },
+  {
+    "publicKey": "HMCrnEENigvwiTBqVzVo5PyN8KggmQHy4DE3yKdNoUV8",
+    "amount": 277419.450127
+  },
+  {
+    "publicKey": "94hWjDgWPKSBxSAc1TNZxYsBHARTMpo3T6eCerE24T47",
+    "amount": 263624.749105
+  },
+  {
+    "publicKey": "FMeuR8KH1Cqyaf4TUs5Q9zcgkohfKd6vfh1sSYeqKqJ1",
+    "amount": 226233.269471
+  },
+  {
+    "publicKey": "BW2J5xb91bk6xi6GgFmCrAnxwy9MG1Y6qtpE6PrGxp33",
+    "amount": 223843.581061
+  },
+  {
+    "publicKey": "Fc82Z7FvmaGwoJTaQn8rRSaoD9cXXQf4w4mZdoLMtnay",
+    "amount": 218666.267244
+  },
+  {
+    "publicKey": "CvbxaDApVdp2cpd3HGx4pCyw8UsAEaiY4JJSWUrTE2NH",
+    "amount": 212552.217569
+  },
+  {
+    "publicKey": "8JsWowcaCCjrWity1R45YCy4vyzY4Pk4sdtbHgQktorw",
+    "amount": 210387.059033
+  },
+  {
+    "publicKey": "23eLh84pLbiLpgAB6KNFSXuT6RHXJEtz4T5KaUU5jfVn",
+    "amount": 209005.450174
+  },
+  {
+    "publicKey": "QpNSzwuPcDZ265RKNsvbZaMbEGQU283QdiwH7V6VTgU",
+    "amount": 207021.556734
+  },
+  {
+    "publicKey": "BM9CcyErJcu2mjrFvUsRRrD3snGeHDDVirJLvL6EjvMN",
+    "amount": 193522.388326
+  },
+  {
+    "publicKey": "5B8j2dVPjfj8hH2eXWLDVVCCV42aCsbHekX4FRTQTyaM",
+    "amount": 191465.284019
+  },
+  {
+    "publicKey": "AVo8RzXJDkEhqf9dpwmvWGN6CGdqrpv5TDjuKebkugUP",
+    "amount": 185359.157463
+  },
+  {
+    "publicKey": "Z6UDPQKBmoXxfTnraHyexYmKj3XLKjCoVi5sg5F4ob7",
+    "amount": 180824.15219
+  },
+  {
+    "publicKey": "7J8RvLjz4FuZo5qEAwmLPBE2kiiEJ8KvMkjktH1BC2fm",
+    "amount": 167332.334493
+  },
+  {
+    "publicKey": "7R66CHLn6meYnKuFbvy5xGFQiQfib5c61Cuyjojc7dTP",
+    "amount": 167315.290143
+  },
+  {
+    "publicKey": "2itmzJSt3iARfRn4wMX7PU2GMeSjqGRnXJnGR668zEL1",
+    "amount": 160763.425274
+  },
+  {
+    "publicKey": "EWcF2iJyZZDQmmDBiUWQQys8fkHkRtnFpxo5VGAzKpom",
+    "amount": 159645.655918
+  },
+  {
+    "publicKey": "AeTYTxw3nhWgHq5YHGwr9tyEFYXgDuaiSgTrcnwMyBtn",
+    "amount": 147625.695033
+  },
+  {
+    "publicKey": "Ew3YTHDaVcJbBxiAdQEUW2zbUrMZ2U9WN8d6x6xPvaS2",
+    "amount": 147232.541046
+  },
+  {
+    "publicKey": "DFvAqR1b8NW11THGtpfeTM9GNWTzjMy4aDDr2h1psZ4w",
+    "amount": 141237.99008
+  },
+  {
+    "publicKey": "65JwoMcT9L5DZJgUo5a1o9DsnvbToG6JkXp5gSdP8b5S",
+    "amount": 137825.534902
+  },
+  {
+    "publicKey": "E3agtxF8HuuLA545VVe6iw8DG7Z92fULT12EPTrkDsAG",
+    "amount": 135395.489195
+  },
+  {
+    "publicKey": "Exsv2fbdB3YmGZ81QjZwtiAgYfnrCPSnp2W62Ts9d7fP",
+    "amount": 134007.563556
+  },
+  {
+    "publicKey": "53uaVc2U5uDZM1BUpP4tokwUSP4gK4Vkg7HKYufeMhqD",
+    "amount": 131278.432399
+  },
+  {
+    "publicKey": "59ESUDfWtneiPm9sGocxLb4ZvqrvGVCWXKrYdf3Ndj35",
+    "amount": 131123.377865
+  },
+  {
+    "publicKey": "61bR6hakywKmMU6q4Yfm2UkTRg5h93ux2wwFLfgxeKhZ",
+    "amount": 129707.094168
+  },
+  {
+    "publicKey": "G6x145jMnzVpUpu5yTcdi1D5CFf3tKVxNkikU9Kg47AZ",
+    "amount": 128950.728059
+  },
+  {
+    "publicKey": "3rseSi6DBCevu6UABMwUbm3YRHAsS58cGf2c3jELnfeT",
+    "amount": 128950.319501
+  },
+  {
+    "publicKey": "7imyxBy8kQK7DfWikrbaGfXsCY8KyyfJq8CWKjWQMPrw",
+    "amount": 128792.745716
+  },
+  {
+    "publicKey": "7ouWwvswHps4pW9uWvy1gJbwRctAdc2PCKrVoedSkkqn",
+    "amount": 123206.015007
+  },
+  {
+    "publicKey": "H852UMQkoPx1Kr5JNo4vDR6Axif5moSqKrzEmLwDg7Hd",
+    "amount": 123027.180826
+  },
+  {
+    "publicKey": "5eGrKG7mvGFwV8dNgToxBn4FUH9YLY9gNJvXHAvxUyHM",
+    "amount": 120151.669246
+  },
+  {
+    "publicKey": "GBcEuPuookGEsdwJ9KZM4PrZ6za1xznCFayjx2F771Y6",
+    "amount": 115457.869593
+  },
+  {
+    "publicKey": "8te42zfgBcCkWCC4yJcRVyst7RwdQAR8MsdfG6ZteRgT",
+    "amount": 112793.195683
+  },
+  {
+    "publicKey": "BzHsBocpoCS3Gx6JsTW8Xk1YLoBy6BCuWk1814g1wzKG",
+    "amount": 110533.905801
+  },
+  {
+    "publicKey": "2nbCQu6BsdsLzjqS8oefWPmU8CCPqcJBCEeXzJ1H2qDR",
+    "amount": 108877.309536
+  },
+  {
+    "publicKey": "BT4uW311rQimUN2y4op6gSSwQy2HwBtztJnqPjBitJda",
+    "amount": 107817.139566
+  },
+  {
+    "publicKey": "4ghktTSmx2VshenuzJy4w6EfgW1BVSvah8NavvXjdsbV",
+    "amount": 105899.161004
+  },
+  {
+    "publicKey": "BbmFALAFyYBCuPeZ5gu6i2nTewH6DM8nVa9RyaQYaD1z",
+    "amount": 103843.266746
+  },
+  {
+    "publicKey": "9UzWSsNYnSYSqDxykRGkv5xLNetvJ8gZRA56wV6ExHTd",
+    "amount": 103601.721382
+  },
+  {
+    "publicKey": "BryYJmpR1RgvkX1uKfJYibme1rN3evSiJQmYE2VHSqH9",
+    "amount": 103111.439349
+  },
+  {
+    "publicKey": "HRwHBGHfNxigTY3GHNuuY5EYiPsCW2mFsJMtapNxLvzL",
+    "amount": 102413.275909
+  },
+  {
+    "publicKey": "FbAg2r9LMSmmftiei3CHasyUnpZ2J94RBQvMCDo5XzBK",
+    "amount": 101360.544716
+  },
+  {
+    "publicKey": "EyF9UZhFKaT8SMYRdKRvJq1ZWepdxzgwRk8MGHGncQ1P",
+    "amount": 100798.218182
+  },
+  {
+    "publicKey": "68guZ3UdicujgUd2skVBoL44sixMwwf7Gk5xqXN5di9K",
+    "amount": 100512.573727
+  },
+  {
+    "publicKey": "2vVerghvGAUxj6A3Zc34VpEeNi1i8rLfcMSoGhFXiMcD",
+    "amount": 99912.192477
+  },
+  {
+    "publicKey": "BmMKd53gKnzuE65E293zG5CZm9SzrExNMcZVHc8D11an",
+    "amount": 99077.823199
+  },
+  {
+    "publicKey": "FuwC8HZJjWPATsA3NcyQzzwdh9i1Vy4r75Q19srDV8Ge",
+    "amount": 97608.247512
+  },
+  {
+    "publicKey": "FxX6XnnEhZtprCrZPobra7w4WhxhMfK4R99PcEqRo5Qp",
+    "amount": 97092.161052
+  },
+  {
+    "publicKey": "2u3DBBxPKbApCEKbYPxXezsxFdP8E9qGhxvfkkRCmaWq",
+    "amount": 96236.420633
+  },
+  {
+    "publicKey": "9TxXKf4GppAyrvjHkxJyKZRwDXmU1nXzmauUrfdqWHhF",
+    "amount": 94774.883793
+  },
+  {
+    "publicKey": "7f8CQ9HhwqnxZZrQ7vQ7WemnyQ1Coh5PjUbLn2GgofTP",
+    "amount": 93905
+  },
+  {
+    "publicKey": "7JGAzUAhAf6V8B1qB1535SGLbTUt17HboDAWJccxnHKh",
+    "amount": 88486.519819
+  },
+  {
+    "publicKey": "Dku2LXAMskNBi3gXd5WwPv9gLpuJHEqZDCj9PD6Ha6L3",
+    "amount": 87364.232457
+  },
+  {
+    "publicKey": "GWU1UexsZDt9fi2ooZsvdMWuTuRvCwakyg7VKhVwXn8b",
+    "amount": 87121.356467
+  },
+  {
+    "publicKey": "HetPjeEffRWuTv4BBCEidLGcLeEaF9KJYwHwGVRW11zL",
+    "amount": 84308.684671
+  },
+  {
+    "publicKey": "3873PFQCPecZh87CKwrG8P5ETrziL4kTmqYuHEzQ4SXz",
+    "amount": 83595.472938
+  },
+  {
+    "publicKey": "5mgi6Px9bacUcpTb9NtssevfigFrcuzMQMNeyhuRwi9t",
+    "amount": 82170.580882
+  },
+  {
+    "publicKey": "Cf9HBLZR5nJ9cedRY2bZtnp25Z6fh4WSnhYkzcsxNvFh",
+    "amount": 82142.567887
+  },
+  {
+    "publicKey": "2LXpBSJ9aLsP8TivF4xGLiUNtVnwH3JayERRSPprApKe",
+    "amount": 81562.736763
+  },
+  {
+    "publicKey": "GtkWbRs9y6Z8s3HkWRtYumEPwFmxTT1atcWKYQnszpxX",
+    "amount": 77557.308156
+  },
+  {
+    "publicKey": "EcXiqzbqxBx5qNnTffhnVErZtYQSfDXxJj3MN3eFowkQ",
+    "amount": 76535.92335
+  },
+  {
+    "publicKey": "A5sg3euwTe75U8MYxcYoyiK3ss7oedKm29jSbGiVWLLB",
+    "amount": 76066.740894
+  },
+  {
+    "publicKey": "3qstFockVPJUBQSWBb8UDs6U6NS4cz5V6dM8Q6AZTaFd",
+    "amount": 75236.770081
+  },
+  {
+    "publicKey": "2x3R3CLHx3dJAC8UvdVJoUE67p7W1EsnibdxVkRYzK9p",
+    "amount": 70082.021034
+  },
+  {
+    "publicKey": "2ckoq5AXvVCePYpqTaVqxezxDj72N7SeWrru4bTGcnWD",
+    "amount": 67488.074685
+  },
+  {
+    "publicKey": "8EPE4jnmnxtUC3LYeTst51c5wqgopnf8RDxihP6kJCKQ",
+    "amount": 65893.353523
+  },
+  {
+    "publicKey": "2M6oifYkVcf7n3EpfjFcmMhJAsJU3c5fDwewPsF9VeZD",
+    "amount": 65178.77559
+  },
+  {
+    "publicKey": "3F6Ckz3iKb6CxEbhH9pVSPx8iL1PnCie2Qt8XgvkPCNb",
+    "amount": 63765.271914
+  },
+  {
+    "publicKey": "2wBad54S8At2q4PwazHs9oCzMZWGkeEw9GaWP82E9E6C",
+    "amount": 63761.642303
+  },
+  {
+    "publicKey": "5C3VFhyqqNuxJYr55Kq5eApThdYShdeDyv1aGoGFareM",
+    "amount": 61188.188115
+  },
+  {
+    "publicKey": "3yfyitN7j97TAQbamfL2iSTzqFRiF1TwmkKUn44YWpjN",
+    "amount": 58938.048939
+  },
+  {
+    "publicKey": "CVUVirYxx6mQcX9RiYqrbzUGSt53rchL6GGo2i23cfZ1",
+    "amount": 57481.473113
+  },
+  {
+    "publicKey": "AuQBzUu8xCp1iEF7sRm7mGe2ECEVa6QzVAWHcoW6C8CN",
+    "amount": 57455.669405
+  },
+  {
+    "publicKey": "77m7jcHpSf2SqSkQ2vX2rFepdeftFVegpxVockKq9cfi",
+    "amount": 55968.846333
+  },
+  {
+    "publicKey": "BBvsuV6GmDpP13yv4mrjpczJrTRoantwMBLb8ebXqVNW",
+    "amount": 55859.937592
+  },
+  {
+    "publicKey": "ARsioDn5a8ws3SUzkQPxa9JjXri3zGLQdL7Zp8LqgAAb",
+    "amount": 55742.634064
+  },
+  {
+    "publicKey": "5jgszTMWdmBoYBZjmkWRXtHksfqtT37cCXV31Zkr6mCJ",
+    "amount": 55602.052253
+  },
+  {
+    "publicKey": "HLk4vnGwwfpTLuURML4QEU3KcKQTBjTv3iyztHgRbcij",
+    "amount": 55516.246686
+  },
+  {
+    "publicKey": "8nX1SC5w1aNnZjB8VXmPccWdCCXr55aTUW78RQfN4w8Y",
+    "amount": 54735.782826
+  },
+  {
+    "publicKey": "FjPPAY1f1miGCxjenC9ZKps1Cs9zBBQr5ufZE8GbihUF",
+    "amount": 54180.149794
+  },
+  {
+    "publicKey": "55Qz1pQQW684m3uHADCjrDaenUbmqw8joASEqNmX4ReY",
+    "amount": 53982.901175
+  },
+  {
+    "publicKey": "inZfpAhg4pm4HhHdgRcZqu8MQifRBPQeRjnXbcXY1jg",
+    "amount": 52921.989736
+  },
+  {
+    "publicKey": "3bcemnQy1pXzrSc9ZfMZAhHHYHhM1EiYwfNffAeyGCAe",
+    "amount": 52629.478471
+  },
+  {
+    "publicKey": "Hrm79qyQFNL1xC88M3GRtqGyAoYMDcBayg46DUxG6MX2",
+    "amount": 52508.452822
+  },
+  {
+    "publicKey": "E667xwjkVWUvqGDrEXXfNsDf3Ch4ZjrSZjkCFVhgyAN6",
+    "amount": 52203.493808
+  },
+  {
+    "publicKey": "GjfPJyqkiAnjmMiv5uX9sozLZicA58JDXFHq3UTStHC9",
+    "amount": 52193.60109
+  },
+  {
+    "publicKey": "4VRqgqD23K6RfGLWwedtv8XjhJfpyfQLw8LuKAn5CZDD",
+    "amount": 51958.516225
+  },
+  {
+    "publicKey": "9cn5DmyFvJvaSrsSJZ54SorGqxfBXTeApY7TRcNffs9L",
+    "amount": 51124.348331
+  },
+  {
+    "publicKey": "5UvFgBhQzVgLXauijDG2XEdD5PVxp2fhCZQpmLvjrWY5",
+    "amount": 49821.593854
+  },
+  {
+    "publicKey": "6mEuB9fYp8yqQ7shVQ4bXiLL58wmEbZoUr1ptgesKrVh",
+    "amount": 49355.8301
+  },
+  {
+    "publicKey": "7gHP5ZrKzN8a8HiakuU4WnMMdZ9KTSwNLWtRosfX5Woc",
+    "amount": 49243.681042
+  },
+  {
+    "publicKey": "FV4s4WdZGvfrrmRjQRyYWrvBHYcG1AuipvP1cbJ9Bnzz",
+    "amount": 48652.319596
+  },
+  {
+    "publicKey": "AfQ1oaudsGjvznX4JNEw671hi57JfWo4CWqhtkdgoVHU",
+    "amount": 47734.679725
+  },
+  {
+    "publicKey": "7Y28NPtHQgdp2H6xy8dfEczqUxWf2A8meE29ucSoDnsA",
+    "amount": 47636.765832
+  },
+  {
+    "publicKey": "6oj9heRu2oPEtdAbaWzymaVyRcTA2LzvFSLrpTEnGeym",
+    "amount": 46629.363263
+  },
+  {
+    "publicKey": "CDdj1YKowGHbjq2Q4EvheeJhEzuYVG4fEn5tFQ2YcwjY",
+    "amount": 46438.498391
+  },
+  {
+    "publicKey": "9ZJgUUBxnj42eJWhfjpQMcNygqR6omnLAQNjWC2qc97p",
+    "amount": 46424.987754
+  },
+  {
+    "publicKey": "6ckUSKGXnwKVpsTHnf3VpVrT7ZsyP9izpaAx1pYE3Uvp",
+    "amount": 45983.198856
+  },
+  {
+    "publicKey": "9QfN4PoFdcQmZWyZiBqYb23fqATh7QpayVyWEyYhxU1",
+    "amount": 45583.405245
+  },
+  {
+    "publicKey": "8voyJjNgBTyp1dmcrvyqxo64MBXJViJhhaiZsEXYRks6",
+    "amount": 45232.703144
+  },
+  {
+    "publicKey": "EgjSeZJX1DHScAiB7Kzw2Da1StbGRYPZj4qvgGEE1iK",
+    "amount": 45200.82104
+  },
+  {
+    "publicKey": "HtZ7RPyFJeXJgaBGSJZFdTwuFZfUScPtRcUram94TiRi",
+    "amount": 45020.871918
+  },
+  {
+    "publicKey": "5fztstpzbR4Kxz2qHPLdYSuRyckBSY8Gb4q5VoX2kKEy",
+    "amount": 44995.526046
+  },
+  {
+    "publicKey": "9noh3VipCq1mBjRbZQLSD1fPCHEjpPgDwLCf1vUGBzoF",
+    "amount": 44985.542055
+  },
+  {
+    "publicKey": "DSubmX8zHajtvnLAhzetqJdQXKojgKb9ZTFneHw5G9zC",
+    "amount": 44908.479313
+  },
+  {
+    "publicKey": "B5XgQqLZhPNmGd6CE6kmY7U3YhRK9vN5cZcnMU6spxGT",
+    "amount": 44783.362789
+  },
+  {
+    "publicKey": "DYX3CB6hhu3t2KxBHy1WcBvbmHGVqeaArR3oDmqDXKCH",
+    "amount": 44783.362789
+  },
+  {
+    "publicKey": "6YJGZ6dAuuTLcZJhVAKYryqqsNiT5XQveyWd1A4nQB2X",
+    "amount": 44264.71921
+  },
+  {
+    "publicKey": "DvUtRVy2R4voDNpZzA1c1YExJiHtxKD9fUf33kDmgKDE",
+    "amount": 44023.098508
+  },
+  {
+    "publicKey": "6S4Gb4Gs6MUXsYXAppFu9BkTpPVgJCm91VbfMroRtpoD",
+    "amount": 43900.066029
+  },
+  {
+    "publicKey": "8mbbEaee32VaEgM3qDiYobK8A7Q1BHeG1rVZqKbYNyth",
+    "amount": 43579.985066
+  },
+  {
+    "publicKey": "2eCFwsfz6CknQH77B6cPK5k7P7pWcNp8UfSbSJx4Nz9H",
+    "amount": 43176.256894
+  },
+  {
+    "publicKey": "E7Ete1dXAPSbkTRgW5fiq4mvP1xQPFPziskoYRs8JWb5",
+    "amount": 43070.245314
+  },
+  {
+    "publicKey": "6avKBCSQnZxgNLpXhdiYBeqcT118UrNXGSF6cca5Lojb",
+    "amount": 42842.454715
+  },
+  {
+    "publicKey": "Cpn2aptZYoQ3yVxjpJiEVm4oNdzLFTcycdmYSEDScMMw",
+    "amount": 41296.489032
+  },
+  {
+    "publicKey": "E5L3ixHWQUNkCec8TajL91RrK8U3VXoQUT5KVezmwUzJ",
+    "amount": 40681.728257
+  },
+  {
+    "publicKey": "HyM1vkaHqsrEUgwVLsha23y21j2o6cv1gNZKA3LxuX79",
+    "amount": 40631.996498
+  },
+  {
+    "publicKey": "HoRjn9FqUaJ6STDH2ayMHZbpFJuzPz21LvH2VRZGiE3V",
+    "amount": 40364.654091
+  },
+  {
+    "publicKey": "6SX16q5WfjxmdZ22e6a5NMNDCS7rgTUZypXqWPyxLD8H",
+    "amount": 40284.71466
+  },
+  {
+    "publicKey": "5uiXnxhhruZwy9DPfmmEKrtMoQhruWuKQSddtxcZAKkn",
+    "amount": 39226.46775
+  },
+  {
+    "publicKey": "3JNKmLb9o89Mi999JbLuphUYo6Z1XXQHJfwFnbGa6XeY",
+    "amount": 38986.443984
+  },
+  {
+    "publicKey": "GnvmSotTCisqitTrYRthmkicgDUf132jKhntvg4iRZsN",
+    "amount": 38398.58413
+  },
+  {
+    "publicKey": "2MLQT6n2m2qBzR47sDEA1C8squoca5GCUnBnZxZk4dyc",
+    "amount": 38305.552618
+  },
+  {
+    "publicKey": "FtrzyNBK7tivrJJ2j6huuspTUtaxGofKCjDgvtwzQh5K",
+    "amount": 38171.093253
+  },
+  {
+    "publicKey": "3w4XDViKZqb5zF3tH6f4HqhFJg5h7c1xtkh27iNWoFEN",
+    "amount": 36510.409701
+  },
+  {
+    "publicKey": "ErHQiTRXV7SmqFhmQzndAaa1TXoqT9dmYLDV6hYBacJP",
+    "amount": 36442.786612
+  },
+  {
+    "publicKey": "Dd7rW6QQ6o9xMuzXfWjopHFK3ZWWLPanx7MrjcdJRVkV",
+    "amount": 36435.673089
+  },
+  {
+    "publicKey": "BFsh9x7pJyBr2AJ5EMg2hBHkWFkr8oxxt26q6VWn9VLS",
+    "amount": 36224.24366
+  },
+  {
+    "publicKey": "87vh477E61QPN9BFiD6WHkhmvRQspySjRYHLW7ZUxA4J",
+    "amount": 36195.685961
+  },
+  {
+    "publicKey": "HGhM8M62gvgDW9oMvLsEcfPjC66QDNuPvDR3zEJWD8BB",
+    "amount": 35779.466481
+  },
+  {
+    "publicKey": "Aua894BVZuQF1mMBScgzD4xTLovskZ5tjdc7rLx3XhA",
+    "amount": 35575.685666
+  },
+  {
+    "publicKey": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+    "amount": 35564.34532
+  },
+  {
+    "publicKey": "8psNvWTrdNTiVRNzAgsou9kETXNJm2SXZyaKuJraVRtf",
+    "amount": 35536.133226
+  },
+  {
+    "publicKey": "5zm7c6MK87wBHJ1mJHoZPpRbnYjcpUfkTA3shRfnNKpN",
+    "amount": 35415.031154
+  },
+  {
+    "publicKey": "EHddYdWXzXCbkrB7Wad7PYxSxz1sppNA4F6YzrJDjrKm",
+    "amount": 34866.356881
+  },
+  {
+    "publicKey": "FBgAaUP7boZCQdhRkKWijbSFLgt8VNDrmrER6nLF72H6",
+    "amount": 33764.414797
+  },
+  {
+    "publicKey": "3gretQMr3gbhrtwBwz1V92hTwm9A4V3bBQCa8Zb4hjrE",
+    "amount": 33573.803113
+  },
+  {
+    "publicKey": "7Vmsyov4m1YAZEtyKseCTh3o6Gebxs9akCpreB9En7hW",
+    "amount": 33310.861722
+  },
+  {
+    "publicKey": "57s12aSaYtcbS6QCv4UZjnMetfrSWPaXSS7k6E3v2ASC",
+    "amount": 33285.580686
+  },
+  {
+    "publicKey": "g2fcfqRQzKMkNFGDRt4i9iXUMLcA47AGq1X8bjgquEu",
+    "amount": 32823.210892
+  },
+  {
+    "publicKey": "32HR1u1wbuMRhZerRKWrCH7jUo8dsR2grk68LdQgx3VN",
+    "amount": 32775.140445
+  },
+  {
+    "publicKey": "7mnKViT9i5bNrydTw6TamJqD1vAVoHu13wC8HzangoUg",
+    "amount": 32014.847661
+  },
+  {
+    "publicKey": "5xd4x61jXrWMqsmRNhfj3e83SAsPetWq8gLE1H4eDYu6",
+    "amount": 31924.413232
+  },
+  {
+    "publicKey": "8fzD7XfcYgwQCej4S6atadd3rhqWoBdek2Mvi3LiAATB",
+    "amount": 31631.388301
+  },
+  {
+    "publicKey": "2mT8mKeMLa51a1o3yr9igxH547UKx8MmaLw6i98Q4KLC",
+    "amount": 31405.645331
+  },
+  {
+    "publicKey": "AJMaxiXeeqdeBJg9HXUmMjdJuYVi8jD76pRgst8Bz4HF",
+    "amount": 31397.927629
+  },
+  {
+    "publicKey": "9wTJBK99pzNDrj3aFbjYhAPFcx18EGv6wYd31RPzfjJk",
+    "amount": 30881.940032
+  },
+  {
+    "publicKey": "H7Ue6Z1RQ8XwrUsU9eKSLoVAHMShnXRmorqwNdwWqHGj",
+    "amount": 30401.984575
+  },
+  {
+    "publicKey": "BxgLonMfyMgC13UwCwV1LhoDyWkun14WpYKDQxMcknFc",
+    "amount": 30228.514235
+  },
+  {
+    "publicKey": "7HUEkQZA31aDhUN3mURFnpsNuXAht72WgoQ5BKoUqJGi",
+    "amount": 29937.077081
+  },
+  {
+    "publicKey": "2dA7XTL6CUPNgpCCDHGeYTxttDYbMqegmGGmWPNUHf3b",
+    "amount": 29581.896959
+  },
+  {
+    "publicKey": "CdGswR6wqNUq3kn2A9fuMZH6YFfw1Bk2gxBYTi4bCGve",
+    "amount": 29420.367279
+  },
+  {
+    "publicKey": "8tm8rTr3UGju2CqtJmQ12jMhv1NLfncD8TBFzqQZWNPD",
+    "amount": 28978.904001
+  },
+  {
+    "publicKey": "4FD5dQUyo1FEqHRXAmBmUGBUtQ6wbGt7cJnz9g2rJ88k",
+    "amount": 28822.941231
+  },
+  {
+    "publicKey": "8V2B3Qiauy85aKufoYKaPxygNjdLmx9VNfuzNqud1rAp",
+    "amount": 28563.331333
+  },
+  {
+    "publicKey": "FFy172tMQzBjnongmLgWqW9vsGrX27VFdg56HjTsvPqA",
+    "amount": 28342.218868
+  },
+  {
+    "publicKey": "HVgKCcYGfJubNeWCnHMhr65vM1WnA1mZDh2K69AKY2o5",
+    "amount": 27694.975257
+  },
+  {
+    "publicKey": "DnWqa1u7wfVGk8thYAsz6B3Xk5bTRaeCr9UHEMxBcv9J",
+    "amount": 27605.151547
+  },
+  {
+    "publicKey": "DyA8GRwmy7q4JARvwgBKYDojLz6CMEBtFqCrLDYRKwcm",
+    "amount": 27567.88152
+  },
+  {
+    "publicKey": "F9Eujg2Ggnrb8QBFGn3v4hQt85QZVremf8GmdTXUukSA",
+    "amount": 27266.339872
+  },
+  {
+    "publicKey": "5NGjJ5v3HXjMGNRM1z7w26SuedGG95rc9oHnP2d19HT5",
+    "amount": 26855.602513
+  },
+  {
+    "publicKey": "DAg1Pdvm5Hw5TzTmemxMUyYydZyYddu3LbgihywZKVG4",
+    "amount": 26537.453566
+  },
+  {
+    "publicKey": "3PLCuviKgLpQC1QEM5AwFH78BVRArSVkd43JDdwgSGDs",
+    "amount": 26392.436419
+  },
+  {
+    "publicKey": "7E7WMPX6gdGyh4Hg8nEcqTAYFRHGu6zWfq6xeLcbxSqZ",
+    "amount": 26172.843139
+  },
+  {
+    "publicKey": "ANMEfYQ2XnXagTBGSRmQeXbJihbkTFTidcz2atrvb5dT",
+    "amount": 25337.286454
+  },
+  {
+    "publicKey": "HNeQMkxpwXX11Qxan7xty9i2tJ1sNqiBN6L23QtXZWEK",
+    "amount": 25233.838516
+  },
+  {
+    "publicKey": "GxfFposjLwBKQT8VS1kKNHg2HFg3baY7XKjVwjGUuhFp",
+    "amount": 25095.057793
+  },
+  {
+    "publicKey": "H4xgcskU9LXyFmrUQyp2XBQcwFF32XbRu6UYF58cAaPf",
+    "amount": 24752.154191
+  },
+  {
+    "publicKey": "G8n1zguTxqSWBf9zhTQzhYtdfA5knjN9VLijcbxPVtGv",
+    "amount": 24722.445349
+  },
+  {
+    "publicKey": "AoBFfDhP5vPwFmdMXGKe2xCwK1b2sHEAXjrE2ehjbhx9",
+    "amount": 24356.732439
+  },
+  {
+    "publicKey": "E1bygp4KHDm55Bhh1TQviLUAh2BpTuy3VTsBdhDtKN1D",
+    "amount": 24283.987979
+  },
+  {
+    "publicKey": "AHRNUhhiKNvjYvkDMKG7oTcadnq6jgaD4LeYDn37UWyV",
+    "amount": 24216.197444
+  },
+  {
+    "publicKey": "GBTx1qA9UEEwHfvjeaFw4a829KoRwNTvHbfHXkkqUHJ9",
+    "amount": 24196.508393
+  },
+  {
+    "publicKey": "4X1i2FRVBH6gU3psoLW6AirJSCeRi8eKsBHTyrizL1gJ",
+    "amount": 23767.211576
+  },
+  {
+    "publicKey": "FAdkKqXAso38gxemA2Yxt2zxoEeL182sD5jtEKvZ2BPt",
+    "amount": 23760.978502
+  },
+  {
+    "publicKey": "AmuKQXCAFLX6Z9qG83xvRnAt95FGvDyn8JECmosnExcs",
+    "amount": 23564.883375
+  },
+  {
+    "publicKey": "C5NKnfYNGy7QY2sQPrDFXED1cbepphP2VpgBMGQQhNER",
+    "amount": 23456.040438
+  },
+  {
+    "publicKey": "DSN3j1ykL3obAVNv7ZX49VsFCPe4LqzxHnmtLiPwY6xg",
+    "amount": 23439.883654
+  },
+  {
+    "publicKey": "47PtnN26boaYRiUK5u1uun6CWyxaiW2pw1DvDEeaA9Lo",
+    "amount": 23424.655394
+  },
+  {
+    "publicKey": "7U8Xaz8JRfyeExFoCUdKWCXdG6xyXX3RtKX6m7gWpMHE",
+    "amount": 23244.709489
+  },
+  {
+    "publicKey": "A5BUWfLdBJCSv4zh9MVvE1k9WC6YGMsbkio6fdyVuUCt",
+    "amount": 23082.165009
+  },
+  {
+    "publicKey": "qiCuqjQ4RfD5KSyKQ7APGZNBZZypQhLWyuausFpv4PP",
+    "amount": 22810.575524
+  },
+  {
+    "publicKey": "6CMc6fwWi85HgW4yiwAzxDdaPE1JabK5kPt3WWWe3pNd",
+    "amount": 22611.830724
+  },
+  {
+    "publicKey": "2TXgZrXbEwUErsmeV4S3YVsLf4xDdosV35p7onrVbgk2",
+    "amount": 22550.201438
+  },
+  {
+    "publicKey": "C6CXaUhPZKVwcMvj5maWYD1uyFcqRhCSv6RJQRz1hrgR",
+    "amount": 22186.432294
+  },
+  {
+    "publicKey": "E4WNHdpDEG4heix7vZLQ5A9Ux38ZpRKYMEBUTC4WYRue",
+    "amount": 21905.836659
+  },
+  {
+    "publicKey": "2YvcWECBFNmbgZmvfDmRG13Kqckd6uVf9hriDJfz3Gr3",
+    "amount": 21711.493877
+  },
+  {
+    "publicKey": "DjjXf8uqe7YAYiFwNpjkqyXH3ttJs2sDuNQtecE1KBK5",
+    "amount": 21600.841505
+  },
+  {
+    "publicKey": "4UaFbvXqJKGLB7KGnK5irS3Dy7cHD9caRYs9aohKHqwV",
+    "amount": 21595.834531
+  },
+  {
+    "publicKey": "D1xuQWuf7ooc6QUumYtuKiNapVC3oABgryiQ9H7MKaJV",
+    "amount": 21513.02568
+  },
+  {
+    "publicKey": "HmBCbavBrZaiq7dVVdbYGXBoDfiv49x7Ld8JK8obHP5C",
+    "amount": 21277.441267
+  },
+  {
+    "publicKey": "4JivrH6rexwjsZYFuTjXA8K9RXg1VTAaWhC7oBaP3WWM",
+    "amount": 21073.713393
+  },
+  {
+    "publicKey": "6Y8EbmRVEotJ7fvRTsNGQP6wAz5ADjvoDbZt7jwJ1mXy",
+    "amount": 20927.137164
+  },
+  {
+    "publicKey": "ACrEu4iDPypoDeyJchNceEn3GpdoWjhQayc9eLppyUYa",
+    "amount": 20805.181184
+  },
+  {
+    "publicKey": "7fpRjbpU4raHFx1tL1tkAEsucbcZ2jYR6BB8eLnzQ9D2",
+    "amount": 20398.10499
+  },
+  {
+    "publicKey": "BCdPikfNXQfUojE6sdRi5SnYobjEJaGdMtjg8PsSAFGA",
+    "amount": 20384.981888
+  },
+  {
+    "publicKey": "5NYh6GmcXmuowxFFwrq4TXkKTwaZfRV5MakbQyTAMSwy",
+    "amount": 20309.450516
+  },
+  {
+    "publicKey": "9hLSwx1MP2GwBXiTS9f3ZtDe2rKnzdxBE42wYWitMkxH",
+    "amount": 20153.410093
+  },
+  {
+    "publicKey": "GThRpS1sfbnuUZE2BCAvELr6GmHYJy3JVtUde21kDomx",
+    "amount": 20116.494008
+  },
+  {
+    "publicKey": "5KT7H9pPzCaFqfLuexF44jja41k4imqLk6xy81LGH8FY",
+    "amount": 20017.822024
+  },
+  {
+    "publicKey": "AA4SDGy7PUSvaQagN6RF47FGLPUoxTk6SGFPm9EE6HBt",
+    "amount": 19868.230084
+  },
+  {
+    "publicKey": "F8Mab4MfTSwHHX64J5pNQMJCrn8H1nBLa2aBvod2bVp5",
+    "amount": 19719.587681
+  },
+  {
+    "publicKey": "CBx9b6NSgi3CXDMH7mnRvVsLkfR7xbVMpv45ocAG76qn",
+    "amount": 19409.051614
+  },
+  {
+    "publicKey": "7X1qLnPcf1Jrg4WrgTZes4tA4ochVbZqo87ybxufHjt7",
+    "amount": 19184.497127
+  },
+  {
+    "publicKey": "6r1pYDF1k85QQtEQ7vTXyEB8WgQ2tP4dHTnENtoqBNcy",
+    "amount": 19163.126631
+  },
+  {
+    "publicKey": "BbJ9Qa5J5JbHc8J3vejnmfSEbXjSxCFrfGodvayxXQbr",
+    "amount": 19136.33895
+  },
+  {
+    "publicKey": "CFfdgV7TnbzEsAEVsZu2P6XPQSvEPukd1g595CJX43pf",
+    "amount": 19116.474611
+  },
+  {
+    "publicKey": "2XgyY1yAEBGKQe8mZCJKz2hTjJVkk9jXrjAvj4jR2uCW",
+    "amount": 18856.680229
+  },
+  {
+    "publicKey": "Fs5BckC1kqP6u76o3j3evTFJsN6J7xNGddoeaSnbNTNW",
+    "amount": 18826.020895
+  },
+  {
+    "publicKey": "6hEGmydgG3Xavgj9CRp1FJu1WtSwiDV96rSTceKBMPi2",
+    "amount": 18310.057755
+  },
+  {
+    "publicKey": "34MgQc8x8UFaYPcc4vyC5KJLvuru6wybgL82qm4JsWtJ",
+    "amount": 18269.917295
+  },
+  {
+    "publicKey": "34fiK1MdMV6nz8tSKCQoVPTtdWfKNsRG4TcSukD7Afrh",
+    "amount": 18170.305807
+  },
+  {
+    "publicKey": "J3QsYehvDZ1gPp1R1Z2pVki1DUKGV2wY5DkrD4UDyMu9",
+    "amount": 18112.237527
+  },
+  {
+    "publicKey": "5jh39LEGQvbBRXnx4x1xa1UkUW2KWgUJBVw2ETe1n1Vc",
+    "amount": 17956.33509
+  },
+  {
+    "publicKey": "Apqj2SwgTfqkYRprYJ6mbvpB1b2iFtD2G1dCTZZ36RGw",
+    "amount": 17818.547116
+  },
+  {
+    "publicKey": "GFRh337ANXNpL7SW6QwLGDve3MJA5c1DMhnCYPbYTUAx",
+    "amount": 17678.481258
+  },
+  {
+    "publicKey": "5rJPBLnuFCTakJN4KucpjRyTg4MWc2Y2zAHjFSRRWXKB",
+    "amount": 17301.70792
+  },
+  {
+    "publicKey": "AZ4Cd9vaUVZYk5pUxNoo3CThosdUVhHoJr1hdFKToGLv",
+    "amount": 17230.046976
+  },
+  {
+    "publicKey": "3duiAepu2vWwMm29L3kvWbBoouKvx4FMG9Dhoy7EdNr2",
+    "amount": 17095.9186
+  },
+  {
+    "publicKey": "4PcZqtj7YnjjRkzVazH6EdBpKMQ7edgy5Bcjx12U3NHx",
+    "amount": 17086.309058
+  },
+  {
+    "publicKey": "EDM2XBxawqiSM2QgNWMKWwRsgHQQtLVbP65pgNKuLhp4",
+    "amount": 16588.571535
+  },
+  {
+    "publicKey": "1PyBdiKVadBqkiiprQFodUrHHZjbQxPwoXXS2cqL5xT",
+    "amount": 16397.707135
+  },
+  {
+    "publicKey": "6A5F1m43SYkqrPrWzsNys5NDUAMyQWSpWr2e5CGaXqdz",
+    "amount": 16322.216678
+  },
+  {
+    "publicKey": "5Vi2VfdpkzzxAAZECTEczyaWGtfqomPHitfvHJ8BSqxa",
+    "amount": 16313.772657
+  },
+  {
+    "publicKey": "Bbq7f1984tU5iz4v8gSxxnLVJaxECV7m4fR5bkvWMNrD",
+    "amount": 16228.86449
+  },
+  {
+    "publicKey": "DJir2CTEuHiFJM7EwoVdC842ovNGy3FtkRVvsPN4pnR7",
+    "amount": 16002.984698
+  },
+  {
+    "publicKey": "VMRE9ikAF8T1uCh2apTq75ZMKXazvvv7Y43iXLFuDKi",
+    "amount": 15886.173623
+  },
+  {
+    "publicKey": "C1pWWcP74BRqyH3Rr9aHkDvQAZnh9xXoT3BcUnZCUN6P",
+    "amount": 15864.904907
+  },
+  {
+    "publicKey": "Ge9R2ZjA7TY81zMGszr8jssFrMZjXZKAtrqgT58omsvz",
+    "amount": 15713.504947
+  },
+  {
+    "publicKey": "86h24qKFQydVdvuzUHhHuTjzP1G7ejsJbAACANNsyDkr",
+    "amount": 15566.852988
+  },
+  {
+    "publicKey": "9fiuykRKFp3WaJgv5HxKVtq6TMGMEYFuLMo6VeHSj99H",
+    "amount": 15330.660246
+  },
+  {
+    "publicKey": "Fj7b1SnVTt6FiUkxQmpZLEPFVH6A4UBE4hYaU1fAZmMc",
+    "amount": 15325.864651
+  },
+  {
+    "publicKey": "HDhWGHooeYK7dVWmjk85xCTqQ19bKfEnRGJx3xMc3mKw",
+    "amount": 15316.362729
+  },
+  {
+    "publicKey": "2gQw891NAQzUMYEpjsK1AyVw33LG9zWChFJiFymohzTP",
+    "amount": 15156.364978
+  },
+  {
+    "publicKey": "7mY8S35bpgXN2gQ9AN6LcgLjAiosk91njVUZfg1LJS7K",
+    "amount": 15118.017452
+  },
+  {
+    "publicKey": "3i99uWXEQajwzB5zYmKhrDS5dK4Q7dm1WwtR6RjE7XNn",
+    "amount": 15070.019873
+  },
+  {
+    "publicKey": "22iGA9hgCJiwK3DtpAntt4E9ZrNxqozTgxQTyBwKQPbP",
+    "amount": 15009.674593
+  },
+  {
+    "publicKey": "EurUrGSQXx3pEc68Ht8RiXtGcDgGKDeLExke6YEm3WD7",
+    "amount": 14885.960043
+  },
+  {
+    "publicKey": "9hSQZq7gvvZmacgiyHHZQezYbqac95DoE3vh3ACEgver",
+    "amount": 14823.14304
+  },
+  {
+    "publicKey": "22JaGcVYqVSBfURMYb3W6dLSYbUZq7zmunPQdeELg3mz",
+    "amount": 14788.275929
+  },
+  {
+    "publicKey": "J1TsgzBm1f9rjcKppa7TmzXWpYTMwv3sK4PKB1TwYRm1",
+    "amount": 14766.935178
+  },
+  {
+    "publicKey": "9RPCAfSRDYGXQNt8DhFKTYmLCtmBu7qzaDBA9L21YeDF",
+    "amount": 14695.782154
+  },
+  {
+    "publicKey": "HMcgUNAnoXwcJq9zsV6KP1k3irzHLHe3kef2eo8LfHAy",
+    "amount": 14688.882462
+  },
+  {
+    "publicKey": "7iWnBRRhBCiNXXPhqiGzvvBkKrvFSWqqmxRyu9VyYBxE",
+    "amount": 14618.030491
+  },
+  {
+    "publicKey": "2MZbbfqvgtCz7AVGzR2qJn1VQ876vq1m8QzefRKyNtTL",
+    "amount": 14579.26791
+  },
+  {
+    "publicKey": "EJHMy2sRsDUVG6LpusnjFjez7kYHC9kz9XEeeWyMQXiX",
+    "amount": 14568.198459
+  },
+  {
+    "publicKey": "H8nT8qtLcEe4vyTAxfH3D7grSg3rzYL3xTKa4iKi1yAP",
+    "amount": 14568.170791
+  },
+  {
+    "publicKey": "4eLke2dk6wZdGWij3jxLBrEx4aPD4XYaurnAyKeRgEj8",
+    "amount": 14495.36224
+  },
+  {
+    "publicKey": "Fu9CDKhtQLKzBqQ9v26snNZwfBsvFbczEPtMg1xxFFXB",
+    "amount": 14381.124291
+  },
+  {
+    "publicKey": "871g4u8wf8mo1jzLEoyev5YWxUNpTFYVCoQ2AkgkTSEm",
+    "amount": 14371.328723
+  },
+  {
+    "publicKey": "AAzp6PUpDeGC5WD8P9VThj7e3G4whYdvPem4cvUc2jao",
+    "amount": 14338.156246
+  },
+  {
+    "publicKey": "E3x5vmPiVojhCmn52qDbZ5kE7cyBtsNiY7NtJtD6dTUF",
+    "amount": 14219.392337
+  },
+  {
+    "publicKey": "8wMLWSeTRsBQG4yHTwmM4EoWcdipKRppuUiJU3FAxXnv",
+    "amount": 14040.210212
+  },
+  {
+    "publicKey": "GXXYJ8rZHTQvxePPdNhq9CDGWRs2cVnhm3h8a1eiRApT",
+    "amount": 14003.795742
+  },
+  {
+    "publicKey": "29ALJnpUMN9DWdxj1q2ngJtLiQPm4eG95wRLik3MXZJt",
+    "amount": 13871.58597
+  },
+  {
+    "publicKey": "DaQTzc5WshUVbQYqPUafiZiPdc7HPWNtLqZfhh25CdPb",
+    "amount": 13634.438092
+  },
+  {
+    "publicKey": "GP8StUXNYSZjPikyRsvkTbvRV1GBxMErb59cpeCJnDf1",
+    "amount": 13630.934922
+  },
+  {
+    "publicKey": "D2NbTMd1Jo9KhifYDRZJmAbmCo7riNQoHxRbzR8wknGi",
+    "amount": 13628.112221
+  },
+  {
+    "publicKey": "9r3AbjKxhXVYSuP9SCNWSgkWA44NpW1bgAetYVDiBsWY",
+    "amount": 13597.743467
+  },
+  {
+    "publicKey": "H6CKJpfZppPZA5EbVK5YoaMdZ6f7c2kwhbuLPPGbR8LE",
+    "amount": 13501.208537
+  },
+  {
+    "publicKey": "XVPrtatMMMWYoLN3KbneYXusRWMqGXcyRkdj7gDxgR5",
+    "amount": 13449.38372
+  },
+  {
+    "publicKey": "9ueT5zDR3EdR73tp9NqZqufC2QJgGzcaM7YGbz6PA1XN",
+    "amount": 13379.403693
+  },
+  {
+    "publicKey": "4oW7vWsmePncb5Aq52B34HFbmjVVaWRaGXKp7DpEWShx",
+    "amount": 13329.370197
+  },
+  {
+    "publicKey": "3LoAYHuSd7Gh8d7RTFnhvYtiTiefdZ5ByamU42vkzd76",
+    "amount": 13276.171173
+  },
+  {
+    "publicKey": "AgucHwE6mcMi4pKPJ3TPpbzpegRCzHesw2Utg6xPMjit",
+    "amount": 13270.75093
+  },
+  {
+    "publicKey": "dpNURDnu2W6kyhMZV4UeDnzmGRUJiLPCsvu4QTLJgSo",
+    "amount": 13239.696884
+  },
+  {
+    "publicKey": "HFqp6ErWHY6Uzhj8rFyjYuDya2mXUpYEk8VW75K9PSiY",
+    "amount": 13232.134544
+  },
+  {
+    "publicKey": "6yVwCC8DJ2PjRGLUVau6cHBVYiZN2gY5H6P5d1wRuSBm",
+    "amount": 13107.174346
+  },
+  {
+    "publicKey": "FKs1inzPXiZwpRuNobHu4y7dn51cNsD3vwUrmn5ZhMCr",
+    "amount": 13063.93229
+  },
+  {
+    "publicKey": "AfW6iBitg6sWpGkJbxvynbPaZwM6EzHZbfPNj4mgB8Ru",
+    "amount": 13035.108934
+  },
+  {
+    "publicKey": "7aNcQnjkqPnyKS94yXYuUkJuhHY5cW7cwv8QqPoZnhYE",
+    "amount": 12913.411643
+  },
+  {
+    "publicKey": "vLEgprdQfujwA494k64mrTCxTKAmfqDmHeBtu9Xeca2",
+    "amount": 12870.560275
+  },
+  {
+    "publicKey": "4SxkFjUJgMn4TrM6CprdjFzJk6GHDnqFdunhuQSSxDfU",
+    "amount": 12847.934713
+  },
+  {
+    "publicKey": "BAHSLmq8w8un4A7nxpcorJdki6HcQNPcB2GKqcT4acr4",
+    "amount": 12799.663898
+  },
+  {
+    "publicKey": "JDUyPZTqnrUsCPY4YyQMBbSdMX7UNsgBYC9nvzHr9Q6b",
+    "amount": 12762.573305
+  },
+  {
+    "publicKey": "7zvrf1ToxcSzrBnV4YKACdr2GP8oY7wnTXWQS1yCabTL",
+    "amount": 12721.875197
+  },
+  {
+    "publicKey": "32WGymBvpNdqk9m83ksgzzxQTToBFfjKBQbDaLqXWEtD",
+    "amount": 12671.59073
+  },
+  {
+    "publicKey": "5vNhoH4uqyt73rXoLToyXY4VZmCfw6ipyruU1vbGq1y4",
+    "amount": 12582.172643
+  },
+  {
+    "publicKey": "55qZMXmNmhSBdpUJXpFpDmeXDCTJVVCgF9byP4xTTktS",
+    "amount": 12558.793195
+  },
+  {
+    "publicKey": "GDpvKA8XJTmufWdeRpLSeC9mp6RcrMZc6ksLUoSGb1Az",
+    "amount": 12471.240766
+  },
+  {
+    "publicKey": "FtjvHsybXfYaM8PhwxVQYxnMnr9tzjSeqU2ZffQJNSoP",
+    "amount": 12275.479672
+  },
+  {
+    "publicKey": "CqfRZcXaRW1z1z7CmZmZHyNdAeb88mKDVGQPp5STWUnp",
+    "amount": 12244.214659
+  },
+  {
+    "publicKey": "CsaS9asnsXz9grdS3nTBMW6qJN9WhqfVdJDNQQrTPP6F",
+    "amount": 12243.255207
+  },
+  {
+    "publicKey": "APuapbx3HynkbTk7GnT3NyQUoNUfWuuXrUC5ZWnam2Qg",
+    "amount": 12221.10905
+  },
+  {
+    "publicKey": "D4HnxZd4RAk5aQH5ov2cWcGkW95cy1XpsiZayRxR1J4T",
+    "amount": 12186.884279
+  },
+  {
+    "publicKey": "2A5saFtMvgoZQPqy6AcsMHq1FUkJernqwHtefwWtkfjD",
+    "amount": 12113.134383
+  },
+  {
+    "publicKey": "mP4tnNkwAtRLpSZG5CqcH3CVPJHgVw7XH3j6YRyayQP",
+    "amount": 12096.248048
+  },
+  {
+    "publicKey": "HU23r7UoZbqTUuh3vA7emAGztFtqwTeVips789vqxxBw",
+    "amount": 12075.297991
+  },
+  {
+    "publicKey": "6hwwc4tTaGBVr7PoL27Yt1HkcSGNtdJnTKsej1bkWMzh",
+    "amount": 11927.888569
+  },
+  {
+    "publicKey": "FTK6fSA31Aqg3ijNkqyV3vuee1gn9LVoFyFELPtq44QU",
+    "amount": 11915.614301
+  },
+  {
+    "publicKey": "B3Shfc169MCKensahfnh4q5ZzLotvGTKBUCQjnCVMt7",
+    "amount": 11910.081375
+  },
+  {
+    "publicKey": "DvZj5DqgBnY7kKYVR4b2ybrFg3k8eNkhVK5NGqu7xsLE",
+    "amount": 11845.019503
+  },
+  {
+    "publicKey": "AiCiFFVyetCTp5fsjdUax6xnCt9Jmn45Pi2MeoHgski3",
+    "amount": 11828.023887
+  },
+  {
+    "publicKey": "GFAjfEAkeQRKTvwRmN5yzGXmR9oho4kDPz6AaXm5hWmG",
+    "amount": 11752.836874
+  },
+  {
+    "publicKey": "2HfDZWVicxD89mSFCcpA6UFh6wEEW85RwLN3Vc7dGDzj",
+    "amount": 11747.91916
+  },
+  {
+    "publicKey": "HFQJsUBfjbgh1EHEpDwKhxQJgWGJHgoJbsV5ZyyDfrBt",
+    "amount": 11718.01457
+  },
+  {
+    "publicKey": "FzRT1iaQnJGN1cUhxHPcisBPX2pBoGCzvMtk4VjsxX1L",
+    "amount": 11690.469509
+  },
+  {
+    "publicKey": "JziSyU5YkDjxDiPf2qCxMyG6rdbQVUoUUmdb8Pe4a4k",
+    "amount": 11639.016036
+  },
+  {
+    "publicKey": "5F4RSbhRUHg3xFNVtcZ11c9y3LQ5E3NzYWEojYwCjUTr",
+    "amount": 11585.575159
+  },
+  {
+    "publicKey": "BbPbaBoq2sVMoPJaEtNcKhKiE6woJJKpWsDB1pduq7Vm",
+    "amount": 11573.516232
+  },
+  {
+    "publicKey": "7N6HBebDSqtnmgEkD34PfyMD8VquuoJphNQn7pAUF42V",
+    "amount": 11483.077984
+  },
+  {
+    "publicKey": "FySu2CfMunnNLnazYa5C9Tajy24CkYruUGdQ6EbWYdPW",
+    "amount": 11463.813548
+  },
+  {
+    "publicKey": "8VQkR3xDb2yU98we62yTdeBTinfQ1MsBUMgn8pB3JGVG",
+    "amount": 11447.418742
+  },
+  {
+    "publicKey": "5pV9yeMRb33koZfisJuBYjHDhdufJMYV8mkt1JaUPHHE",
+    "amount": 11440.39272
+  },
+  {
+    "publicKey": "D2ZuaSrK1D2eh2aVGwUF5KSxdp5UHvnuMCGt9eYk2Q2i",
+    "amount": 11427.361683
+  },
+  {
+    "publicKey": "8z7hGYT7quTNfN9pm2tQ5Ew7ZWSg6acvSWkWULUDB9N9",
+    "amount": 11176.459039
+  },
+  {
+    "publicKey": "q3GN8kLubE5BeR8txf6UmN42ADzFZyN3Gsh6PjYeMZF",
+    "amount": 11173.10188
+  },
+  {
+    "publicKey": "2Tq3kqzEmnZn5rMfVE9NuLJnTMf1anjhBWDTy7b6cBmU",
+    "amount": 11127.820457
+  },
+  {
+    "publicKey": "DFXkV1hwAj1TYu4Eiism4h1ZBdVUUrfoMPU8Tbq1wFEt",
+    "amount": 11103.064447
+  },
+  {
+    "publicKey": "FNmjJCyyj9AwQmZzLw6sF1vCae5VJ9EhAUacRgmvFuJP",
+    "amount": 10956.482602
+  },
+  {
+    "publicKey": "7z39fSmbtky4Fq8dTLEFfswQaK96UviZJJ3vDEpBBm1T",
+    "amount": 10932.080646
+  },
+  {
+    "publicKey": "EoS1vVDPt5R4ABJ5CKHhdtLC8Xniphg8SG3fo43QBZt7",
+    "amount": 10929.349283
+  },
+  {
+    "publicKey": "qTerNVUMUTbDyQwmhxAXqdGqcQpkmhyPkdt6mqWwDAE",
+    "amount": 10881.535831
+  },
+  {
+    "publicKey": "Fqiu44VixkKtxr3qw2nLm9NLyU96gx8sqDE3hMxTUw3g",
+    "amount": 10833.695874
+  },
+  {
+    "publicKey": "8XgDnQCoDzYjdfCWyUSZv5tgj9NAXpoZfGUHmZNNjZDE",
+    "amount": 10806.557126
+  },
+  {
+    "publicKey": "BFSkxP9Bek368koyF1eTpkiKQL7ZZr74SFXZaD8GCHtT",
+    "amount": 10802.902394
+  },
+  {
+    "publicKey": "FVb8hvv8VD4F79eu2wv2qkqfEEQdNaE8u4WzeB8sgMXS",
+    "amount": 10779.364504
+  },
+  {
+    "publicKey": "DVhAjsT2MBkxv5zAJv56hzAJmWRodUEMVN5ycWYVMVXz",
+    "amount": 10766.433006
+  },
+  {
+    "publicKey": "CdbTRGUXr4bRBauuuQW5qLcNnuDkoGN3fAwxhQGw82P2",
+    "amount": 10683.492601
+  },
+  {
+    "publicKey": "7eeRyh5SXhsuWi9J594mRRtaSS75Nm2tT24cLC8GSgE7",
+    "amount": 10665.129452
+  },
+  {
+    "publicKey": "FQJVz73Dwxs1jTiYbMUFMNv855kqDZsCpS7PYWdSsSvQ",
+    "amount": 10631.137049
+  },
+  {
+    "publicKey": "9RjR6Gkh7zKHoGV4VmVqV67nZc2uDvwjCwRmn3AdLHoU",
+    "amount": 10624.291436
+  },
+  {
+    "publicKey": "m2e7w3szvWQjXLMZE3Z3tpV3qSLJBkQvEYAyZV1Y26i",
+    "amount": 10533.475162
+  },
+  {
+    "publicKey": "FbxiYFA5AAscG3JJXSwmJPXLJxMn78KJUeX37a4LgfAU",
+    "amount": 10490.271192
+  },
+  {
+    "publicKey": "8Pw475Tresjzuw7jMBCD4D1eEvY3tHgUR8dVGgAMCBDq",
+    "amount": 10459.847547
+  },
+  {
+    "publicKey": "9nUsifyA3SXkwHNYoBMCVEcnGeXob465A1uUVBe5JtRr",
+    "amount": 10457.770241
+  },
+  {
+    "publicKey": "H7upPQXJnTqgyy8nZ1AkH5jjzrkebzif9XLzxC8egkxh",
+    "amount": 10431.448124
+  },
+  {
+    "publicKey": "9xpbfh3wDF4ihiLPd1jG7TZJ9aqUcSU8vfWFmEiBwtdE",
+    "amount": 10427.846881
+  },
+  {
+    "publicKey": "FBJa8gmv3mEvJxtw8fg9rHYrjsUvXvjdz72Ne7W1fX6w",
+    "amount": 10420.9481
+  },
+  {
+    "publicKey": "5QHZiJGzvpPo7jpHUrcbeDqZiPD9NzotsDEPiRi1pLfn",
+    "amount": 10396.247996
+  },
+  {
+    "publicKey": "6dfYLxaA5Kcxv1HKYutQ92XBJtK8XqtqMeSMqACkJzFD",
+    "amount": 10337.010821
+  },
+  {
+    "publicKey": "FLJAmRGn8hL2oV9HQF4t5XBVFjvfzA5NBHfc5cFqMaAC",
+    "amount": 10295.487188
+  },
+  {
+    "publicKey": "EmijNMzDtnqZToAntzgc1LBz9J2rhCPwUaPULo5CnJSB",
+    "amount": 10263.875948
+  },
+  {
+    "publicKey": "84m69fvU3UFRaz4rHY4HcPswaycWWV7LYpTHvsyYNSsb",
+    "amount": 10243.517661
+  },
+  {
+    "publicKey": "Bs7H3dyxeaohhPPfTjq6yPPRCvAeQ89uMczqEkd6d85L",
+    "amount": 10240.792506
+  },
+  {
+    "publicKey": "6YVk7mfFZPUfX4GzPuwL7oQFNCKSbqVvAwswchUMznMX",
+    "amount": 10234.390278
+  },
+  {
+    "publicKey": "kJLU7UWWsZL3LHk8M5WtLY14Zt4xotPzHuDUoR2xcgi",
+    "amount": 10197.883954
+  },
+  {
+    "publicKey": "8fcAa3jQZTBP85LebTpeCZpKA26P5J5GBS5Wxf4g4Pu1",
+    "amount": 10129.760325
+  },
+  {
+    "publicKey": "4nfxbjgPWX6kNFmoiwjQ5znvMXU4Kr9GMgfyAf9mUQ8i",
+    "amount": 10106.029155
+  },
+  {
+    "publicKey": "BRKTyppfjWTXzDXsXciVKxsRKXrqvg9uVRaAURKHYb4Z",
+    "amount": 10096.707821
+  },
+  {
+    "publicKey": "G5oLCndG98E6GaScJbuth8Y4jHSoU48T1Y5nUb7iqsxX",
+    "amount": 10093.904876
+  },
+  {
+    "publicKey": "GCNgYoJqV5HNjV1ny4khVf2jLEeXPaQGGcfkCcPP9Srf",
+    "amount": 10088.794074
+  },
+  {
+    "publicKey": "BBxZSGcs5VQaDBWdBmiJ4gZKtWwpPzxzecUkyZwEFfvx",
+    "amount": 10088.516457
+  },
+  {
+    "publicKey": "5y6o61SGVPebE6uD18HVrKS5LdEEHGYoFgxSkDsTso7A",
+    "amount": 10082.181225
+  },
+  {
+    "publicKey": "2Zptmse2zM5SAuCkm5Qbgsess3gEmN9gmKeK9wSWZpQk",
+    "amount": 10053.765755
+  },
+  {
+    "publicKey": "FMmU3ch3GPe3zN1cjbkLEKDMnSyZzGPPw1eEH5EWPJu2",
+    "amount": 10034.631469
+  },
+  {
+    "publicKey": "Encjn1qLXA73S6dfxmTD9JoVFwYR9DdU2xaMHXVqBjNB",
+    "amount": 10016.785406
+  },
+  {
+    "publicKey": "76fvjnF2izy7qfYJQzz6fbr1NapKkba8a7dvpH3KqMZD",
+    "amount": 10000.493634
+  },
+  {
+    "publicKey": "3WmY5os5p8uYrEHZ31RYZnQTunheRqBacPBUaXgwyxsj",
+    "amount": 10000
+  },
+  {
+    "publicKey": "3goc1LCrTqGvnnwwAK7etMbQpSGJkLRC4tUVMFDbBJHW",
+    "amount": 10000
+  },
+  {
+    "publicKey": "DyLz9qoSiKE1XxzbpM3TRdF9VafUQZyYtNDz5Zw6GUqd",
+    "amount": 10000
+  },
+  {
+    "publicKey": "41CtVaMRAHHdBoc7efgFuK46ejvdLycVDAcXU6cUtR8s",
+    "amount": 9914.959927
+  },
+  {
+    "publicKey": "CrQduMjH1jyBg1XsdQ4Fc1H1Rq69dbbuTGE71h6Phw4o",
+    "amount": 9882.934518
+  },
+  {
+    "publicKey": "Hg5fGqWXP7EnvtMLG8Fcfc7sp1sGfRSN4zF3faQFZTZR",
+    "amount": 9857.629285
+  },
+  {
+    "publicKey": "7k4xwruyqwuBYr9pJ7gsWe65mPtYw41adyKrGVvNdXNW",
+    "amount": 9777.727926
+  },
+  {
+    "publicKey": "EzGoVZUmSmRargGZS4Ni1qvtnT2Ze9DrjK6sLNUJdimR",
+    "amount": 9720.135187
+  },
+  {
+    "publicKey": "9TyrFV2Rj11kEY4RbUNQ3tUcujm2r4yvhcyNBmSC4nHQ",
+    "amount": 9712.292236
+  },
+  {
+    "publicKey": "7g3yMUMynPriP3pciHAMF7PUNYq1nM8TofdiRioidDGj",
+    "amount": 9702.078481
+  },
+  {
+    "publicKey": "F3r4LTyJLtbCN45qfJs9cvcXZkMgojhWk3b5A5ErmsSC",
+    "amount": 9628.177821
+  },
+  {
+    "publicKey": "dEVQCaEDT8GNSQGi3QbHjQNLZzJKaUAm3MjuMyiQxG6",
+    "amount": 9603.152346
+  },
+  {
+    "publicKey": "BTNkBRDLXSgSZsFxohmMhcvx4HBsRmVNSCEp8D1uNasx",
+    "amount": 9555.904421
+  },
+  {
+    "publicKey": "ByFdp49StktFwaruiBm55eRUPxjEpR9jtdyTsLm3GxQ7",
+    "amount": 9531.503637
+  },
+  {
+    "publicKey": "CeVwnYeUr471uF3y4wtYEudy6LtGTpCidZdnknmaebUe",
+    "amount": 9491.413586
+  },
+  {
+    "publicKey": "CFoq28Bs5cR5qGbW9YtyVxEZ4eMLbPYtEmSR94c63yQC",
+    "amount": 9441.645344
+  },
+  {
+    "publicKey": "538uXvp7mUWvmBXsKs1bXqYKdAC9xRHw8Ngczej5fHrc",
+    "amount": 9385.533273
+  },
+  {
+    "publicKey": "311e75bA6Gp9foZdFL3epUcDHgmT6zsJ7a8vntSZXxCW",
+    "amount": 9346.28365
+  },
+  {
+    "publicKey": "9oKjWYbqtG8cqW3AhauaxiCFPRogdDv8mSzRZTaUrLMo",
+    "amount": 8794.608806
+  },
+  {
+    "publicKey": "H9S9aCEBTUeQEraJNCEDcBSQAUB7ify5XnM1yHCej2YB",
+    "amount": 8630.967732
+  },
+  {
+    "publicKey": "99h8z3pBTyHUQeMpFJyUe4Ybs66vqgAfAVtk9AKxTxY1",
+    "amount": 8351.194248
+  },
+  {
+    "publicKey": "CjRWprWT4yBDeDsZSqbJjxQpWxxR77ZaGewT7bitmWTV",
+    "amount": 8329.215628
+  },
+  {
+    "publicKey": "7TgNXHRMBwT29vGj3F3T2TyAw1aTuexmdwrtzT9L9pJK",
+    "amount": 8318.603466
+  },
+  {
+    "publicKey": "4u16Q5SPYUuiNrqk3atUePGgrqetD6A71GGNxnCHB54K",
+    "amount": 8309.727203
+  },
+  {
+    "publicKey": "CNmKXdJZ5hN2MLbn5qQaXMVv8L3jXyECWMJvyRtNZJkm",
+    "amount": 8300.237215
+  },
+  {
+    "publicKey": "2iDB42Z6m2hdtAXJD19JJC26GpruYMeE7PTj3nmQJKD1",
+    "amount": 8254.118856
+  },
+  {
+    "publicKey": "2orisML8JEskYnT4p59kMRrTtbu1ng9mmCizKYTCz2mv",
+    "amount": 8176.805049
+  },
+  {
+    "publicKey": "8oYuRqC34wXBb9hXZrSGqrxLcT7ovouw8mqBT4h9MyvK",
+    "amount": 8176.096684
+  },
+  {
+    "publicKey": "EQscQ5VjaNpaPpwPbG4ipecxdZRMp2gMRg8aJqio8gpK",
+    "amount": 8124.634786
+  },
+  {
+    "publicKey": "B84DFjKVuRg5QgednwEvxsToh4GXMpuWFM1czssmr4Jp",
+    "amount": 8073.077487
+  },
+  {
+    "publicKey": "D9GYt4W7VvteKCSvTgyjzuiBJyTy94Kmr6YiC9fbxGjW",
+    "amount": 8022.580289
+  },
+  {
+    "publicKey": "Bxr7mhDzpkhocagCCiNSFchacqnvwfnaDgkFn3RBV3ZZ",
+    "amount": 7997.056355
+  },
+  {
+    "publicKey": "CJYqNH3CahCwsU1zynydDa8oxgEfVo9d3DwsXvMxGi32",
+    "amount": 7960.417605
+  },
+  {
+    "publicKey": "CpoD6tWAsMDeyvVG2q2rD1JbDY6d4AujnvAn2NdrhZV2",
+    "amount": 7957.105797
+  },
+  {
+    "publicKey": "2pzJpFYNhK9xVhAEz5izXRPbn9Wge52qPPopqTv66ShQ",
+    "amount": 7937.747776
+  },
+  {
+    "publicKey": "EC6Tvvhox6ULgkY86R2RodZcyWNCFwh8fYpEhVgKKzWV",
+    "amount": 7929.551454
+  },
+  {
+    "publicKey": "5PgN11H7MUvrKWQX71Sfb2YwVULGJM5z5pc7rw3sHEpS",
+    "amount": 7924.552254
+  },
+  {
+    "publicKey": "6M8wVvVbfo5itKeAuNWfPSZtLbZnj9LwR2UqUHtac1DQ",
+    "amount": 7915.006935
+  },
+  {
+    "publicKey": "4szTxL9sjuLbb2yDfBnuJXquefPQc4tLabGZBvMJauyd",
+    "amount": 7903.783264
+  },
+  {
+    "publicKey": "A665jXP6emaHw5jY95XH2gTfEaKfPbgS8anWYhevqAe7",
+    "amount": 7891.864573
+  },
+  {
+    "publicKey": "5KVpZbhWYtHURGJaRJNBmJk2cdABMxSRdwak7jqsd1eH",
+    "amount": 7817.230178
+  },
+  {
+    "publicKey": "R7yuG6Yqbspxg2HZngKwz8eWV58PVxb8d4Gi2QeJjvW",
+    "amount": 7800.944809
+  },
+  {
+    "publicKey": "5GouSGGB3sSLpQtCguzrh9ohaBpFdjuMgnKLQ1MQj85M",
+    "amount": 7788.07969
+  },
+  {
+    "publicKey": "DU4BKL6KsdqTA77YXPHp86XzVyD1n51Ang3R45aFWbog",
+    "amount": 7781.118244
+  },
+  {
+    "publicKey": "3w6oq289xioxASwFvCuavKjMifCkke3fDyQFJxqZvKg9",
+    "amount": 7775.623401
+  },
+  {
+    "publicKey": "2KhCH9W1LBvkzan4xyFspEsBxon2BgZ3P4qBSRTsFvTi",
+    "amount": 7706.413523
+  },
+  {
+    "publicKey": "69KD3gWUxxBrFbuTbha4DmYAKyKkaAEeGaz5QgxEo15Y",
+    "amount": 7675.364968
+  },
+  {
+    "publicKey": "3q5EUVrvbKbJNLVx63bJFLE2tMAxaeyDhJ4mQASjbiTX",
+    "amount": 7662.028385
+  },
+  {
+    "publicKey": "9gJ7sS7kMJo1QTZE5JNFqaY2pNjCrZzqsYadxhXsR5qv",
+    "amount": 7659.881981
+  },
+  {
+    "publicKey": "D9pkqKUVDmkpDkjmd6TqpNBgvBDEo9umRpA9GRBfeWAp",
+    "amount": 7651.729875
+  },
+  {
+    "publicKey": "42AHDi96z6RXdBzPhAjtzp6LNiHr7jqtadTkfLpp7vok",
+    "amount": 7605.419106
+  },
+  {
+    "publicKey": "5ASDn4EEmxfHZfnEMigjHuj4jAdEssurJaXnjhbLuGtm",
+    "amount": 7570.107912
+  },
+  {
+    "publicKey": "7jwYayGHy7UMWVAxomJy5EnZJqLXNLpFpaejP1pjEsKK",
+    "amount": 7486.666625
+  },
+  {
+    "publicKey": "BXXSTKr9VxafBAHTxfBaf78BkyEJujPrKWJnakf1J9Cg",
+    "amount": 7455.501994
+  },
+  {
+    "publicKey": "6sYngYiYdMDkNHkHDsXGtEo7WfvndnhVuTDBsLJqbFhn",
+    "amount": 7398.036878
+  },
+  {
+    "publicKey": "4tVVkTFHvC7d3dbDpi5xtX429X55WXdACVHbDYbPX6zf",
+    "amount": 7377.64015
+  },
+  {
+    "publicKey": "7GpBLSrtezdQ9ocAkQDXPx1GHkFWTyS13h5d9bQgpkGx",
+    "amount": 7370.566491
+  },
+  {
+    "publicKey": "EZMDA3MQ5nnQJkMgqJrEUxs7mP335d7RizfpEXwMz7d5",
+    "amount": 7328.476667
+  },
+  {
+    "publicKey": "xDNsxavBSprPFa9CuUdorJQZ1WWuaHsEQd2bgxXnWY6",
+    "amount": 7322.895515
+  },
+  {
+    "publicKey": "HaiwSgBCx1AUdjTXCx25k9bNpfkRH7YFQBGZzqTdUwvT",
+    "amount": 7315.855779
+  },
+  {
+    "publicKey": "Fu9PBpJ1nGJJYHiJzMGNv8te8B6qhM745aDP6kBMr5ja",
+    "amount": 7273.81216
+  },
+  {
+    "publicKey": "5vwQiye6NZuXzpRkk4AcfvjnUFd9gGBRHsHxLKujfPqu",
+    "amount": 7270.752784
+  },
+  {
+    "publicKey": "6XoyS7yKSGo3gEVAKr1juWXrUhHuuvowMnECsHvVSRrY",
+    "amount": 7223.719525
+  },
+  {
+    "publicKey": "LxDyJdxMivZ9Ec5XLrYmTArSkGcDQ1vAzfuEb5bcYd4",
+    "amount": 7217.785054
+  },
+  {
+    "publicKey": "HKKXGpEeoHjJaWKfnifp2mmY6Uys4DWRUoXUwbGPnWnZ",
+    "amount": 7214.863384
+  },
+  {
+    "publicKey": "AVha561DpTXeizaJaeSWSk24jbotDZqR6FvkE6SEHnjB",
+    "amount": 7183.508168
+  },
+  {
+    "publicKey": "B8qQN3J1SrdJPUpVjnZST56fCMxzYVzSE1QvfjrW6YHC",
+    "amount": 7172.289019
+  },
+  {
+    "publicKey": "zhUh3jQ93MtNAroZiHj9pDXufs4kA61bHKkqvW7u3MC",
+    "amount": 7133.791649
+  },
+  {
+    "publicKey": "9hCWw6kqHKjanB49qzi81szdb9wA9SYJt5qRqT4Ekk3s",
+    "amount": 7099.97082
+  },
+  {
+    "publicKey": "BhEVKTJSjXcgKSEYZNqn3iaC9S2DF3AJKRzdiPnBiPao",
+    "amount": 7094.899046
+  },
+  {
+    "publicKey": "4LSB8oAYUHZZnDZThpx9pX8N6xXQZAXZjbF6vedN1H7o",
+    "amount": 7079.354041
+  },
+  {
+    "publicKey": "2eV98ax9Qbf2h6s8bAjYpHU8f4WkhAAuAWPvDcZtaNzj",
+    "amount": 7013.98046
+  },
+  {
+    "publicKey": "DNsqHQz3gGP42XSh3v51fiWyVpidVRpTVL5comSotivh",
+    "amount": 6966.125612
+  },
+  {
+    "publicKey": "3CgvbiM3op4vjrrjH2zcrQUwsqh5veNVRjFCB9N6sRoD",
+    "amount": 6922.909011
+  },
+  {
+    "publicKey": "E71H25gSvCf68McJBgoG24doEk2GnqzkHdKFt4y6DVFM",
+    "amount": 6896.166318
+  },
+  {
+    "publicKey": "612F38uFeCVN6SmvgsShcWqBz5BtiWgCgRkgMTitrgJQ",
+    "amount": 6870.16186
+  },
+  {
+    "publicKey": "375AKytrD31hqJpVbsGKsPoFXwdaTY3x7E4u1Jr9tPrW",
+    "amount": 6863.123962
+  },
+  {
+    "publicKey": "3gQRWstzcjwBaBFoiMNgRYcF2HxJSVh4xC9pUgA1WhHm",
+    "amount": 6862.805984
+  },
+  {
+    "publicKey": "G6znfBkT7RceiEgzoqgf2ygo1FvowfmifpzSH7DGSkQH",
+    "amount": 6831.059386
+  },
+  {
+    "publicKey": "FZaU4rTE11oBkYQDVp7i8T9g53FaPN8aKSAoM4B7LjmS",
+    "amount": 6748.342318
+  },
+  {
+    "publicKey": "Fi1cgbsGry4CTVHpNrUCZA7RJGeUmrWxJcd98xNoN6Xg",
+    "amount": 6686.137871
+  },
+  {
+    "publicKey": "4FS7iS8e4mqM2qQXbuCwUbVf9eR3T9F9ZeGj4NoxyAW4",
+    "amount": 6545.377505
+  },
+  {
+    "publicKey": "BAHsaEGdRLzkHEWUgtNnpRZpBRzbHwGZ6oSDXqXcywWJ",
+    "amount": 6509.728916
+  },
+  {
+    "publicKey": "2F3HuQg2JRDyRBXKFZ7sEm12iR1YwMLK8SNfXikhVTa6",
+    "amount": 6426.017438
+  },
+  {
+    "publicKey": "566UupDX9XGFsKXg7iecJzd4vjNgEMWzTv894PsWj2ms",
+    "amount": 6414.768265
+  },
+  {
+    "publicKey": "D2dAFXMsJ1jRS4KsoNYS3fNjrps2LKKZFLoyJ4PXcDWa",
+    "amount": 6401.856063
+  },
+  {
+    "publicKey": "DFEj2SZpEZxeDdXdvKwkqjoCYzWNic9zAx4vdZvGsw7D",
+    "amount": 6378.935369
+  },
+  {
+    "publicKey": "CA8ZjbDY2VCQhgA2nGhY9MHNttWmeYRtJN9cmEuGFgx1",
+    "amount": 6340.213742
+  },
+  {
+    "publicKey": "5euAUZMGrGXjeEAzPtdoSZfGVJ7zJoZ6udBfVdmvkHDa",
+    "amount": 6322.625181
+  },
+  {
+    "publicKey": "AAXDipmdtvrY5A69Fkp2xWELK7pbSkTgBq2ndCu7TJTf",
+    "amount": 6317.664586
+  },
+  {
+    "publicKey": "8NHbNG9nvZCxBGhSrBsDovd2C2w8F7HKKVBbF4qJfY8s",
+    "amount": 6300.435401
+  },
+  {
+    "publicKey": "4KQNYD5qfMZSYAhXMBRn8C8k7XdFdbwEZsGwKZReLeyu",
+    "amount": 6157.847006
+  },
+  {
+    "publicKey": "8CdLjcytVNi83ZXTiV6smfYvbQwtcA797Um9abL2aaen",
+    "amount": 6138.371237
+  },
+  {
+    "publicKey": "Bh87qWYh4KnWUMHpjYcJf9dwfeBnGU5dK8GrZ62Ei6yA",
+    "amount": 6117.00461
+  },
+  {
+    "publicKey": "HFe3vu1eYpy5TDwNvXFQz1UVWmGLvad4URMNu4HdCBhS",
+    "amount": 6095.237987
+  },
+  {
+    "publicKey": "A5WLnUQrTCYMracUVvDXKt1kxTWVdmyvB2DBENWGKsbq",
+    "amount": 5966.631701
+  },
+  {
+    "publicKey": "9C3X5AnKvAX3YAsQiT2Qs33YGZbs3cG1eR5VCDMMYyfY",
+    "amount": 5949.998495
+  },
+  {
+    "publicKey": "8JP4XVy5rknu8JG36hD5JYdF4fpmNzGG9qLosc2uBycj",
+    "amount": 5914.573235
+  },
+  {
+    "publicKey": "73qp6PU7gdN7yGg2zZWxbVCpMfoDHZxVnpNf3PnAmYdp",
+    "amount": 5888.387998
+  },
+  {
+    "publicKey": "DKLU2vYuqP2fjs85cjkpzbdFFN8SsEx49s7mmtMDTus8",
+    "amount": 5793.461467
+  },
+  {
+    "publicKey": "5uQ7v9LrwFu58WaqbWhidiybsvV5k7XQJVEYK46qeEwU",
+    "amount": 5744.721359
+  },
+  {
+    "publicKey": "79pTRvE8iYUjM5W5PuKuZzuVwyodW3rWheLfLthL7YPk",
+    "amount": 5742.762111
+  },
+  {
+    "publicKey": "8qe6HLt2EKUWM2JSikf8m5ESUFhf6wRE8ut84nspF5i3",
+    "amount": 5733.969557
+  },
+  {
+    "publicKey": "F9PENCxTRNRiidHtc3dH7Zek4kDH4Cah6uCvaGdp4WSV",
+    "amount": 5664.57403
+  },
+  {
+    "publicKey": "HgTupMyaxUsARd4VdM8hXksQzGe5ANzEWQK419fX7Yfc",
+    "amount": 5641.032852
+  },
+  {
+    "publicKey": "ENWCVMxfCMUFVG1z1XnnVWWMmon9t4KaRZ9egNex8umb",
+    "amount": 5587.071814
+  },
+  {
+    "publicKey": "EUM1SdXDaeKiNXEnPgeqYbpJKZd6JvDEwmm1xMT1yfLe",
+    "amount": 5543.066542
+  },
+  {
+    "publicKey": "GKXq7jr2WehWpYnrAAJN2doEBSLsrS6qpWo9CZKR34Vb",
+    "amount": 5518.76414
+  },
+  {
+    "publicKey": "2BBe4J29TM3xmtMGBtngXBpN1D3yMuXhFjtYguoGYmXL",
+    "amount": 5511.506527
+  },
+  {
+    "publicKey": "AkTgH1uW6J6j6QHmFNGzZuZwwXaHQsPCpHUriED28tRj",
+    "amount": 5511.302556
+  },
+  {
+    "publicKey": "2ZyhKB6gL12nb3bugRfPC7m5FzcJJZsENj7mkWt4rjVh",
+    "amount": 5503.309795
+  },
+  {
+    "publicKey": "EBUw4g4jDMUre8ywwDZdeLoznWJpFHKDXjeRS8TvSEJa",
+    "amount": 5473.974002
+  },
+  {
+    "publicKey": "DvKyCt975H5fEcH4mXMGUcxHxxa6imaq32wNyDHwpQWa",
+    "amount": 5425.351645
+  },
+  {
+    "publicKey": "5pjZpYLRqnZWxGsZu3TQQkbuGuSSg6DfULRJdrmiSmxp",
+    "amount": 5384.914412
+  },
+  {
+    "publicKey": "ETsR5j4HAcYeKr4V1BfR6R7pYPz29bdZaZQCX5ZPcWCW",
+    "amount": 5381.182198
+  },
+  {
+    "publicKey": "J4ktQEc8Tm76L8QDXmAu6UCXmksKuQVsYL9JGLsraRsp",
+    "amount": 5379.174325
+  },
+  {
+    "publicKey": "9eownTkVCoYiRzN9SMyBQth1sG9QVKxuFS6Lx6dzL8Le",
+    "amount": 5376.524562
+  },
+  {
+    "publicKey": "Co4WUEZbH5qyBYptVYYevT9WbaMriYCQ9iHKg3zcA6aL",
+    "amount": 5345.581664
+  },
+  {
+    "publicKey": "AtxJtuU46uie9Wsa3CgQ3CDx8LvzGnQXRuerwvPVAM1j",
+    "amount": 5341.909948
+  },
+  {
+    "publicKey": "5FgaaQf3rLhiVLDWm96xDFZAgR6GUvGEPkyF245FarDX",
+    "amount": 5334.035339
+  },
+  {
+    "publicKey": "HU5317VLEbWV7y3jBEsrtHUBTWT34Xrzxt3yejJaEooD",
+    "amount": 5298.898595
+  },
+  {
+    "publicKey": "H98RqGybyiYiyqTWKZXQiJNFQbaRXEgJ1DDxbaiznfLE",
+    "amount": 5298.809665
+  },
+  {
+    "publicKey": "5tjtm71UMaevHEDRKCc6bAZtRai4BhWrRawRRpcGraq7",
+    "amount": 5288.126813
+  },
+  {
+    "publicKey": "6epyw3YDwMRRWb6YULRK7RdnueDHhSjMpwYCpMfp1kxY",
+    "amount": 5252.151465
+  },
+  {
+    "publicKey": "GFtaT8pFLN1NetTU8nYbFU5AsHGr4v2K4ozsCawFmEiS",
+    "amount": 5241.100963
+  },
+  {
+    "publicKey": "2wEZazDLkovQDhQxRo49Gsh1FXoM9m9U9ScApUpgJYU7",
+    "amount": 5208.280763
+  },
+  {
+    "publicKey": "taWzp2DckpRQ84RcrPGWG1stu6zyvWgQeKmK1FWN1TU",
+    "amount": 5189.399023
+  },
+  {
+    "publicKey": "5tGNDyRjvdbcf35YvhHUhKEc6FH9mG2en2gHawvknm1B",
+    "amount": 5142.27795
+  },
+  {
+    "publicKey": "A3ZQV8dUhb4QsnM2pQKGMKcZw2kg5NxL2dKMVPcP2JC2",
+    "amount": 5133.20285
+  },
+  {
+    "publicKey": "69yhtoJR4JYPPABZcSNkzuqbaFbwHsCkja1sP1Q2aVT5",
+    "amount": 5029.663908
+  },
+  {
+    "publicKey": "H1dNrS8BciFxE8KceX8QYGmzfu28X5gKiuqmApYo4QA4",
+    "amount": 5015.676259
+  },
+  {
+    "publicKey": "FD8bBY4LBe4VHgkum67N2BJ7qcQGp8dRWya5wowzmDFV",
+    "amount": 4892.946181
+  },
+  {
+    "publicKey": "BwMfJu1izS3MPsJ9P8p7qjBBrKSzgJ3qAu8XgATWXyC",
+    "amount": 4888.652486
+  },
+  {
+    "publicKey": "7JJJd83WYxnyJjj7e7Y6QCX7UQFBV2naxFJUQLV1Ykq9",
+    "amount": 4859.565945
+  },
+  {
+    "publicKey": "4WJowZ6ochA86aiDeBD3gEMGv1NmXcP4poV9n5ywZEPo",
+    "amount": 4794.301735
+  },
+  {
+    "publicKey": "CzqhFd7SWngfen5X1LzEoz4vJr14NzncDxJdsAnzYki3",
+    "amount": 4792.593779
+  },
+  {
+    "publicKey": "6rx9uan9MQMy2YdDwk3EiEVXmkoMi44cYoQ1F3te2wyV",
+    "amount": 4785.649019
+  },
+  {
+    "publicKey": "36X2qQ5p7bQF5yfuZYFywsRbmfvdsm1ZBunkjyDFFfB4",
+    "amount": 4784.086535
+  },
+  {
+    "publicKey": "3LYcdotT8XbZUvVWVwxPMJWNdtaZF19oVDAgyLZeP1r1",
+    "amount": 4770.775723
+  },
+  {
+    "publicKey": "4BzZX5JkR5g8v8iTfEipppKajgMovGdnZ6JdChPmDJYX",
+    "amount": 4742.391338
+  },
+  {
+    "publicKey": "4ba3heQiueK5oR15xdcLtoCoCXkcNFAS4ULtZUhqqEo3",
+    "amount": 4714.217446
+  },
+  {
+    "publicKey": "BZg716mktS583k5Pp5B9JFWiQbGweZQ8e8Nx51RQV5dG",
+    "amount": 4693.864891
+  },
+  {
+    "publicKey": "448F4FZWKQDwERVLCzCEiYh3ythuAt3Cv6ZF7XbWZCVV",
+    "amount": 4685.445325
+  },
+  {
+    "publicKey": "BPrTfAACK5e1Pjvd2WuJqz9rQvXxwp9WVJH3jTsc3iiZ",
+    "amount": 4678.476959
+  },
+  {
+    "publicKey": "HSeXfkBQumyW6t6Pv4i9kRbb1riGMVc3XS7bx1YoBZ1Q",
+    "amount": 4634.275607
+  },
+  {
+    "publicKey": "FT98iNRUGtJqmZF85as5FZZKm2jvZ6GNNB7CE1Lywojg",
+    "amount": 4617.784926
+  },
+  {
+    "publicKey": "39zSz6zRiM4ZoQtcBAss2Yr8z6b54Wr6kMaUemASWTtK",
+    "amount": 4592.091007
+  },
+  {
+    "publicKey": "7YUaoSxbb76mk3BioifA1BWZxATP9fK7qKPRffvMG2HQ",
+    "amount": 4591.173105
+  },
+  {
+    "publicKey": "Bgf42v7HpW3kNWkRYSGseAt56h6kwvNjANSadgDT7ftZ",
+    "amount": 4590.793
+  },
+  {
+    "publicKey": "2xehiRcnWMMBa6rRbPLrbCjr6iymt2XcEFEKjr6JPvYL",
+    "amount": 4586.390211
+  },
+  {
+    "publicKey": "GNLQB8ECBMFMN5iKJFjbtpRYGYqdXHKfD9BDDmttgGzw",
+    "amount": 4585.059741
+  },
+  {
+    "publicKey": "4sr8c6nxETNLLMfLcyiqxRuLCxnLfz4eE899rgRGu6Et",
+    "amount": 4557.890256
+  },
+  {
+    "publicKey": "5XS1GvEMJmvDTXRnC9uAMLENJtCMJHn1xPqnT7d9qNYQ",
+    "amount": 4534.857158
+  },
+  {
+    "publicKey": "EyyVikXyrMCBD6TjBXddhchUYdUCarYgabhPo5Fhz3ZF",
+    "amount": 4518.649767
+  },
+  {
+    "publicKey": "CDzoRGLPuZ4CHiAkStc31rZWazB5kacwr3vzKqBPJ3ss",
+    "amount": 4508.804601
+  },
+  {
+    "publicKey": "6jEZe4WUEzYmEEA6cYiHjMxHsgSQPx7sQDWLMC5X2tdx",
+    "amount": 4470.884189
+  },
+  {
+    "publicKey": "Fit3kJrGtrUfJT4hLnVdhsbcGC1d5Vu4vR8z6qHFCXsm",
+    "amount": 4451.059958
+  },
+  {
+    "publicKey": "AreW3aHRMFDYw3AEmMzphsQRuG9REdJQEEWh9HAREpoJ",
+    "amount": 4439.292295
+  },
+  {
+    "publicKey": "DznKHfqvXKphbVdteGQ637Rrh3yZWmwTTmerW2aLUvPb",
+    "amount": 4418.462252
+  },
+  {
+    "publicKey": "974UF3e1GzCZgGHqRe9NtBeGfRpfzg3ZaP53gjsjBkLi",
+    "amount": 4413.848576
+  },
+  {
+    "publicKey": "9nCK9yo3evwdZVeATrkT9HpU2KGugxkKJD3X3FPaQYff",
+    "amount": 4404.16319
+  },
+  {
+    "publicKey": "4QECRXhyd4Nwzib9y5NFznw8MHmGEvf4KBQFRqrGzC56",
+    "amount": 4386.262347
+  },
+  {
+    "publicKey": "9cu1Y2o1cB8V7GeobirKfxXfJTfAakfWutdxqmX6pBj",
+    "amount": 4364.150398
+  },
+  {
+    "publicKey": "Exwd3o3C3THSyN6jaaXRpiXtX8r9AmHmDeh5SA4rYZyM",
+    "amount": 4317.82612
+  },
+  {
+    "publicKey": "E8e2qWYE6tdfzJR4hgza292CnmJw3LJrs7vu43bfBCd6",
+    "amount": 4311.961346
+  },
+  {
+    "publicKey": "8S4sHGSZuixg8StTLgYsHKatRpRijs5P6sjeH92amHzv",
+    "amount": 4283.361031
+  },
+  {
+    "publicKey": "G4yo11BkgmvvyyXKyaytP31yCPM1wgHDzwUUF7mWVa7C",
+    "amount": 4275.903718
+  },
+  {
+    "publicKey": "GUFTbzLFMjetn8YpmVxv3kiD6PJkgAJQhdQrTPycM3aP",
+    "amount": 4262.859849
+  },
+  {
+    "publicKey": "8x2MqoMV95Zx9Ykx3aWDVSnwyoQRWDk79L2N5v1k5gVx",
+    "amount": 4250.315154
+  },
+  {
+    "publicKey": "W5yvogm6jo8VjRPhAhdN5LtSKyvpHTS3i1sVENjpN6h",
+    "amount": 4246.76458
+  },
+  {
+    "publicKey": "5bBfFoyn47W4UtnTzKFQLZ3K3Y5YBupJZuPMryLffRCB",
+    "amount": 4174.660463
+  },
+  {
+    "publicKey": "8o8SGH3GQyRmqumTsXLdXrL7YjF49RQFMvLQ67kKAf5x",
+    "amount": 4153.044136
+  },
+  {
+    "publicKey": "DQVymp37GbYmQ1jjcJbgZiiEPHg5pExTEd2QSS4PFDUN",
+    "amount": 4129.123835
+  },
+  {
+    "publicKey": "2SSPF6QcaMsZDSmWT1PWLuPM3oiMxyBLeprpWcBRbB43",
+    "amount": 4122.130222
+  },
+  {
+    "publicKey": "7ekYCpiPG8P7rgVz7shUVAwuLDPaFdLAQgJ7J3cqmkBq",
+    "amount": 4113.485768
+  },
+  {
+    "publicKey": "A74azVBhKjdciifdyb4k4ZaL9HstxvVLAtNFt41gFcSJ",
+    "amount": 4107.891356
+  },
+  {
+    "publicKey": "jtV9xeymWLz5mDcnfYdWQrgXHEgMpLH2LJi7F8LU3cU",
+    "amount": 4097.253936
+  },
+  {
+    "publicKey": "9VsfYXqRXNdumtJuWANfFCywLP2kdF68tyadvpuGtvom",
+    "amount": 4083.96236
+  },
+  {
+    "publicKey": "5YFjgHtoXNcjB2QcF1e2D7HFttXFeHaYRHdiqkrygPz",
+    "amount": 4081.182509
+  },
+  {
+    "publicKey": "GrNJ6zvqqTig2udZDPnqMykdXQr6xD8FgzSUVhnat2xu",
+    "amount": 4069.609786
+  },
+  {
+    "publicKey": "HEQdsuw3iM5kKEZWtqvRgVcniSpVo5BrrR8ua5XxinnG",
+    "amount": 4069.399845
+  },
+  {
+    "publicKey": "BkPvEfJFziW43fojQtEN19vv6w6s5HpxHnrpYdoqr9HN",
+    "amount": 4053.708836
+  },
+  {
+    "publicKey": "HtzpqLjph4j4g3x4aRFf2iEoSUaZ9zqULu9LEXSLYwkN",
+    "amount": 4045.745403
+  },
+  {
+    "publicKey": "Ggt4tkxjtH9ez5DoTmyrnsBW8ZMbKNzsGqW9NtSGkRc5",
+    "amount": 4015.242434
+  },
+  {
+    "publicKey": "49VsNfvijivKSKCoixGSitmqBA8nNRpNkSjPL8T1UEW8",
+    "amount": 3975.948935
+  },
+  {
+    "publicKey": "FqUFF1dzD53t85eDkFsq42FLjbKnebfAET2UYSjmxwyH",
+    "amount": 3966.992868
+  },
+  {
+    "publicKey": "5xrBEPNrpzxoz8APqzv2mEbtbU9fZB52HA5eXh5279yg",
+    "amount": 3964.379876
+  },
+  {
+    "publicKey": "BepDH2vwkT6tprCFyXbjWroyinRJpCCGKZvWjDvBXPZc",
+    "amount": 3954.685142
+  },
+  {
+    "publicKey": "8JVkgroRnACcxKdpPuRaphaJnEHnxveGhtDWcoaKxzSP",
+    "amount": 3933.840486
+  },
+  {
+    "publicKey": "4iwchaAmUDwm56VgV57z9E91KJT79qyTm4RAvXYJ99Sq",
+    "amount": 3933.700604
+  },
+  {
+    "publicKey": "CpJLEKYSeqH8gu8frqerTZEAAXSBMMVHyXynTsaZ4GDy",
+    "amount": 3930.839429
+  },
+  {
+    "publicKey": "6tn682UgPPRgHsFHt8whQ5TL5W7jvLo14e2JrPkWvELY",
+    "amount": 3892.956003
+  },
+  {
+    "publicKey": "BaqsuhTCcUGMUkQFBykUamD3i7dWnFUMgpWX5UiaegK4",
+    "amount": 3874.050268
+  },
+  {
+    "publicKey": "BEgkmxzWGxH8CFDm1KvDwbsYtjhtWNnowuViirYLM8gf",
+    "amount": 3869.934733
+  },
+  {
+    "publicKey": "2np1L9Ca2hPm1EDZxpJuZHCryjj5iAYDHddgNT9Vf2kY",
+    "amount": 3844.060437
+  },
+  {
+    "publicKey": "Eom3eiqS3izB7ZLsPWbhoqF1pbu8iFha1AY1ntDk3w3y",
+    "amount": 3826.801392
+  },
+  {
+    "publicKey": "79rKarQ6hZmrEjVnwypCqnY3q9w6G1FY7BuSJBRxfLPT",
+    "amount": 3826.401168
+  },
+  {
+    "publicKey": "CdjJC3KTZHpQFHaka2ECW96Mx4HgmiueFEDvo6Q4ov5t",
+    "amount": 3824.363576
+  },
+  {
+    "publicKey": "7xtzvLRXHSZ6ffCwdtfijAqGyQ4xf9MHqyGhWXzPF9W6",
+    "amount": 3797.48913
+  },
+  {
+    "publicKey": "7bB7QGFHU8QfUY8yhrjZAdn65sS6EcD21SiA84fTcVsC",
+    "amount": 3792.074904
+  },
+  {
+    "publicKey": "7YaexW9EofPnSkVZQfXmrKqk3ZHaZ7eUbCpgeEg8d7fT",
+    "amount": 3780.621043
+  },
+  {
+    "publicKey": "CLgGwR7AtCT1YnUw4YCQJADWFAie5VrbeK9yzzvzAtJ9",
+    "amount": 3757.378676
+  },
+  {
+    "publicKey": "3xC6D8m5HYca4cyk9Y7UAr96cVDmHziWSpUqmBJ2G7Ht",
+    "amount": 3745.341661
+  },
+  {
+    "publicKey": "E5ASgJomoEnemj1YwY1maajsZv4e2UujcShn6cp4Lxjh",
+    "amount": 3742.338813
+  },
+  {
+    "publicKey": "4E81uYAohAuDXuESX1zQuASZrEULT9A9Nv1KFiixkFy9",
+    "amount": 3739.32197
+  },
+  {
+    "publicKey": "BbiUTrECWqij5SZQ4KXRKoePg6FfKzo63xnuK6bHNKLU",
+    "amount": 3737.554054
+  },
+  {
+    "publicKey": "5KwcBhbZwkaC3Pw8Kx99ykYuKmViY1oBWdKLXu4VQWX9",
+    "amount": 3733.512457
+  },
+  {
+    "publicKey": "81D5MYcpSCx9SR2qyfM9F38kWwGFNVkR529s6Wvk8Lqg",
+    "amount": 3709.088117
+  },
+  {
+    "publicKey": "FpcCz97E9fsfdbEd3EbejqQQ6Xejg4GdsyRWRreLEPEf",
+    "amount": 3678.854377
+  },
+  {
+    "publicKey": "CCUWnBN3XnV5CvHTehLc6yEMqACW677q6gnmaLsme4ke",
+    "amount": 3675.236261
+  },
+  {
+    "publicKey": "6eFDXwVu94cY4jr1SrjzC2fUgJ4FFDSW9Q4Qqnj5qXM6",
+    "amount": 3671.924427
+  },
+  {
+    "publicKey": "7a1CRP72VJW649Xoq3YWa1iFk4pZJ3DjypgyQKbWLMp1",
+    "amount": 3643.823843
+  },
+  {
+    "publicKey": "3Z24MZR8GcbKY1DQLx1cbrYZb2qvz9YCejeNysd1KvCm",
+    "amount": 3641.757475
+  },
+  {
+    "publicKey": "9BWUb81dAJiCzrufxSQzDCgsFhJyseFMrmY1utCeh83j",
+    "amount": 3640.116377
+  },
+  {
+    "publicKey": "Fa7Wp93eB8CBjUQzYSAioG7ckMXmrUUd2gVgyb577RNz",
+    "amount": 3622.317778
+  },
+  {
+    "publicKey": "4LYLdmwLU5GymkffzErKjbcVjSqmp1j7aeFW8cukQwBW",
+    "amount": 3617.419309
+  },
+  {
+    "publicKey": "AG6KfLnscPKsK89E23uF6vtZnDkJx5tS1kN3exrdTDq9",
+    "amount": 3602.001849
+  },
+  {
+    "publicKey": "AZMpAXzXXEnsBa1RyyeQqScwpNA5PSBF31f84FuXSo7w",
+    "amount": 3586.423084
+  },
+  {
+    "publicKey": "GKPwfoXeBibeTU4bGE8THKFo3CKtGAYYrs2bzLv9E1Q3",
+    "amount": 3557.186276
+  },
+  {
+    "publicKey": "632Eon8kqJEW2JiggHQpCPtWNJAiYduyEppqSnCgtrPC",
+    "amount": 3532.238342
+  },
+  {
+    "publicKey": "2PJEMFMgUBTFCnUr2vcZJujsvSCAjsdXHPM1WEHw1YD6",
+    "amount": 3493.835704
+  },
+  {
+    "publicKey": "9cgprM4FjNnM6xVTXo1dkdSQ1ZLZFLabD7rPbsT7DijE",
+    "amount": 3487.705997
+  },
+  {
+    "publicKey": "4QoGxuZLB4iK9i4QaYotDzMcd2UTMZxD7egRC1HSWCsS",
+    "amount": 3484.961902
+  },
+  {
+    "publicKey": "AMCKRhpbizbb8ZiQBaDkzzkVLhNBGfo1RtRBW8LnNt72",
+    "amount": 3473.91006
+  },
+  {
+    "publicKey": "7QuZH55Wd6wqGCJMG8etW2PPau5CRLjztQ6ntzos8uC4",
+    "amount": 3471.464299
+  },
+  {
+    "publicKey": "2zhmsT26h2uHubPTXBSGx8HtdTZbGKQZtDC3N13pv4D9",
+    "amount": 3469.944425
+  },
+  {
+    "publicKey": "FZ4XWjV5z1CkzbCpmobZfApiTbrXmoSyFKZxXBBMUau7",
+    "amount": 3466.251471
+  },
+  {
+    "publicKey": "FEw9ULUTstFJet7dwcHcPqfuAGaszGRgwtoYwQy1vhZ1",
+    "amount": 3452.300088
+  },
+  {
+    "publicKey": "6v9ypFCcXggMqg7eujAaiKcNLBBEKEy7hp7NaEUp532y",
+    "amount": 3406.211526
+  },
+  {
+    "publicKey": "SbfkaRzboK6jhbiY6XyAMCbwPM4A46V1heCFnSb4Hsh",
+    "amount": 3394.187139
+  },
+  {
+    "publicKey": "BnJWA7PoJaxL4XL7kmrZ7fZGvq13A8W23ieTxMEn22mb",
+    "amount": 3393.680982
+  },
+  {
+    "publicKey": "9yiDBetTSWHrSjgA4a3rMmXMBbn9YDQipt6ZeogDpZsR",
+    "amount": 3391.970529
+  },
+  {
+    "publicKey": "7A8WrcxzZ7oDzaFkg1jNNNbr2gpEPavqsKzMd3V4ZvQw",
+    "amount": 3356.039311
+  },
+  {
+    "publicKey": "C8s3xtfhJroStGPmrY31fA2o8d591hF8WQp2LE8RmWhc",
+    "amount": 3336.896288
+  },
+  {
+    "publicKey": "DAJsL7tj1uBHibcd6G7hqKQvqYi7rJB1vTzMkKvrc6Ek",
+    "amount": 3249.940745
+  },
+  {
+    "publicKey": "Ef7skHqD9xzTt6uTaihsNVxnEkUYv3F1nDTiZr3d5PJv",
+    "amount": 3219.486165
+  },
+  {
+    "publicKey": "41t5JHgh9EqUCi4vYPsrBtT78BXsWz2LxUaeusmBiY44",
+    "amount": 3198.854103
+  },
+  {
+    "publicKey": "GgEJQb7t6siWJhh7oEA7xCyw14xTRDjPiPbkGDQTHwZ5",
+    "amount": 3197.247787
+  },
+  {
+    "publicKey": "2723DNmSExwuKC4MuuaSCAHGKA3GGcdyj7E3b9yLYCV4",
+    "amount": 3195.026489
+  },
+  {
+    "publicKey": "3R381FTeBfFLUTKGT5Nrj32YNTNhztEB9h7H6YVL2bg8",
+    "amount": 3171.584135
+  },
+  {
+    "publicKey": "CpghirE2CMYicYWVPBdJHF16sLXCRLMjdLF7GsbdNsbU",
+    "amount": 3171.189509
+  },
+  {
+    "publicKey": "8ZwfVDi4LoLZjhpa1P9RUYKiuVUt74Nin5y9sYjY9LUN",
+    "amount": 3168.361116
+  },
+  {
+    "publicKey": "8SEgG1RqQEmAyuZ7EHtTeUqV1yvFLgBymPZQZU676M7v",
+    "amount": 3161.341837
+  },
+  {
+    "publicKey": "3bMuGS9xuWRuU6d6vF9eLDusLYTid8iFVggZF9tynhkG",
+    "amount": 3149.040685
+  },
+  {
+    "publicKey": "4urqF8iemgU1g3u9BzeQKkxn3ZzrDykPXXfuGSY8N5cj",
+    "amount": 3139.065328
+  },
+  {
+    "publicKey": "BT2KGD66QwXZWjjFV2p5Ybk35zbJ9Q7GTUC78TY4s6Cp",
+    "amount": 3124.944362
+  },
+  {
+    "publicKey": "8ogkdTuPeRyiUQwtxs5dbFpdRajqUCguoEcYa7UHv4k4",
+    "amount": 3123.937909
+  },
+  {
+    "publicKey": "4E9vog5ccnC34PmYpR5kNAtndfC4HDhDjfh4THn4F3Hj",
+    "amount": 3120.972434
+  },
+  {
+    "publicKey": "9aMKAqcoRtcyAGWQR4yaywaW56kMkeqcpTB36GNmg9wn",
+    "amount": 3101.233178
+  },
+  {
+    "publicKey": "CGHqfiGQPKsrPRECX4iZJYvu2DSVh3xcj3hTNpPTNUXE",
+    "amount": 3090.580307
+  },
+  {
+    "publicKey": "H9vZWP8XM4sZ2LADsfJJun9PLtrcWo2WEJ5v11Hobwro",
+    "amount": 3089.521215
+  },
+  {
+    "publicKey": "EZrfMorebfJLgtXta3vd1Yp2QunSHtrVQhcpo6bHSF8A",
+    "amount": 3087.083725
+  },
+  {
+    "publicKey": "v298QMw7MQbrV6Ns5NFXqjtcxqSAykriLJARgD1ubMZ",
+    "amount": 3074.68036
+  },
+  {
+    "publicKey": "FwAbxSiCd2Wc8j7BeFfwSrnpHWDGmR4xqv6B6bgbwYKs",
+    "amount": 3072.94069
+  },
+  {
+    "publicKey": "9JApihPgc9aW4EeoAZpStnZejcf9GVRLDX1hZAekyEWd",
+    "amount": 3072.695984
+  },
+  {
+    "publicKey": "DyAyyPXtCD7gY1aTmXDjXKKPVPtanj5Mi7umNsNQpr7g",
+    "amount": 3057.716337
+  },
+  {
+    "publicKey": "9emHJB57J2vEckbTxyTfnv6cTxAYV4bSf35n5kRCokLJ",
+    "amount": 3050.811892
+  },
+  {
+    "publicKey": "AGtRvaxSMpashUg8wMVbx7Z6HHZZuUogC93zgcKeCZrg",
+    "amount": 3039.946334
+  },
+  {
+    "publicKey": "HFASoZ8NhHxejv6QGdBq11LMUNbm6p4touChZW8386tL",
+    "amount": 3035.055021
+  },
+  {
+    "publicKey": "8MpttAaeHm5j2oea1dPt6SR8CbNQjSnrv6pj7FB7kYv7",
+    "amount": 3021.115359
+  },
+  {
+    "publicKey": "BYPZNstMoQiVujDAkgQQxKQVK4Ecj8efMAVmgYrVvEnM",
+    "amount": 2982.24058
+  },
+  {
+    "publicKey": "9rPZa5Kz1ZURyiz7zf6XZpui7qxHUZzEUeT3H2p6FTB5",
+    "amount": 2977.519315
+  },
+  {
+    "publicKey": "E2EooHrAgxAu8oCi78DhsxgftQJLSF1EiYwyZnuTfed5",
+    "amount": 2973.388061
+  },
+  {
+    "publicKey": "35QCNAcrPpTypCCAsozgGJpDktoqwxL8WcdfYP1FeBRt",
+    "amount": 2934.050741
+  },
+  {
+    "publicKey": "ALCHbdD48qkXbyCnqdn2io2StgRGGHakar681R6JJmg3",
+    "amount": 2923.467898
+  },
+  {
+    "publicKey": "5cMhvscAsLvmxAubftf6REuV9ayC8rn9MGgp6WWKJ6Zu",
+    "amount": 2918.103265
+  },
+  {
+    "publicKey": "86DFryZZ42GZS3zZiwwG64aWBQCcJGoFy7JDaB2rrVcN",
+    "amount": 2917.340534
+  },
+  {
+    "publicKey": "GNggS1bbZqE37ScE1xbsa5ngjhUffaUTn9zSaRL3xPGQ",
+    "amount": 2913.758688
+  },
+  {
+    "publicKey": "DGVXvzj6bZEL74Qgsx8yHT4PPyUZVbHJVfwFFzXF1CVz",
+    "amount": 2905.730941
+  },
+  {
+    "publicKey": "nSVQs7FdKg4HxXyMnsDsHRotzTSk22BPyFvKxrPoBWa",
+    "amount": 2892.974334
+  },
+  {
+    "publicKey": "AuXMS9g1ynfrLz1y89D7tCVb7QsXzvBJtosVkXdpj4is",
+    "amount": 2873.526057
+  },
+  {
+    "publicKey": "63THgncW9VeJsLwQ4q3ERDvqQExpuxmMAfd5NfgKc8ph",
+    "amount": 2873.009301
+  },
+  {
+    "publicKey": "97KigKMtkhbNbEjBa5H98iFV95wUgd2WvY7qyECQrato",
+    "amount": 2859.062808
+  },
+  {
+    "publicKey": "CJiLa181mHUNbjdMLnYP4oYBAsPAF95WoK9DD7epZQY4",
+    "amount": 2858.490362
+  },
+  {
+    "publicKey": "7UmpMUwaxRDfhkNQGN9gYhVsV3wyiw3HxFCCvbUrrdqr",
+    "amount": 2856.486573
+  },
+  {
+    "publicKey": "AxWdj83AKUU6jKHh3kjMCmXNagN8ZaAPz9XjF3B3SAGG",
+    "amount": 2854.347059
+  },
+  {
+    "publicKey": "6CZyqFtpT4ND6yiPBtaWcCyYhWGLEwsnryxyHmkkcJYa",
+    "amount": 2813.121351
+  },
+  {
+    "publicKey": "287MMCVXofCTP9MqdogWtg4aeuMzKzsH6xjVW8GFPyJ3",
+    "amount": 2804.585347
+  },
+  {
+    "publicKey": "5ywarmPP8Au8HitGu7JT51AdM7ZMCEycsvs9bHAwx5M3",
+    "amount": 2789.436335
+  },
+  {
+    "publicKey": "EHvsVukdZB75wLLR8d11XhsxdVSgRTMcL5bMWwxpxAXm",
+    "amount": 2780.699921
+  },
+  {
+    "publicKey": "2fW7GRvnvM8FX9UjsXF7TcnLL98o1AN3xmVd3SQ8KCUS",
+    "amount": 2766.183137
+  },
+  {
+    "publicKey": "6FjuctDsiMR31R3zWB23EAeAC4Tj3inFEcgkV2BT5hZA",
+    "amount": 2751.051377
+  },
+  {
+    "publicKey": "78kzDgpoCV4jJMpShtQ8madVC7gDKa5NQ5FPJ1z2THzY",
+    "amount": 2736.981976
+  },
+  {
+    "publicKey": "DmHz29ZqNhNRkMHHN91aEf7pQcK29Lq3T3WBGdz6sY7D",
+    "amount": 2728.281716
+  },
+  {
+    "publicKey": "6AmUc8T2wpxK4kGsFR8VXAZjTAgVxvBK8EpXmA6BYSwJ",
+    "amount": 2724.538675
+  },
+  {
+    "publicKey": "8GersQgDHr6FPUtPxJeYtpAycVwrQxPFotAkhH6edkAt",
+    "amount": 2713.138566
+  },
+  {
+    "publicKey": "FxzvsXW3ikEBmkPTs5VbxLZCkJzomJxMbEbZtgGih6vM",
+    "amount": 2708.469683
+  },
+  {
+    "publicKey": "FyZktsekAkebFPFNzfcFuqdWKsenbGB6FtMjE3im4aNE",
+    "amount": 2695.400569
+  },
+  {
+    "publicKey": "5cEL6D5GRe56ikyVFavCUt229sZDmmPDMYBftLCed5f5",
+    "amount": 2691.236967
+  },
+  {
+    "publicKey": "6m41vd36pefV6CWBitob1vrWrLY5HoDw3rG8nGjnQYRi",
+    "amount": 2690.804666
+  },
+  {
+    "publicKey": "B9u51dUsGehUUNjPUWXD23Dn7fxXpnArGRRTKdx8cJHT",
+    "amount": 2680.732562
+  },
+  {
+    "publicKey": "4Er1vw9WYLR2itLztLa1dt8iAoJtNJoR3fmTQ7S5YLbf",
+    "amount": 2674.599648
+  },
+  {
+    "publicKey": "J3ZUrzUJbssRpaTTkKLUgANgQNdpPTnhTofcGrEqHZXK",
+    "amount": 2670.923543
+  },
+  {
+    "publicKey": "AUb54uiqSKEFYE1RZPbRFMBhAbHLLur9BgxvTdkvSPYG",
+    "amount": 2669.03686
+  },
+  {
+    "publicKey": "35jjw7eLDFfv7KApPEo5pXFiZ6UENHV7WN4KeNvWr6Te",
+    "amount": 2659.912563
+  },
+  {
+    "publicKey": "86GRdWjeJDTP63L1uTJJRbDUTGsZeFpxLJCu9tgDpC1q",
+    "amount": 2644.110937
+  },
+  {
+    "publicKey": "J86BWj1NBeDciMunPNzrpf8a1XUTUQ6qQFcykg8rY5ZJ",
+    "amount": 2612.65675
+  },
+  {
+    "publicKey": "78D5oSAKGGcDHHTscprVK6Eie1NteKKsGXHQQ5hrvbMA",
+    "amount": 2587.223151
+  },
+  {
+    "publicKey": "3W3SMMcsQob8vg44UBhv56gXmk5zHpRT4oc5i1pPr7cf",
+    "amount": 2586.361868
+  },
+  {
+    "publicKey": "AUcd1UQamVUM8egCQrKku1S5tv8NKeJ7v8fAECnzNCkc",
+    "amount": 2581.908463
+  },
+  {
+    "publicKey": "5iDeqRn9iLiwvfUnuWt22w2xWrreQ1JCGta3k1rJc9zB",
+    "amount": 2566.614858
+  },
+  {
+    "publicKey": "Fxz2XKbt7aazdLVTJF5bgWqDs6nusjnbBKDjw4dhQGch",
+    "amount": 2561.236687
+  },
+  {
+    "publicKey": "DJCVdb4H6Xs2as8pRwW1BS6t46oVbFuVdx4vy6eC1nFH",
+    "amount": 2553.288267
+  },
+  {
+    "publicKey": "54V3XEMQVE5eDUvW43xFsifn46XzGZLvcrvkfxsQBFeb",
+    "amount": 2522.143112
+  },
+  {
+    "publicKey": "8A44dcDxf6DmenCyWVPXdhkamX1kHKyxZ5P85k6ciwpn",
+    "amount": 2516.209931
+  },
+  {
+    "publicKey": "DWbWba84iouT1aVJ8RP6MY8sGrNTueLNckDDoTcVSgSY",
+    "amount": 2510.195316
+  },
+  {
+    "publicKey": "2tCj6qm2NcqbTaHCknGVJxpjbtK61n5J8XyABiH4AvRT",
+    "amount": 2503.048987
+  },
+  {
+    "publicKey": "8RXA5KaduaZhqojD6syMwoq4oECGThFThpHf4qWwH5hf",
+    "amount": 2502.598068
+  },
+  {
+    "publicKey": "47GyZxQuYHHXAdFm79GfMLD7sniBgqh15uEudAQsWthH",
+    "amount": 2500.743324
+  },
+  {
+    "publicKey": "DWEaBtFw6sy9aSXpQeJh7EAem2tCKUfVMJMKEkCzJY63",
+    "amount": 2493.69687
+  },
+  {
+    "publicKey": "A2LXiFBbzFsWSvDBJHfpPFeZVHMCCGN7bXhLtEw8LS2u",
+    "amount": 2476.986623
+  },
+  {
+    "publicKey": "HsgHximG4sxBtrfcLuJfxabvCD43oPuysUG1XcTQegZ6",
+    "amount": 2467.790735
+  },
+  {
+    "publicKey": "FEpx1Q5PgWPczExE2ZhiCfjfLNNAEBKKouAiZzJFp7Kv",
+    "amount": 2420.546019
+  },
+  {
+    "publicKey": "9MTAiUkLiJ6Gze9dKnV89ZpkY8UbPjpXkK7i74ZkqXkf",
+    "amount": 2404.13545
+  },
+  {
+    "publicKey": "AHAW6vVx2zmUWhAGQURhMBdLP52k5J5Mfewjyy4hhBDA",
+    "amount": 2404.029743
+  },
+  {
+    "publicKey": "Gifpt64gVrhk59jLSgTs3KYoFucnitzfWogsPmN7ZrEq",
+    "amount": 2400
+  },
+  {
+    "publicKey": "9n8bhQyDcwJRpzGSBTqX5UkbjAGMM8D2gZ7SmwEEgeUg",
+    "amount": 2399.751377
+  },
+  {
+    "publicKey": "CvHe3FetdtDxCxZ9Y1PsunfA1QuNeGJARhZoJ8rF6Lun",
+    "amount": 2387.346864
+  },
+  {
+    "publicKey": "2Y3oVeFT2uXsNiKm4rw3UvAKEn5WGTY9nrzhhcojjBJn",
+    "amount": 2386.044364
+  },
+  {
+    "publicKey": "Hrv1Nnm41n5PNkYX5HszykjkGcmaJ5hm6MP8eyh2oeon",
+    "amount": 2375.705758
+  },
+  {
+    "publicKey": "CtK5oC4uXL51YqNkffXxW5Wyu5r32jzQ3Hddi5wcBxSF",
+    "amount": 2361.748178
+  },
+  {
+    "publicKey": "Agza1qxzcs4YK9n8Ncx3nKZ2fGnhZwSM4pru8ZqDKgPt",
+    "amount": 2354.494001
+  },
+  {
+    "publicKey": "44s9tzbxdxwwFraY7V8CRJd1jqkWmz1pN8gDYWCL76hA",
+    "amount": 2331.777972
+  },
+  {
+    "publicKey": "LtDC9P3dMAw65L2wwfS2sKxRgPyYVzVPBa7GVr2PNaY",
+    "amount": 2323.325454
+  },
+  {
+    "publicKey": "2m83W3zQKPTS1rhozQ4NwUGdWAffedYKqTHrG5HmkJx3",
+    "amount": 2300.64897
+  },
+  {
+    "publicKey": "GcbXodDq9cKPgaAYqkhsHuFrEaupWBbpijcgcH6LpMQq",
+    "amount": 2300.379266
+  },
+  {
+    "publicKey": "2pkTvA4En34uy9eFQv2Ki8yeb32evBdn9D5KDizYScpE",
+    "amount": 2299.521511
+  },
+  {
+    "publicKey": "FHq8kj5e33pYagA59Tk1DGfvRf5nf3xiHgmGXg32kgdL",
+    "amount": 2292.543213
+  },
+  {
+    "publicKey": "F3GncYYdbqW4doKzeu1btwNS74uwgR3swPKHzXLUdLwT",
+    "amount": 2290.631359
+  },
+  {
+    "publicKey": "6prh4cE8Q6MXAGiALBR9zxPY82PkHQh5cuWGJ5CfcDY",
+    "amount": 2280.023602
+  },
+  {
+    "publicKey": "CJGwwMWZffbWMcBT3GRwMaRGhwERGqkWvCs9iin416bG",
+    "amount": 2264.595439
+  },
+  {
+    "publicKey": "9AmbY92FfSVBXAFkEvQaFXYxCxXbD3tRtM8WC7VScTxA",
+    "amount": 2257.378391
+  },
+  {
+    "publicKey": "4PfyT23ruWYxr5jXDNLJi6jXvduL5PqMvAu9GQbA1ZtB",
+    "amount": 2247.173201
+  },
+  {
+    "publicKey": "7tgKfzSbduTa4RY6iggH28m6XoSuwNnKD5D33Qc8Ep9R",
+    "amount": 2220.134002
+  },
+  {
+    "publicKey": "DXPMwku49gamSpbs7f1XQaSj3792ybx4VSuYiXEcUbXT",
+    "amount": 2213.858922
+  },
+  {
+    "publicKey": "GuvN7YTFjYyLFsE3NHu6z3SGskvtR3FyNtHYdRo6xmkR",
+    "amount": 2211.418623
+  },
+  {
+    "publicKey": "8QmoJyLmdSdX6BvNt5c1YZhqMZYPB7CsmmTDs9JP516d",
+    "amount": 2206.757791
+  },
+  {
+    "publicKey": "uzkGtz3yyWdd6xDKk9HiHjnrEwUcMjLzvWySNLxLLYP",
+    "amount": 2205.839728
+  },
+  {
+    "publicKey": "FoWwqg9Uwqq6rAwXH5wEbthvoqzfqYdp1uzK6eHFdQQ2",
+    "amount": 2200.652541
+  },
+  {
+    "publicKey": "9dyjHN7m9HdczG42kn5FDfSTSr4fx1rNr9rwkoBRwnxv",
+    "amount": 2197.500495
+  },
+  {
+    "publicKey": "HPLNYQ3KLPFA2VpxUCRy1UZmsnm35xv9rmq59mLigA8X",
+    "amount": 2185.756056
+  },
+  {
+    "publicKey": "avZpWkZPWAxtaGXgg6tzXsaAr2uPLpSbeMZsUMJJEHy",
+    "amount": 2181.921581
+  },
+  {
+    "publicKey": "CzT3jxMwYhCWutTvpFPB8Vee3WX9eeoawBHrAyBRb7td",
+    "amount": 2180.996871
+  },
+  {
+    "publicKey": "JA1zD49uhS3NGHSJvRT57bYV69g3BcrKq7UYPLoAG2De",
+    "amount": 2153.864068
+  },
+  {
+    "publicKey": "8EU4RxQiwRdUyFenmKV79K9aenZQrnqWGD97DPPcqMLB",
+    "amount": 2152.002542
+  },
+  {
+    "publicKey": "54RiS21J1hp9A8J9mevWeNMCHMZxL3W3ihzQPYPDWSoc",
+    "amount": 2151.186169
+  },
+  {
+    "publicKey": "8tcoG6xJWtAJv67zandYPECmaiP6wdz3Cct6U1CEtrqB",
+    "amount": 2126.301962
+  },
+  {
+    "publicKey": "4hiE88gyZcSVEVJSWHuEPLRKp71riq39DAqEPBZyrYY9",
+    "amount": 2124.673173
+  },
+  {
+    "publicKey": "GsULgap7E7xJvUqt5R9wUF9W7aN8AexpjkuWZDaGkj7a",
+    "amount": 2116.103122
+  },
+  {
+    "publicKey": "4xrPaCqJz8KN7ManyY4uJ11TRyu3kTnYd7RL77QVLAdE",
+    "amount": 2111.777125
+  },
+  {
+    "publicKey": "6ZCsdPYag4LqCfC3efnKw97VUgiB86uqQwQivXHj3CDj",
+    "amount": 2105.868687
+  },
+  {
+    "publicKey": "9wT5mtjEbvyE14vjfu2xaWwKfr5zm22qCWvJCkL6biDp",
+    "amount": 2099.269476
+  },
+  {
+    "publicKey": "EyoL6QKeM1if1GpjsE7rrkBKWrmURxwoqfydvWYsGYLU",
+    "amount": 2095.566694
+  },
+  {
+    "publicKey": "Gdrrw5iRrs3bhFLdt17fDqfRoNtjAMb7kq5zbJs9r5HP",
+    "amount": 2082.283112
+  },
+  {
+    "publicKey": "2QfBNK2WDwSLoUQRb1zAnp3KM12N9hQ8q6ApwUMnWW2T",
+    "amount": 2078.251315
+  },
+  {
+    "publicKey": "7oS5XTzUPcnaGqFJhXKAXXzJ8UajumYZd3LNpPE3PmLw",
+    "amount": 2077.030551
+  },
+  {
+    "publicKey": "Be8GmN9QAhCWDPwChyD3mUDYNdNEck71tKeawM5Am5qK",
+    "amount": 2063.937896
+  },
+  {
+    "publicKey": "FgTaJSevm3aEmEwkBJ4YhTE6jvDi1dBGz3NhavPF3u1z",
+    "amount": 2055.472917
+  },
+  {
+    "publicKey": "6Z9pLmsmbNDs2B9yAj5MKpatxHynoYBoVjgsF96KyY3f",
+    "amount": 2052.79476
+  },
+  {
+    "publicKey": "HcvbgfjpDDYntmZvQSJxvbf8QePxcK9SXPquJzo3uyCL",
+    "amount": 2052.520248
+  },
+  {
+    "publicKey": "84JhwNrPPsF3BxWkTq1g29FWmZQd2fhw3tR9NBg9Q32s",
+    "amount": 2051.917776
+  },
+  {
+    "publicKey": "AwxRADrQuqLnmyNsEsUVFpyPTToemcMawV1VcmbQD8Y3",
+    "amount": 2046.137567
+  },
+  {
+    "publicKey": "53Mpbg3VMZrsffF8L5oR6SNCzasqAv7ipvW6P2vC2uZC",
+    "amount": 2044.954901
+  },
+  {
+    "publicKey": "3LuSpFvcNYfHUkoQHKRGuErprmEGRX3yDhG6prPsszKs",
+    "amount": 2033.066104
+  },
+  {
+    "publicKey": "EhAhsWEZ5FVFsutGnFw8b488Tuzrdd8AZtJk7oSeyphv",
+    "amount": 2031.482111
+  },
+  {
+    "publicKey": "71Mdn432gcL9uZn5BbaU2YhuiUAu7Ceh1kdxasAss6oE",
+    "amount": 2026.464697
+  },
+  {
+    "publicKey": "B5YtweQumG52XFZDoxHtAAMKCATWB3W88VVRsua76c5m",
+    "amount": 2022.902965
+  },
+  {
+    "publicKey": "r7tkZBpCFpru2E5nGqUnwc6aZyuoWid7PQdsWUWtReE",
+    "amount": 2018.482958
+  },
+  {
+    "publicKey": "4nGu54W9V3yNeLdETdNtG6mwxhgpfGESNrdGy8LcgP3X",
+    "amount": 2002.05876
+  },
+  {
+    "publicKey": "4cBbEXoHA3aLMvd38LBNqULxHFW7kGQngNPjYrKwMxqw",
+    "amount": 2001.235834
+  },
+  {
+    "publicKey": "8tMsY78LSUX7tt5hAriXwUrQH2ntpmMdG5899MupmyAc",
+    "amount": 2000
+  },
+  {
+    "publicKey": "7fUhpgRsVhbGDSwpqw4oZYUDS7rtvSCNj1J5oAaA4hE8",
+    "amount": 1995.300645
+  },
+  {
+    "publicKey": "HqYzXCuCw2ddKErURsV6L5hfxS5FAicd581nHMDqnmzv",
+    "amount": 1990.398444
+  },
+  {
+    "publicKey": "HnrxuZ1sC2Pn5VDEX1e5YDGaxr5zo4ARcTKzWHZjP55K",
+    "amount": 1963.55821
+  },
+  {
+    "publicKey": "AzTJXpA4oCarhTCycwzE6CWM3QJ6jxQmwqFRFqE58M5X",
+    "amount": 1963.51629
+  },
+  {
+    "publicKey": "13S1uwYQYnPyUTXw4aebpx3CYzkxMvTZKRfUYEf61xuF",
+    "amount": 1956.962177
+  },
+  {
+    "publicKey": "84TBQoKvYfg2T3Yj1p6aVD19MtajL5QQkmXLdcY7oSCp",
+    "amount": 1952.701216
+  },
+  {
+    "publicKey": "Am9tRBEwA1MTZu8BpcQLsmsfw4LroGHratNrX1SHnUUj",
+    "amount": 1949.226947
+  },
+  {
+    "publicKey": "5XooNcSYa56yPWspQi8eSjRc4edLkd8VttweG1JkX2sM",
+    "amount": 1946.721501
+  },
+  {
+    "publicKey": "4LFTiZgkBEDePvUKJFn9tjbNNNPXNa3vzSykbVyouQHR",
+    "amount": 1945.486341
+  },
+  {
+    "publicKey": "8saStCwHYaM2rATx4AqBiRTE7XPsYqsPChW1X21SxEFB",
+    "amount": 1944.758083
+  },
+  {
+    "publicKey": "C7jpPymBkcsyTY5LYcm8W7idD9SNYfdQ83er3v5JskKJ",
+    "amount": 1942.866128
+  },
+  {
+    "publicKey": "3M6r9xHTLg7feGWYqHCZqAUv2j5M6kb1k6GEjBYuCF2m",
+    "amount": 1942.512558
+  },
+  {
+    "publicKey": "96XebpJVdnjHShmuhV44oHJ3VZrejSxi5mjBhMLvtuwn",
+    "amount": 1942.123109
+  },
+  {
+    "publicKey": "76AJJ32LrTW2RExBmtqJFv1ZQhrYrazstjNZWF4WVU3Y",
+    "amount": 1941.688206
+  },
+  {
+    "publicKey": "5JGHmP9cWP5Fzpw5eKqs3cM9ZybcBEXopmT4MZ2PiPyh",
+    "amount": 1941.651873
+  },
+  {
+    "publicKey": "Le99KR3kBqMsiF82K9tFDizs1VnFcDLxN5JuZ1TMSAK",
+    "amount": 1941.364705
+  },
+  {
+    "publicKey": "4MhpagvTZHdsaHHcWAUBtMpkqeLDCbrN5vizvNKD9WYg",
+    "amount": 1940.828451
+  },
+  {
+    "publicKey": "4QdD2Qr8x7UCqZR66i5FN5J7a4n47iBrHhJ62mkmhUhY",
+    "amount": 1934.738332
+  },
+  {
+    "publicKey": "Es1tLQ8hazLKWmCZxPWwYwHq9ds6pUMLLEAmGoofQXzC",
+    "amount": 1929.681591
+  },
+  {
+    "publicKey": "CQ4kVcMRUxWLD3WrWWReXYq7Uz438oXNoXff1dtsaDku",
+    "amount": 1919.313275
+  },
+  {
+    "publicKey": "Ag64VrqTVmQG7bSze7f6rTVBhPEJpihkkeaZE4WbaWSv",
+    "amount": 1916.042813
+  },
+  {
+    "publicKey": "BkpGSKTkFRjMExgRWJKJHVhXcHPQAfXE9z8pyTNTZhpo",
+    "amount": 1913.929545
+  },
+  {
+    "publicKey": "EpTKpbeAoSpZ9QDKCPxB2Mt2pux88mi7JYJFmTCwczSU",
+    "amount": 1912.668784
+  },
+  {
+    "publicKey": "EngMAbeMgDq4o6EJcUHnpnnaQFUKL6Dp8zwQSRPE2Skk",
+    "amount": 1905.453734
+  },
+  {
+    "publicKey": "CdxgxBzgxcqVtXHSNshUk9R1VDaFVUcq5qPT6FfhHex1",
+    "amount": 1903.676828
+  },
+  {
+    "publicKey": "GGHgTWYgTHYx7HhPpFnDAC4go7AhtyZ6dyXQus67zdK1",
+    "amount": 1878.962692
+  },
+  {
+    "publicKey": "h5X5WoRdJJg7EWcfvrnSgi83JXSMCJ66eS6HbHejj1r",
+    "amount": 1873.629717
+  },
+  {
+    "publicKey": "2tdqZ3s1EgfZ4SRxXiV5cwj9kDYmuJScQbRNjjtRx2UT",
+    "amount": 1862.842142
+  },
+  {
+    "publicKey": "FB7CMqwayBchDxchWSBvNbRqSrHhCprHFsaex3u3dgtF",
+    "amount": 1858.676303
+  },
+  {
+    "publicKey": "HMTZZiZJjWGeUTWcqv4YRr67c4EJ5mYwwuDSFq4BDBU6",
+    "amount": 1832.161522
+  },
+  {
+    "publicKey": "qoVxSdgvQNK6cVvrNnmp2ggRzaXTEgSxdgY7y6PGYfM",
+    "amount": 1823.816818
+  },
+  {
+    "publicKey": "6XLLjWwkXu3iaUEePQYY8nvQCdauaiEAbnP1zwa9nnKH",
+    "amount": 1823.085322
+  },
+  {
+    "publicKey": "FJfsESBySyRfzgyZmW9LCeENbnsnWtRkfggYg98Tn9tm",
+    "amount": 1822.311437
+  },
+  {
+    "publicKey": "A1kJ5nc5i7CBJURiy8rjNFGkTouCYBdWus1mz7ep21o1",
+    "amount": 1818.971388
+  },
+  {
+    "publicKey": "HYiTUVj4Ti6o2AojpP2caTSMXxKdSsYZGC2aXMmDDxrW",
+    "amount": 1807.0013
+  },
+  {
+    "publicKey": "5YRnR68Rq6aSMGwAQihttWtEt4D2qyCTbUqazNrYKbvA",
+    "amount": 1804.994292
+  },
+  {
+    "publicKey": "Da3Wup7xRCbcjHAi4KVi1EA968gHs2k9mubqh2972QV5",
+    "amount": 1801.845169
+  },
+  {
+    "publicKey": "7vrgCdUqFYQh6HMRN3v149tLcaiiAXf6wnbzhpBDE8Aq",
+    "amount": 1789.328646
+  },
+  {
+    "publicKey": "FKCsznzqpjvS3yLtxuSg7PFyEkDh188tJX8irQ2umwqJ",
+    "amount": 1786.096731
+  },
+  {
+    "publicKey": "BJsHPjYU11tvezFHgYmpJHZFLbHtNagj6KiUUz1ccBuw",
+    "amount": 1782.964787
+  },
+  {
+    "publicKey": "9Yv5z42wiyaZwvWvcX6zn5WEvJMj5TbkPN3xDwUZX2ky",
+    "amount": 1771.321532
+  },
+  {
+    "publicKey": "AtFeDwS9kn8TLGR8bsZLGgz2cz1fuS4AEFJPxN6pwj64",
+    "amount": 1756.969406
+  },
+  {
+    "publicKey": "GpvXZEqjdcNGo6zTDu7E7ALYMBmFvSN5UTDoUVa1PYjP",
+    "amount": 1748.233741
+  },
+  {
+    "publicKey": "B6WHKAi9ANjjNFgA4xYCjZVckFwfspkcj92XwFqtXZRG",
+    "amount": 1725.096039
+  },
+  {
+    "publicKey": "3PcMZWVNTABiv2FVdY2TBp3VCPKvYSUgVWpUnY8n4gkG",
+    "amount": 1723.328351
+  },
+  {
+    "publicKey": "GCUoFfQXP3RkHyKYAprSNpWe2cEvdnhj948EpW1zp524",
+    "amount": 1720.10582
+  },
+  {
+    "publicKey": "9CKyBKVQdn7MCTMSpu6NKxp73UYxXJcoJUyALzwsbY74",
+    "amount": 1715.45678
+  },
+  {
+    "publicKey": "944o2wbixR13uciDowjNHnQf3acZpgf5MKXy3zTb6mpb",
+    "amount": 1703.06793
+  },
+  {
+    "publicKey": "GucweDViNCYn47wYUcQgs6VNrDuhqgUg1mdPT2CPZYLt",
+    "amount": 1678.918838
+  },
+  {
+    "publicKey": "DaURAVniSYMbVHeJH6k8tDr2L7DBFjKaXRBHqHJZCuB",
+    "amount": 1671.539895
+  },
+  {
+    "publicKey": "DpGSfuFRQDeWRDuzsVnyNjUxsLbDFJ4khy3aD4REhUBX",
+    "amount": 1670.65799
+  },
+  {
+    "publicKey": "jDFTLHGoN4bv7cpnnyJ5zLoa3WupEAh7z1CBJFCGTbm",
+    "amount": 1657.138025
+  },
+  {
+    "publicKey": "9rpp7Ax3mbf6gzX1YiLVbwgtGq6nLkG2yQm8oG2GAK2g",
+    "amount": 1653.914357
+  },
+  {
+    "publicKey": "8ypSh2Z2P6k4nHFLGSbnwdK1nPRcjX5GgLzBhwQKHP5G",
+    "amount": 1643.403609
+  },
+  {
+    "publicKey": "DfP2JYkD3xDkicVecXMwG5kqai2SPU5iusiVdqCrugyD",
+    "amount": 1637.709358
+  },
+  {
+    "publicKey": "CLjrJtYE9jaYeYmiK7VM3itMTHr25MGY18HMiZRut5yB",
+    "amount": 1634.786085
+  },
+  {
+    "publicKey": "F6T1JF8Q3PrieGfadd3wghj9scCf1uurXu1M5iJEtkZq",
+    "amount": 1630.935656
+  },
+  {
+    "publicKey": "DK1qfRL9HTmyuqi2h3LuoWBUJkddUHT88mYALioxCuNa",
+    "amount": 1626.798177
+  },
+  {
+    "publicKey": "Fd1fghUh8Z9ecpGiHvZSd2JrqUuXuK2NJ7uGJBx4zdoM",
+    "amount": 1615.015839
+  },
+  {
+    "publicKey": "G5ARfYGtGx3ZKe36XjVUGA7s8EkkM8kNzq2zrz5xNE3t",
+    "amount": 1610.339352
+  },
+  {
+    "publicKey": "7th5edY8TEczbrAR1R3HgF7DaqXVYHREjhPn3JyxKA8W",
+    "amount": 1607.448556
+  },
+  {
+    "publicKey": "Bpn6LjqtdKsnMTgFnorrv3HMRu2Xd657uA2xMURBsFaD",
+    "amount": 1581.826756
+  },
+  {
+    "publicKey": "7JQeyNK55fkUPUmEotupBFpiBGpgEQYLe8Ht1VdSfxcP",
+    "amount": 1564.836478
+  },
+  {
+    "publicKey": "fC9HhDgAJQh8zxhASdNMprzH2bXHvQfChiiGHAH2Da9",
+    "amount": 1561.905964
+  },
+  {
+    "publicKey": "7p1LhoZBDVw9QJ9y8sAGqkwxrRQnwyoijtePLM5KfD93",
+    "amount": 1559.584093
+  },
+  {
+    "publicKey": "7quo15dLMArtB299ZLGvwZxuCKiQdHygWDRuTPbaDB1Y",
+    "amount": 1539.141392
+  },
+  {
+    "publicKey": "2p4dsgb6E3w7YK1Uoh5VUgFfQZjieYmg6EAKkbyQS9qy",
+    "amount": 1536.590048
+  },
+  {
+    "publicKey": "HsDPfW1aTQiAN2Jjvdfs8R6BztuR2JUSQ1GeB7yDEkGq",
+    "amount": 1535.619535
+  },
+  {
+    "publicKey": "9Vmi39JjVG1ZQpKBexrT1uzNqYTikCmkXRtHLbNwebYV",
+    "amount": 1531.267076
+  },
+  {
+    "publicKey": "CUFVTs3XNtkcTvswmVxNepx2R77cJ3u4YFSRhDUxcH7d",
+    "amount": 1528.738065
+  },
+  {
+    "publicKey": "BGFH3wfkFackhQTkgJTDAb7LYA3eBWNVQNJeBntgpf2a",
+    "amount": 1521.318951
+  },
+  {
+    "publicKey": "FYCsZSVuxKmo7EeVSGGwGme9mjQKu9Uwmd2JgFdLWeMX",
+    "amount": 1517.886639
+  },
+  {
+    "publicKey": "GM2bBvpDApe9qR4PPT9xdpJvHEaRapo14DbZVtckHMb5",
+    "amount": 1507.640164
+  },
+  {
+    "publicKey": "E5TiEh5Aa1i4SzHLVGF1yge17oxdbVTaHBBJYythfeud",
+    "amount": 1495.245394
+  },
+  {
+    "publicKey": "GSmkCGw3CQyZhde9bRNvV1vtapzHKpEWW8gaQyGHk3Q1",
+    "amount": 1485.07064
+  },
+  {
+    "publicKey": "9FsNmRkRo2S2jK7czzdHqZnurtAH7Bn6mUYTwpLvjr1c",
+    "amount": 1483.46962
+  },
+  {
+    "publicKey": "D5pECxs7Z6ge39R68d1Cng7VNn4iNjuhUWcwDuoA9LH5",
+    "amount": 1476.87668
+  },
+  {
+    "publicKey": "GSPnRkckd92STVZb4g2GdKLiSAoqvM9AnejZABd9ZdM",
+    "amount": 1457.092739
+  },
+  {
+    "publicKey": "CJkj9nH6Wcx15K81BhQTvmp16AfcZt4CJE2Y7vdUpVjU",
+    "amount": 1456.887112
+  },
+  {
+    "publicKey": "EdXTK4jzmeZNFU6bgShibc2QxRmtNteVne8zrVKPo7uC",
+    "amount": 1456.887017
+  },
+  {
+    "publicKey": "3ELApR2RFt1mz3UPGEkiRS8EWBFMroQQ8ke7RLMe6dZ8",
+    "amount": 1456.88697
+  },
+  {
+    "publicKey": "5rw5qLbTZ2yvjqEoezbQfkh8u7Hef1e9ZE1V8kCe8mFB",
+    "amount": 1456.886923
+  },
+  {
+    "publicKey": "6eXVeHnanDcPUEUnVX19PYsnsxHcH4fUyme9AQz8nfox",
+    "amount": 1456.886875
+  },
+  {
+    "publicKey": "4zcq1Lphw1LHQQpegn4SchcigEvntqpHhxMyfMmjLyxL",
+    "amount": 1456.88678
+  },
+  {
+    "publicKey": "6wvrdTjdrzXUsaWNF4Ps3Sai6weGYLw74Mqp1VRsd9kU",
+    "amount": 1456.886733
+  },
+  {
+    "publicKey": "EcPyrxWUVhGiBkiJAPfi9PjXXsDZaUByQYcXvb7v5QfK",
+    "amount": 1456.886702
+  },
+  {
+    "publicKey": "3XZ2ALiCdmcQ49RThFnn4jJGrkTnnXuJs8xj5Y22SXFv",
+    "amount": 1456.886686
+  },
+  {
+    "publicKey": "HNfcDWwF7oMPkuSYHL21w8yNgq3nXWhMUGrGiKKEa4H5",
+    "amount": 1456.886638
+  },
+  {
+    "publicKey": "6B8ebKtieLKYnbcNcEf5Rb6tH5iWqmHFVLhB9m1fH14u",
+    "amount": 1456.886472
+  },
+  {
+    "publicKey": "4PMLDsRbPDxWPyNkQuduT5CJUQs7L6cjktBhTn8dCXrM",
+    "amount": 1454.79528
+  },
+  {
+    "publicKey": "CfdGDpTnsThFedMZfD9y94ZmSg9kDsdgtLTtkbHE91dP",
+    "amount": 1453.22515
+  },
+  {
+    "publicKey": "4jvhkHpCVBjJAmfp6Pjb9j23XHRjoJrZfho5nXRtTEVG",
+    "amount": 1426.701789
+  },
+  {
+    "publicKey": "E4JjdypEpvgUUMoMWLsgr5tQdZLAgfj1KFJmqQ4W1cS8",
+    "amount": 1422.667722
+  },
+  {
+    "publicKey": "GY7ciZRqJe4H8bxF6e1FoLsijeNeave4Key6hiTjP6hK",
+    "amount": 1409.930709
+  },
+  {
+    "publicKey": "9xfa95xmKAX2b6n9CLbUkS4QaSehyHP4exzjqbAJ2Zzr",
+    "amount": 1408.835805
+  },
+  {
+    "publicKey": "2cuZsTPZdVt1JU6mdeimTyzs2ULoyHXxyLmrkYw2eU9p",
+    "amount": 1390.028713
+  },
+  {
+    "publicKey": "EyS6yiiP4bKjx55sQRenB6gdL6D8pfhAcozGGBiPybWa",
+    "amount": 1387.115749
+  },
+  {
+    "publicKey": "8gcpmrPdzKoNXZhuburCkSujoLLfqXNDeCgCEdC1ZpLf",
+    "amount": 1379.272667
+  },
+  {
+    "publicKey": "BxLgU1j6kK1r5vLQx2ah431niZyAAxSYWe9r65k6ao1Y",
+    "amount": 1373.55469
+  },
+  {
+    "publicKey": "FMY9dBFS9Yi75wxWBB2qv3BXUHxdWvSLozhTZWCJR6CR",
+    "amount": 1371.414282
+  },
+  {
+    "publicKey": "CWuzMdqksW2qMQUhxjP7faRb8m8XkPg6vhX7bcFxt4tP",
+    "amount": 1333.641365
+  },
+  {
+    "publicKey": "6V9P3rF6pohceNmh16QzpW5ph24Eohjgz6Qjk14nBF9x",
+    "amount": 1330.855105
+  },
+  {
+    "publicKey": "6AtYUmbYo6oQzsSDqa19kU7Tqk7h3DYgX42GRQ2qxY2e",
+    "amount": 1328.889459
+  },
+  {
+    "publicKey": "3gPeYBghrRfMgrpCagZ4Uei1bCPzYpiHf3XbW18DzEn5",
+    "amount": 1317.006325
+  },
+  {
+    "publicKey": "J9LkJSWmWEt7EuA3f9TpoVZZYuPNVtBNsvBfUJWWyScp",
+    "amount": 1316.798099
+  },
+  {
+    "publicKey": "6M4j9xoe6aCzk2SDwKMt7XQg2tDbkrKniKswZzHD7Tsc",
+    "amount": 1314.581589
+  },
+  {
+    "publicKey": "5ELHPUqYpQqBaEWWiHxb4a3YLp6uoUFui8oFig9BZHcs",
+    "amount": 1310.700228
+  },
+  {
+    "publicKey": "9NBfUnrsHczswxA5BfBxTk4u5ork5fj8PnEPXX6Ns43C",
+    "amount": 1302.160063
+  },
+  {
+    "publicKey": "GBWxtrz62EqM9dmxuLyqXv1gjwFpD8HshNTAYfqMPz8s",
+    "amount": 1287.303774
+  },
+  {
+    "publicKey": "BXDJzgn9YePr2meQLfQvf5k61PnmSQC9vSjGUGbGC5op",
+    "amount": 1278.515219
+  },
+  {
+    "publicKey": "HQdvvVVSQxbdnnpo8d7fdwsEaLwLwpk11JwqBbSbhmgB",
+    "amount": 1274.680339
+  },
+  {
+    "publicKey": "ZfbTGCNwWHGJgAa3oQH23HyqVYyjDBTbTubP3Y9KXCb",
+    "amount": 1274.379799
+  },
+  {
+    "publicKey": "CfeMWc1QF9ZKA41wQMDNEssuq6Szg5b1kPTgFiRRcVSA",
+    "amount": 1266.151369
+  },
+  {
+    "publicKey": "2V8R5eGuBp6wC3FgdNYC33XMmpZgMA4Sbgdd6fSuqLkx",
+    "amount": 1265.454851
+  },
+  {
+    "publicKey": "HoX8HxWayXSxtmL8TF3dLRDV8JC91tHQEAKdJRqyCL8c",
+    "amount": 1262.708682
+  },
+  {
+    "publicKey": "E96FM8kPZHvhY3NXXVg5V1smkZ6c6TDGevjqra9M8UUx",
+    "amount": 1255.411318
+  },
+  {
+    "publicKey": "7tGxDVodZQaZNAcPJtWAUVF93HCLP8z4C3tCq7bHgdzo",
+    "amount": 1252.840915
+  },
+  {
+    "publicKey": "6H1TkwEDr4uYbDigSTNYPCfpqW2EyayGXfYUHrQpXAgb",
+    "amount": 1250.753038
+  },
+  {
+    "publicKey": "6jcHZ4LWx5Yx5F3rzm45LvBJHVV9v3J9DJsBf3xYduti",
+    "amount": 1240.085029
+  },
+  {
+    "publicKey": "6my87vLewMn9YEhYNUuNUpUNz4Qbm6bJPfbmmrrsiy7x",
+    "amount": 1223.831228
+  },
+  {
+    "publicKey": "CSciVLbXFwaaF5CR37UU7ebNnQqUWmSoYp4sy6mCNTX9",
+    "amount": 1222.386094
+  },
+  {
+    "publicKey": "D1v4PQKwshdDygmsEgfvtX2Ady2e7Fv4poAhbdfMa95p",
+    "amount": 1203.52637
+  },
+  {
+    "publicKey": "78ENwyDrNEJoGydcstPsScu9xkZzVhEECFaHzRE6UVi",
+    "amount": 1193.498398
+  },
+  {
+    "publicKey": "6BXAPtSUKPiED6RPZzUfwexWSAKqNiYikQRGuMzFGf9",
+    "amount": 1191.82376
+  },
+  {
+    "publicKey": "GGnPSpCtjcNT8YKmSwUtcj3TtcNzJMPJkkYpsE26q5rx",
+    "amount": 1191.669363
+  },
+  {
+    "publicKey": "5DrdxFzc6HbmFGTv55qR5XXfAktdncYQrLM4RFMnkCgF",
+    "amount": 1190.126951
+  },
+  {
+    "publicKey": "9gf4rny3byi5mhncZpsUxRAGx3tUvJpzMfGoMsjoqnnh",
+    "amount": 1185.155228
+  },
+  {
+    "publicKey": "8EhR1udAgnjWJNhUxjqrkDHYnA28dy3Qjsh8zDP9ApZ7",
+    "amount": 1180.718916
+  },
+  {
+    "publicKey": "2Gvicgjq51VNUt5aWwxb2VhiWLrzHiy8qeNkxozpMF6r",
+    "amount": 1143.412093
+  },
+  {
+    "publicKey": "F8Yodz9swf5sNcqFuVrTCU7RCFSpDBYkc4AZ6nXVSi2P",
+    "amount": 1138.305144
+  },
+  {
+    "publicKey": "8V236KbWTbBv8ApyBgJMT8AqRZeFfJ7dogoBCyoAkJQe",
+    "amount": 1124.969004
+  },
+  {
+    "publicKey": "yKNNPqhMZfjy6KwZURjh5iF1JWcXeQSA5YQFzyAGT6G",
+    "amount": 1124.376936
+  },
+  {
+    "publicKey": "5E69J29MfXeccBkhw3Cz19X4BSWVVRNFGsZtZWU5GiCx",
+    "amount": 1119.120007
+  },
+  {
+    "publicKey": "DaJd6BawuLq51FMyPxGZ2H1eDUHE2cJBU571fEa3hNnq",
+    "amount": 1115.69725
+  },
+  {
+    "publicKey": "35pgqkaiwmAP5sYbjUDM3Zf83k1UkUtLwwo8zduQDCuu",
+    "amount": 1114.168417
+  },
+  {
+    "publicKey": "59njcrNHKyGRLbEt7tgE1f5ewapttvn7jcsotSmrz8bK",
+    "amount": 1108.681001
+  },
+  {
+    "publicKey": "HR8hNrxXZRKsEer7b5iXE53KUEFoLARApNa2nMWMG5QY",
+    "amount": 1107.386532
+  },
+  {
+    "publicKey": "J5DRxKqZPn65ugrrpSRrNvxCkhNeBvJaUe6kQEFRJgfy",
+    "amount": 1101.558079
+  },
+  {
+    "publicKey": "J411V6dXkhs3ggAacQYK3XV7XA6v8UTJrVo4WZWqSwBn",
+    "amount": 1089.559167
+  },
+  {
+    "publicKey": "8UbXhji6sPaJHaf9vRguPhKtL9bGjcc7fj33qHZ7AoeM",
+    "amount": 1075.60652
+  },
+  {
+    "publicKey": "BWEpqtvBCgMjMLBvbubSXC2vdbetEit8aH9zedUGDs7x",
+    "amount": 1075.422835
+  },
+  {
+    "publicKey": "8MmHu1tjamShi74su9vXnxtWMb1qdWdwK8NWLRBZxGbF",
+    "amount": 1074.9733
+  },
+  {
+    "publicKey": "5ytrFuSQgYtS4uTbpzv1SReYbtbvGTwpRXhp5xx2c1Ya",
+    "amount": 1072.354765
+  },
+  {
+    "publicKey": "9742suugmXrxwvGAiTdau7RVgonjAPYSnV9vX1NKNBhr",
+    "amount": 1069.937009
+  },
+  {
+    "publicKey": "8Lk98HXdL5y2HFgankgFQWZMMR961ZEoHzoMJCb3uZaT",
+    "amount": 1064.460287
+  },
+  {
+    "publicKey": "GUqykW7wJ4ZRY25gntgX24q5FqnP6NBdRAoPYgHBdRiH",
+    "amount": 1061.534426
+  },
+  {
+    "publicKey": "28RzQovoWvPDwmY2pnVyA5S9cZVx4TU2MKQnSHkJZ4SL",
+    "amount": 1043.229045
+  },
+  {
+    "publicKey": "4dMAMKGBQgdUMfcJBVgh3kfKRTRLfMRtVx4sZDWUCsiq",
+    "amount": 1036.132573
+  },
+  {
+    "publicKey": "9YwTt5xq3PiHkUauBKxjJsxmhRZVVw5PAmDkxzTnWXPs",
+    "amount": 1033.842879
+  },
+  {
+    "publicKey": "BN8KrL9QceHDrBehia7oCJLE5w4tCJuh4abaMiYdH3NN",
+    "amount": 1030.768402
+  },
+  {
+    "publicKey": "7pc272dGwyEYvYJbcAH7YxsETzNAahUycynnXWmhs4tr",
+    "amount": 1029.805063
+  },
+  {
+    "publicKey": "Gw3ARCrMG85wqqdjxPgJZxNPeiLHKTriEmzarwX47xHb",
+    "amount": 1018.55349
+  },
+  {
+    "publicKey": "H7bhJkGmthSW5iuzUgAtd2sEz6A9ggP7Gn1fSHbCNjy2",
+    "amount": 1016.278569
+  },
+  {
+    "publicKey": "CwHXqjNPKiRYa2iJ4nh26h8dJbGRShmxUGjxc2m91Rhd",
+    "amount": 1015.487121
+  },
+  {
+    "publicKey": "B1ndQeYGtGfWTs51RvJDGUhbU6NPR1ozKGrhmXJizk99",
+    "amount": 1015.203909
+  },
+  {
+    "publicKey": "G2bDtSFMB53obLTF6aYposP5EU2e29GoeKGCUjmNoBs5",
+    "amount": 1010.116343
+  },
+  {
+    "publicKey": "BhhPk5EszNtrwVCq5NzrTPyRo2GeiRxXkPqPFJ6NLUWh",
+    "amount": 1000.266573
+  },
+  {
+    "publicKey": "4AzgC1cKQkqzCcN1ou8CGVtC4X5pgjR1f3V5FqaBeott",
+    "amount": 1000
+  },
+  {
+    "publicKey": "CKnpfMk2ACYvwSfN4vvFjaMdCpwx7EBc2qx8RQvnawnQ",
+    "amount": 1000
+  },
+  {
+    "publicKey": "ewvLovRTh4uxFmVrXyDRsirgUVSnNG2XFn5kbJsTmCF",
+    "amount": 996.554882
+  },
+  {
+    "publicKey": "7kjJByAGC2q4jNuEhd7iAttdfUyq7jTkpqfLYgn44CRp",
+    "amount": 993.836651
+  },
+  {
+    "publicKey": "Facd3SUnDbAAs23CcFxBWKX7kTi6UgyfLa5MBHvRNjia",
+    "amount": 988.663998
+  },
+  {
+    "publicKey": "5NUfWrPiR4o7gFTqhyDwiVAGTG6EX3oipFvQyHLSfWiK",
+    "amount": 983.934684
+  },
+  {
+    "publicKey": "DwQnKDjUuCn44cfWb5BdfiAaB6Yo3GY4Mt16R6xkUZZj",
+    "amount": 979.67162
+  },
+  {
+    "publicKey": "AwBEZGiibv8QxSVT45XCt176oqt7mG5uehyw9ZquKCeV",
+    "amount": 976.012296
+  },
+  {
+    "publicKey": "9fEto1LJ9KwJryXgfRn5q527vxP6wkwNyAd7NZjCd2ge",
+    "amount": 975.524135
+  },
+  {
+    "publicKey": "HrjAfmWhkVZNnEWuqf3CxkWpa2SKt83ugfLMpW2gQdVQ",
+    "amount": 971.259285
+  },
+  {
+    "publicKey": "9Uviw1ErdZGCUh5xKkR58TCM4RFZdTkqKH3zwqTFAWbX",
+    "amount": 971.259203
+  },
+  {
+    "publicKey": "6rSv8RheQZkYAXf5VK22ikzAVYKvTjHwPNpRahMTEdM1",
+    "amount": 968.843111
+  },
+  {
+    "publicKey": "7TYX8JBmHfyBXfFCH3hmnMTZXW44hKhBa2rKnWfpHFVb",
+    "amount": 964.641298
+  },
+  {
+    "publicKey": "9KKi5SfpR4nbCr6gqbZk2wFYNaAA65MTjVYX4dTATqeG",
+    "amount": 962.935683
+  },
+  {
+    "publicKey": "a35qFCtqK5dSES3LaM5LAqvrNNypiqVFUjQS3sMF2JB",
+    "amount": 962.373513
+  },
+  {
+    "publicKey": "JBwXWfPKJWdBhZZhsPsfizGpx8HrNJVcrnZy31VU4tTW",
+    "amount": 958.565885
+  },
+  {
+    "publicKey": "2SNZKYD9nyYnZmSnuArUF5JuJqyRuhCoiWaCinMqyLT8",
+    "amount": 955.502581
+  },
+  {
+    "publicKey": "2x1rfrXTwFoZWNswGuygxodSen7peMoBtf8THfSi6wAE",
+    "amount": 948.418328
+  },
+  {
+    "publicKey": "32sTkkbueVWZKqsRX6xfFrxiMJo8FE4gt2yZnmRqPpem",
+    "amount": 943.316755
+  },
+  {
+    "publicKey": "7MFxQB8aVQAu3JH6SDF4QTTz2E8RKRZRB911ZpdaPr2R",
+    "amount": 921.161351
+  },
+  {
+    "publicKey": "7kdYrBKLTLdQxwuka5cUVRtyW6UignUMe5Ce9BcDxsxK",
+    "amount": 918.384108
+  },
+  {
+    "publicKey": "HBp1PiA1sdjSRuQnEtZCtu6VoLxCW9bGz4CuP3DDSXLQ",
+    "amount": 917.967394
+  },
+  {
+    "publicKey": "3yjRjANv2RaN3TWEBKuCgxW76e6uHTNpg9uNTDz9ufS7",
+    "amount": 917.474703
+  },
+  {
+    "publicKey": "7L9tQDHbwDbjuE9CcPkfseRaoD5f4CpB3KwiPA8vd5f",
+    "amount": 916.357953
+  },
+  {
+    "publicKey": "56H28FyXqRjDE6ZXQzpKBNMecGuJFrVAnx4R7BiLxty7",
+    "amount": 912.894866
+  },
+  {
+    "publicKey": "91oGJxtaQHc6TpcPeP4LBiC5pSHQXRG8PjiYdcLy9K2r",
+    "amount": 911.771246
+  },
+  {
+    "publicKey": "6KF5eRbn7qXerYG9FrLPJFdepYeQSt16iWdQmXqKqXAK",
+    "amount": 906.18948
+  },
+  {
+    "publicKey": "8XSNEoudUdSYB9BMTHYHprFciDgVekdgWMnDL8wXuhud",
+    "amount": 897.81329
+  },
+  {
+    "publicKey": "6TktRxUh6igMUVSXWESyj46wkd1qEUaHZjDRC3woGvbR",
+    "amount": 896.538692
+  },
+  {
+    "publicKey": "DaeaQ6zppwJCYPhtrBZg9zNWbLjnms36mH7uQ4SnSqFQ",
+    "amount": 892.42523
+  },
+  {
+    "publicKey": "7qq6Gcd8e5FgmGEdCDBpLY59LTvgpoTddMk3j54xRLVE",
+    "amount": 887.819479
+  },
+  {
+    "publicKey": "AVqGJMauDkbkgmXgNdQGozuvP8joAFRNNX34frHAiWNx",
+    "amount": 884.507149
+  },
+  {
+    "publicKey": "7h9Uj1AbS1DvJcJB2qsUqViDTf8arBpREGV39T3VYwWt",
+    "amount": 882.565407
+  },
+  {
+    "publicKey": "4khYjQaxJZMqVwUxARH5Kqp3y3iGn5jT6ohKs8sRwdnb",
+    "amount": 872.948323
+  },
+  {
+    "publicKey": "4F6yx61McwbdDho8vb3YMEBJ1vYZtctq9MxUaTBir3WH",
+    "amount": 871.637683
+  },
+  {
+    "publicKey": "DEwEem63AkV596qK44utfzEP4ei2R6n8mmmr2yJuUnMA",
+    "amount": 871.184111
+  },
+  {
+    "publicKey": "5LESaYKqw5sVU8irSM9pQRUF8ckvkz1ywLYpDfHrspP3",
+    "amount": 869.389464
+  },
+  {
+    "publicKey": "HXYNFfoYNa6Dx812t7fD7Bwj7xxUGmv7HNbX6BEcnJXD",
+    "amount": 866.247746
+  },
+  {
+    "publicKey": "4gzkhsrGYamAoAPuQtFbyV41A1PQmHop1qZT9Kbz3UrM",
+    "amount": 860.868226
+  },
+  {
+    "publicKey": "BARqp9swYxzRS2BeQzQe6dpMwjLAhBqNCoZrmi3ybBL",
+    "amount": 856.367827
+  },
+  {
+    "publicKey": "71nrmt8DBvdtn1ePV7PrGQqha8gnTWq9FwoM119NUrqz",
+    "amount": 852.261257
+  },
+  {
+    "publicKey": "DKGGjXZytCDYpTtnESmcha1G6XmTFQGoEcgNrtWsLLrt",
+    "amount": 846.979439
+  },
+  {
+    "publicKey": "pSwTTFE92RsRtvMCpb3mjruv5ww2KgBNVPscwdWwbxk",
+    "amount": 841.08959
+  },
+  {
+    "publicKey": "ArCfseaEwbfoEitMPDzLq4qSJgLj5DmuaojQYHifRj2u",
+    "amount": 833.48519
+  },
+  {
+    "publicKey": "PmahR18fEKHcGq1z5qEvrbUXcQ3PqgQRxfNWLW6fzww",
+    "amount": 824.760558
+  },
+  {
+    "publicKey": "4RWJUWrjf7TGucEVuH65xWfuzN27UiymmvJbwUBXyFvj",
+    "amount": 824.092851
+  },
+  {
+    "publicKey": "F2FAQssHxFKtFyenbcrUHSSY87F84qg4L4eeB5NPuf5A",
+    "amount": 821.886969
+  },
+  {
+    "publicKey": "5daz6aqKXjpf5mv7FGLLpeksXacfcvCLu3rzSacbsFSW",
+    "amount": 821.784158
+  },
+  {
+    "publicKey": "H3xT8UT3kCBQxyzhZv14TtDhNmHw4GozkAqN3efp9GHp",
+    "amount": 809.775651
+  },
+  {
+    "publicKey": "6XQR5w23911Hz3hABKrFteS72UUo6qwzepfWKSNZXGdA",
+    "amount": 807.915527
+  },
+  {
+    "publicKey": "DZPE53zmT8RjaEfs3mA2rs4maMmmDjQZnaZJkUFs1ecx",
+    "amount": 805.635045
+  },
+  {
+    "publicKey": "43zGnJUwoZuqenRjLDBvy98gtB8CA26VgHJywuSLkuco",
+    "amount": 801.379547
+  },
+  {
+    "publicKey": "F9SjPD4HYp4A6HdjR6wHqaf6hVHbaejjwq9ap9BK9Yyj",
+    "amount": 797.925194
+  },
+  {
+    "publicKey": "GMVHGX7CzGRk1sYbqR7fP8piiwZyjL1FyvwyrgN4qsZN",
+    "amount": 792.966157
+  },
+  {
+    "publicKey": "Dvm1nTHxWMvyPNKkgsHJm4b3food6xmmcAjEWHjbWzrL",
+    "amount": 786.991624
+  },
+  {
+    "publicKey": "5ErDweCVNtVS8ZgfWnDH3HdnPUtGRbDDznq5FLjdnGej",
+    "amount": 782.145994
+  },
+  {
+    "publicKey": "F5M3emcmyQMrPKp7oxzyoPTNntDhy4p5LLdqWdQFhfxB",
+    "amount": 768.809168
+  },
+  {
+    "publicKey": "D6v3kLzF3BtCFzTQzcLwsKWbmt63pmQuMAJxXY3aMUu5",
+    "amount": 764.483974
+  },
+  {
+    "publicKey": "J77nhbwGvcp4oPp1GyDbNBXwwQkgLtEenLPKXv3eayRC",
+    "amount": 763.024094
+  },
+  {
+    "publicKey": "3c8hYtjqLNt1KUm7edCrnVtGhxpXGhAgS3uhfrEXHdec",
+    "amount": 762.830101
+  },
+  {
+    "publicKey": "BFBetCxfjh1Ec5ybB3ckCoVfnJ9r7UkzYisuQrKA3bB3",
+    "amount": 754.751591
+  },
+  {
+    "publicKey": "45ruCyfdRkWpRNGEqWzjCiXRHkZs8WXCLQ67Pnpye7Hp",
+    "amount": 753.334226
+  },
+  {
+    "publicKey": "D2ARg2nuDGhu79XMrU5FjUV4fMBPex2Lib1uUvLsnUcV",
+    "amount": 751.962959
+  },
+  {
+    "publicKey": "FU2tX2nMfknVAfsv7dMXeN12pNbc4gYaaqFFtouZoUfK",
+    "amount": 750.092169
+  },
+  {
+    "publicKey": "8acWVFs9h1X4CMy3PB75PQ11EkNWcxRQoDQZ82LVfuoU",
+    "amount": 748.356866
+  },
+  {
+    "publicKey": "5pnvFp2zAmLMkpTqxFXaBL5VmipbKG95LaumcPsfxK5W",
+    "amount": 744.627305
+  },
+  {
+    "publicKey": "FV95SsJKPLqsqornMpNgBTwSfDcutsKHE8hEqMfrRcQC",
+    "amount": 743.793013
+  },
+  {
+    "publicKey": "JB9SedRuTeRcGxVw73RsGMxKbprB9khLJatRWhbQk2yx",
+    "amount": 736.884849
+  },
+  {
+    "publicKey": "3pXgyLhjXPTe1sPZkEfYXsy4bWpHU1YMK5n6VkHyA78Z",
+    "amount": 733.798132
+  }
+]
