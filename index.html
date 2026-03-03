@@ -934,22 +934,11 @@
     <div class="facts" id="facts"></div>
 
     <!-- GALLERY -->
-    <div class="section-title">
-      <span class="badge-icon">📸</span> Photographic Authenticity Proof
-    </div>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="assets/images/IMG_7452.webp" srcset="assets/images/IMG_7452@2x.webp 2x"
-          alt="Luka Modric signed jersey proof">
+    <div id="gallery-container" style="display: none;">
+      <div class="section-title">
+        <span class="badge-icon">📸</span> Photographic Authenticity Proof
       </div>
-      <div class="gallery-item">
-        <img src="assets/images/IMG_7759.webp" srcset="assets/images/IMG_7759@2x.webp 2x"
-          alt="Luka Modric signed jersey proof">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/IMG_7761.webp" srcset="assets/images/IMG_7761@2x.webp 2x"
-          alt="Luka Modric signed jersey proof">
-      </div>
+      <div class="gallery" id="gallery"></div>
     </div>
 
     <!-- RUN -->
@@ -1090,6 +1079,13 @@
         holderCount: 140,    // top 140 holders from sorted file
         randOffset: [40, 104], // Orao SDK standard — matches trendexgg/src/core/vrf.ts
         expectedWinner: '6bwzpkSKSXbjVMBYMSdazEytkaCZatibRdmExpjSgCyA',
+        media: [
+          '87EF74D9-21BC-4F0A-BDE5-62AAA9E59EDA',
+          'EE5CA6B6-713D-4B33-8C9C-DB4FF3D855BF',
+          'IMG_7452',
+          'IMG_7759',
+          'IMG_7761'
+        ]
       },
     ];
 
@@ -1110,7 +1106,29 @@
       }
       updateFacts();
       updateLinks();
+      updateGallery();
       resetSteps();
+    }
+
+    function updateGallery() {
+      var d = DRAWS[currentDraw];
+      var container = document.getElementById('gallery-container');
+      var gallery = document.getElementById('gallery');
+
+      if (d.media && d.media.length > 0) {
+        var html = '';
+        for (var i = 0; i < d.media.length; i++) {
+          var base = d.media[i];
+          html += '<div class="gallery-item">' +
+            '<img src="assets/images/' + base + '.webp" srcset="assets/images/' + base + '@2x.webp 2x" alt="Luka Modric signed jersey proof">' +
+            '</div>';
+        }
+        gallery.innerHTML = html;
+        container.style.display = 'block';
+      } else {
+        gallery.innerHTML = '';
+        container.style.display = 'none';
+      }
     }
 
     function updateFacts() {
