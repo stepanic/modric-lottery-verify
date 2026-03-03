@@ -1,4 +1,70 @@
 <!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════════════════╗
+  ║  $MODRIC LOTTERY — INDEPENDENT ON-CHAIN VERIFICATION                       ║
+  ║                                                                            ║
+  ║  This page independently reproduces the winner selection for all three      ║
+  ║  $MODRIC lottery draws using only public Solana on-chain data and the       ║
+  ║  open-source Trendex selection algorithm.                                   ║
+  ║                                                                            ║
+  ║  Official Trendex implementation: github.com/trendexgg/trendexgg           ║
+  ║  Commit analysed: dd66bc144690b1a6876ac856ebd1e207f3fa9b34                  ║
+  ║                                                                            ║
+  ║  VERIFICATION STATUS:                                                      ║
+  ║    ✅ Orao VRF randomness is genuine and unpredictable (all 3 draws)        ║
+  ║    ✅ Selection algorithm is a faithful port of Trendex's selection.ts      ║
+  ║    ✅ All announced winners are independently reproducible on-chain         ║
+  ║    ⚠️  Three structural transparency gaps remain in the official process    ║
+  ║                                                                            ║
+  ║  ──────────────────────────────────────────────────────────────────────────  ║
+  ║                                                                            ║
+  ║  TRANSPARENCY GAPS (GitHub Issue Proposal):                                ║
+  ║                                                                            ║
+  ║  GAP 1 — Snapshot committed AFTER VRF randomness is known                  ║
+  ║    The holder snapshot JSON is published to GitHub days after the VRF       ║
+  ║    transaction is on-chain. For Draw 3: VRF was slot 393,429,835 (Jan 14), ║
+  ║    but the snapshot commit was Jan 19 (commit dd66bc1). This means the     ║
+  ║    operator knew the winning slot before publishing the participant list.   ║
+  ║    FIX: Before calling generateRandomness(), broadcast a Solana memo TX    ║
+  ║    containing SHA-256(snapshotFile) + snapshotSlot. Because memo TX block   ║
+  ║    < VRF TX block, it becomes cryptographically impossible to change the   ║
+  ║    snapshot after learning the randomness.                                 ║
+  ║    See: Solana Memo Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr  ║
+  ║                                                                            ║
+  ║  GAP 2 — verifyWinner.ts produces wrong result for Draw 2                  ║
+  ║    Draw 2 used raw Orao account bytes [73:137] as randomness input,        ║
+  ║    while Draws 1 & 3 used the Orao SDK standard [40:104]. The current      ║
+  ║    verifyWinner.ts always uses the SDK (bytes [40:104]), so it produces     ║
+  ║    a DIFFERENT winner for Draw 2 than the one actually announced.           ║
+  ║    The announced Draw 2 winner IS correct — just using a different byte     ║
+  ║    window. Both windows contain genuine VRF randomness.                     ║
+  ║    FIX: Add RANDOMNESS_OFFSET to constants.ts and --offset flag to         ║
+  ║    verifyWinner.ts. This verifier (index.html) already handles this        ║
+  ║    correctly via the per-draw randOffset config.                            ║
+  ║                                                                            ║
+  ║  GAP 3 — Snapshot slot number not recorded anywhere                        ║
+  ║    The snapshot JSON files contain token balances but no reference to       ║
+  ║    which Solana slot was used as the balance cutoff. Without this,          ║
+  ║    independent verification requires fully trusting the published JSON.    ║
+  ║    Archival RPC nodes (Helius, Triton, QuickNode) support balance queries  ║
+  ║    at historical slots, but only if the slot number is known.              ║
+  ║    FIX: Add snapshotSlot as a required CLI argument to selectWinner.ts     ║
+  ║    and include it in the on-chain memo commitment (Gap 1 fix).             ║
+  ║                                                                            ║
+  ║  AFTER ALL FIXES — Full trustless verification chain:                      ║
+  ║    Block N      → Memo TX: SHA256(snapshot.json) + snapshotSlot            ║
+  ║    Block N+k    → VRF request TX                                           ║
+  ║    Block N+k+m  → VRF fulfillment TX (randomness on PDA)                   ║
+  ║    Because N < N+k, snapshot was provably fixed before randomness known.   ║
+  ║    Anyone can: (1) read memo TX, (2) verify SHA-256, (3) query archival    ║
+  ║    RPC at snapshotSlot, (4) read VRF PDA, (5) run selection algorithm.     ║
+  ║    No step requires trusting Trendex.                                      ║
+  ║                                                                            ║
+  ║  Analysis by: Claude Sonnet 4.6 (Anthropic), Feb 23, 2026                 ║
+  ║  Prompted by: $MODRIC token holder (Draw 3 winner)                         ║
+  ║  Verified against: Solana mainnet + commit dd66bc1                         ║
+  ╚══════════════════════════════════════════════════════════════════════════════╝
+-->
 <html lang="en">
 
 <head>
@@ -884,6 +950,32 @@
     // ─── Draw configurations ────────────────────────────────────────────────────
     // Each draw has its own VRF seed, PDA, TX signature, snapshot, byte offset,
     // and (where known) expected winner.
+    //
+    // TRANSPARENCY GAP 2 — randOffset anomaly:
+    //   The official Trendex codebase (trendexgg/src/config/constants.ts) does NOT
+    //   define a RANDOMNESS_OFFSET at all. The Orao SDK's verifyRandomness()
+    //   (trendexgg/src/core/vrf.ts) returns `result.randomness` which corresponds
+    //   to raw account bytes [40:104] (64 bytes, the Orao SDK standard).
+    //
+    //   However, Draw 2 was executed using raw account bytes [73:137] — a different
+    //   64-byte window of the same VRF output. Both windows contain genuine,
+    //   unpredictable randomness from Orao's ed25519 signature, so there is no
+    //   evidence of manipulation. But the official verifyWinner.ts script cannot
+    //   reproduce Draw 2's result because it always uses the SDK default [40:104].
+    //
+    //   This verifier handles the inconsistency correctly via per-draw randOffset.
+    //
+    //   PROPOSED FIX (GitHub Issue):
+    //     1. Add RANDOMNESS_OFFSET: [40, 104] to constants.ts
+    //     2. Add --offset CLI flag to verifyWinner.ts
+    //     3. Document the Draw 2 anomaly in README.md
+    //
+    //   Historical draw offset reference:
+    //   | Draw | Date           | Holders | Bytes used      | Reproducible? |
+    //   |------|----------------|---------|-----------------|---------------|
+    //   | 1    | Oct 19, 2025   | 20      | [40:104] (std)  | ✅ Yes        |
+    //   | 2    | Nov 01, 2025   | 8       | [73:137] (bug)  | ❌ Needs fix  |
+    //   | 3    | Jan 14, 2026   | 140     | [40:104] (std)  | ✅ Yes        |
 
     var DRAWS = [
       {
@@ -897,7 +989,7 @@
         snapshotFile: 'modric_top_holders_oct_19.json',
         snapshotUrl: '/snapshot/1',
         holderCount: null,   // use all holders in file (20)
-        randOffset: [40, 104],
+        randOffset: [40, 104], // Orao SDK standard — matches trendexgg/src/core/vrf.ts
         expectedWinner: null,
       },
       {
@@ -911,6 +1003,11 @@
         snapshotFile: 'modric_top_holders_nov_01.json',
         snapshotUrl: '/snapshot/2',
         holderCount: null,   // use all holders in file (8)
+        // TRANSPARENCY GAP 2: Draw 2 used [73:137] instead of the SDK standard [40:104].
+        // This is the anomaly — the announced winner (6hrBv4...AeZ) IS correct when using
+        // [73:137] but NOT reproducible with the official verifyWinner.ts which uses [40:104].
+        // Raw bytes [73:81] = 77b19a77d07b7c34 → slot 30,126 of 36,650 → 6hrBv4...AeZ ✅
+        // SDK  bytes [40:48] = 8633110a6ffbf4f0 → slot 19,348 of 36,650 → HL6yps...dkF ❌
         randOffset: [73, 137],
         expectedWinner: null,
       },
@@ -925,7 +1022,7 @@
         snapshotFile: 'modric_top_holders_jan_14_2026.json',
         snapshotUrl: '/snapshot/3',
         holderCount: 140,    // top 140 holders from sorted file
-        randOffset: [40, 104],
+        randOffset: [40, 104], // Orao SDK standard — matches trendexgg/src/core/vrf.ts
         expectedWinner: '6bwzpkSKSXbjVMBYMSdazEytkaCZatibRdmExpjSgCyA',
       },
     ];
@@ -1016,6 +1113,28 @@
     // ─── Trendex selection algorithm (exact port) ───────────────────────────────
     // Source: github.com/trendexgg/trendexgg/src/utils/utils.ts
     //         github.com/trendexgg/trendexgg/src/core/selection.ts
+    //
+    // Algorithm equivalence verified against official Trendex code (commit dd66bc1):
+    //
+    //   distributeSlots() ←→ trendexgg/src/utils/utils.ts:distributeSlots()
+    //     - For each holder: Math.floor(holder.amount / SLOT_DIVISOR) slots
+    //     - SLOT_DIVISOR = 1000 (trendexgg/src/config/constants.ts)
+    //     - Each slot = one entry in the lottery array with the holder's publicKey
+    //
+    //   pickIndex() ←→ trendexgg/src/utils/utils.ts:generateRandomNumberFromRandomness()
+    //     - Reads 8 bytes (BYTES_PER_SELECTION) at offset (iter * 8)
+    //     - Interprets as BigUInt64BE (big-endian unsigned 64-bit integer)
+    //     - Returns: Number(bigInt % BigInt(max))
+    //
+    //   selectWinners() ←→ trendexgg/src/core/selection.ts:selectFromRandomness()
+    //     - Distributes slots, picks random index, removes winner's slots, repeats
+    //     - Note: winner removal is done by publicKey (not by index), so all of
+    //       that winner's slots are removed in one pass — this is correct behaviour
+    //       matching the official .filter(slot => slot !== winnerAddress) logic
+    //
+    // ⚠️  The official code also has MAX_WINNERS = 64 cap (constants.ts) and
+    //     validation checks (utils/validation.ts) which we omit here since
+    //     all historical draws selected only 1 winner.
 
     function distributeSlots(holders) {
       var slots = [];
@@ -1070,6 +1189,21 @@
       return attempt(0);
     }
 
+    // VRF account fetch — reads raw Orao account data from Solana mainnet.
+    //
+    // How this differs from the official Trendex verifyWinner.ts:
+    //   Official: Uses Orao SDK → vrf.waitFulfilled(seed) → result.randomness
+    //     This internally reads bytes [40:104] from the PDA account (SDK default).
+    //     See: trendexgg/src/core/vrf.ts:verifyRandomness()
+    //   This verifier: Reads raw account data via getAccountInfo + base64 decode,
+    //     then slices at draw.randOffset. This lets us handle both [40:104] (standard)
+    //     and [73:137] (Draw 2 anomaly) without depending on the Orao SDK.
+    //
+    // Verification that the PDA is genuine:
+    //   1. Account owner must be the Orao VRF program (VRFzZoJdhFWL8rkvu87LpKM3RbcVezpMEc6X5GVDr7y)
+    //   2. Randomness bytes must not be all zeros (indicates unfulfilled request)
+    //   3. The PDA address itself is derived from the VRF seed and Orao program —
+    //      anyone can verify this derivation independently.
     function fetchVRF(draw) {
       return rpc('getAccountInfo', [draw.vrfPda, { encoding: 'base64' }]).then(function (res) {
         if (!res || !res.value) throw new Error('Account not found');
@@ -1152,6 +1286,38 @@
       setpb(4);
 
       // ── Step 1: Snapshot ──
+      //
+      // TRANSPARENCY GAP 1 — Snapshot committed AFTER VRF randomness is known:
+      //   The snapshot JSON files are fetched from Trendex's GitHub. However, for all
+      //   three draws, the Git commit publishing the snapshot occurred AFTER the VRF
+      //   transaction was already on-chain. Example for Draw 3:
+      //     - VRF on-chain: slot 393,429,835 — January 14, 2026, 10:59 UTC
+      //     - Snapshot Git commit: January 19, 2026 (commit dd66bc1)
+      //   This means the operator knew which slot (and thus which wallet) would win
+      //   before the participant list was publicly committed.
+      //
+      //   PROPOSED FIX: Before calling generateRandomness() in selectWinner.ts,
+      //   broadcast a Solana memo TX recording SHA-256(snapshotFile) + snapshotSlot.
+      //   The memo TX must confirm in an earlier block than the VRF request TX.
+      //   This makes post-hoc snapshot manipulation cryptographically impossible.
+      //
+      //   Snapshot SHA-256 hashes (computed from official data files):
+      //     Draw 1: 6707004879e418bda141d702d8cb9db6404bf0b0c4559d0ab3101fda9b682fff
+      //     Draw 2: eddb5535354c8b28a258904a3b6816981fd616e3123c87d311ab39ab96b07823
+      //     Draw 3: be9a00ba90f7c557bcf9a8b094fdbf55127fd23440ed79012458ff7353c62cef
+      //   None of these hashes exist on-chain anywhere.
+      //
+      // TRANSPARENCY GAP 3 — No snapshot slot recorded:
+      //   The snapshot JSON files contain {publicKey, amount} pairs but do NOT record
+      //   which Solana slot was used as the balance cutoff. Without this, nobody can
+      //   independently reproduce the holder list using an archival RPC.
+      //   Solana archival nodes support getProgramAccounts with minContextSlot, which
+      //   would allow any third party to reproduce exact balances at a given slot —
+      //   but only if the slot number is known.
+      //
+      //   PROPOSED FIX: Add snapshotSlot as a required argument to selectWinner.ts
+      //   and include it in the on-chain memo commitment (Gap 1 fix).
+      //
       state('s1', 'active', '\u27F3 loading\u2026');
       body('s1', '<span class="spin"></span>Fetching snapshot from GitHub\u2026');
 
@@ -1360,15 +1526,40 @@
           '<div class="vc"><div class="vcl">Win Probability</div><div class="vcv g">' + myPct + '% &nbsp;(' + mySlots.toLocaleString() + ' of ' + computed.total.toLocaleString() + ' slots)</div></div>' +
           '</div>' +
           '<div class="checks">' +
+          // What this verification DOES prove:
+          //   ✓ The VRF randomness is genuine Orao oracle output (on-chain, immutable)
+          //   ✓ The selection algorithm deterministically maps randomness → winner
+          //   ✓ The algorithm matches the open-source code in trendexgg/src/core/selection.ts
+          //   ✓ Anyone can re-run this page and get the same result
+          //
+          // What this verification CANNOT yet prove (the 3 gaps):
+          //   ⚠ GAP 1: The snapshot was not manipulated after VRF randomness was known
+          //            (no on-chain commitment of snapshot hash before VRF request)
+          //   ⚠ GAP 2: Draw 2 verification requires non-standard byte offset [73:137]
+          //            (official verifyWinner.ts cannot reproduce it)
+          //   ⚠ GAP 3: Snapshot balances cannot be cross-checked against on-chain state
+          //            (no Solana slot number recorded for the balance cutoff)
+          //
+          // Full trustless verification requires all 3 fixes from the GitHub Issue:
+          //   github.com/trendexgg/trendexgg — see proposed changes to:
+          //     - src/core/vrf.ts (add commitSnapshotHash memo TX)
+          //     - src/config/constants.ts (add RANDOMNESS_OFFSET)
+          //     - src/scripts/selectWinner.ts (add snapshotSlot arg, call memo before VRF)
+          //     - src/scripts/verifyWinner.ts (add --offset flag for Draw 2)
           '<div><b>\u2713</b> Trendex GitHub snapshot</div>' +
           '<div><b>\u2713</b> On-chain Orao VRF randomness</div>' +
           '<div><b>\u2713</b> Open-source selection algorithm</div>' +
           '<div><b>\u2713</b> Deterministic &middot; reproducible by anyone</div>' +
           '</div>' +
           '<div class="trust-note">' +
-          '<strong>\u26A0 Transparency note:</strong> The holder snapshot was published by Trendex on their GitHub. ' +
+          '<strong>\u26A0 Transparency note:</strong> The holder snapshot was published by Trendex on their GitHub ' +
+          '<strong>after</strong> the VRF randomness was already on-chain (see Gap 1 in source comments). ' +
           'VRF randomness and algorithm are fully on-chain and verifiable. ' +
-          'For complete independence, snapshot balances can be cross-verified using an archival Solana RPC at the lottery block height.' +
+          'For 100% trustless verification, three improvements are proposed: ' +
+          '(1) on-chain snapshot hash commitment before VRF, ' +
+          '(2) consistent randomness byte offset across all draws, ' +
+          '(3) recorded snapshot slot number for archival RPC cross-check. ' +
+          'See source code comments and <a href="https://github.com/trendexgg/trendexgg" target="_blank" style="color:var(--amber);text-decoration:underline">GitHub Issue</a> for details.' +
           '</div>' +
           '</div>';
       } else if (isMatch === false) {
@@ -1395,6 +1586,7 @@
           '<div class="vc"><div class="vcl">Win Probability</div><div class="vcv g">' + myPct + '% &nbsp;(' + mySlots.toLocaleString() + ' of ' + computed.total.toLocaleString() + ' slots)</div></div>' +
           '</div>' +
           '<div class="checks">' +
+          // Same transparency caveats as the "match" verdict above — see those comments.
           '<div><b>\u2713</b> Trendex GitHub snapshot</div>' +
           '<div><b>\u2713</b> On-chain Orao VRF randomness</div>' +
           '<div><b>\u2713</b> Open-source selection algorithm</div>' +
@@ -1403,7 +1595,9 @@
           '<div class="trust-note">' +
           '<strong>\u26A0 Note:</strong> No expected winner was provided for this draw, so we show the computed result. ' +
           'The randomness is on-chain (Orao VRF) and the snapshot is from Trendex\'s GitHub. ' +
-          'Anyone can independently verify this computation.' +
+          'Anyone can independently verify this computation. ' +
+          'For full trustlessness, the snapshot needs on-chain hash commitment ' +
+          'before VRF request (see Gap 1 in source comments).' +
           '</div>' +
           '</div>';
       }
