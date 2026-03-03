@@ -1,4 +1,4 @@
 [submodule "trendexgg"]
 	path = trendexgg
-	url = https://github.com/trendexgg/trendexgg.git
+	url = https://github.com/stepanic/trendexgg.git
 	branch = main
