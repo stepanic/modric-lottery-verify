@@ -11,9 +11,25 @@
   },
   "dependencies": {
     "@solana/web3.js": "^1.95.0",
-    "bs58": "^6.0.0"
+    "bs58": "^6.0.0",
+    "sharp": "^0.34.5"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepanic/modric-lottery-verify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stepanic/modric-lottery-verify/issues"
+  },
+  "homepage": "https://github.com/stepanic/modric-lottery-verify#readme"
 }

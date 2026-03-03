@@ -156,6 +156,26 @@ const server = http.createServer((req, res) => {
     return serveSnapshot("3", res);
   }
 
+  // ── /assets/...  →  serve local assets/ directory ───────────────────────
+  if (req.method === "GET" && url.pathname.startsWith("/assets/")) {
+    const filePath = path.join(__dir, url.pathname);
+    if (!fs.existsSync(filePath)) {
+      res.writeHead(404);
+      return res.end("Not found");
+    }
+    const ext = path.extname(filePath).toLowerCase();
+    const mimeTypes = {
+      ".webp": "image/webp",
+      ".jpg": "image/jpeg",
+      ".jpeg": "image/jpeg",
+      ".png": "image/png",
+      ".css": "text/css",
+      ".js": "application/javascript"
+    };
+    res.writeHead(200, { "Content-Type": mimeTypes[ext] || "application/octet-stream" });
+    return fs.createReadStream(filePath).pipe(res);
+  }
+
   // ── /  →  Serve index.html ──────────────────────────────────────────────
   if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
     const file = path.join(__dir, "index.html");
