@@ -61,6 +61,24 @@ npm run serve
 
 The browser dApp has a draw selector (tabs) to verify each draw independently.
 
+### Cloudflare Deployment
+
+The app is hosted on Cloudflare Pages. To deploy updates:
+
+```bash
+# 1. Install wrangler globally (if not installed)
+npm install -g wrangler
+
+# 2. Login to Cloudflare (first time only)
+wrangler login
+
+# 3. Deploy the current directory
+npm run deploy
+# (which runs: wrangler pages deploy .)
+```
+
+The browser dApp has a draw selector (tabs) to verify each draw independently.
+
 ### Test Suite
 
 ```bash

@@ -6,7 +6,8 @@
   "scripts": {
     "verify": "node verify.mjs",
     "test": "node --test test/verify-lottery.test.mjs",
-    "serve": "node server.mjs"
+    "serve": "node server.mjs",
+    "deploy": "wrangler pages deploy ."
   },
   "dependencies": {
     "@solana/web3.js": "^1.95.0",
