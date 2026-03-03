@@ -907,6 +907,54 @@
     .gallery-item:hover img {
       transform: scale(1.05);
     }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      padding: 40px;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+    }
+
+    .lb-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: var(--white);
+      font-size: 32px;
+      cursor: pointer;
+      line-height: 1;
+      font-family: var(--sans);
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .lb-close:hover {
+      opacity: 1;
+    }
   </style>
 
 </head>
@@ -1000,6 +1048,12 @@
     <div class="links" id="linksBox"></div>
 
   </div><!-- /wrap -->
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lb-close" onclick="closeLightbox(event)">&times;</div>
+    <img id="lb-img" src="" alt="Enlarged Authentic Proof">
+  </div>
 
   <script>
     // ─── Draw configurations ────────────────────────────────────────────────────
@@ -1119,8 +1173,9 @@
         var html = '';
         for (var i = 0; i < d.media.length; i++) {
           var base = d.media[i];
-          html += '<div class="gallery-item">' +
-            '<img src="assets/images/' + base + '.webp" srcset="assets/images/' + base + '@2x.webp 2x" alt="Luka Modric signed jersey proof">' +
+          var srcset = 'assets/images/' + base + '@2x.webp';
+          html += '<div class="gallery-item" style="cursor: pointer;" onclick="openLightbox(\'' + srcset + '\')">' +
+            '<img src="assets/images/' + base + '.webp" srcset="' + srcset + ' 2x" alt="Luka Modric signed jersey proof">' +
             '</div>';
         }
         gallery.innerHTML = html;
@@ -1686,6 +1741,20 @@
           '</div>';
       }
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ─── Lightbox logic ─────────────────────────────────────────────────────────
+    function openLightbox(src) {
+      document.getElementById('lb-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden'; // prevent document scroll
+    }
+
+    function closeLightbox(e) {
+      if (e && e.target.id === 'lb-img') return; // Do not close if clicking the image itself
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(function () { document.getElementById('lb-img').src = ''; }, 300);
     }
 
     function done(reEnable) {
